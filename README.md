@@ -1,8 +1,15 @@
-# dss-website-v2
+# Next.js 14 Web Architecture
 
-Welcome! Follow these steps to get your local environment running.
+A production-ready Next.js 14 application built using the **App Router**, **TypeScript**, **Tailwind CSS**, and optimized architecture conventions.
 
-## 🛠️ Getting Started
-1. Clone this repository to your local machine.
-2. Run `npm install` (or your project's specific installation command).
-3. Run `npm run dev` to start the local preview server.
+## 📁 Project Architecture
+
+```text
+├── public/
+│   └── assets/          # Static assets (images, fonts, logos, videos)
+├── src/
+│   ├── app/             # App Router (pages, layouts, error boundaries, routing)
+│   ├── components/      # Reusable UI components
+│   │   └── ui/          # Low-level primitive design elements (Atomic UI)
+│   ├── lib/             # Third-party configurations, utility functions, SDKs
+│   └── styles/          # Global styles, animations, and typography tokens
