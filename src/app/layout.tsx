@@ -1,35 +1,34 @@
 import type { Metadata } from 'next';
-import { Inter, Montserrat } from 'next/font/google';
+import { Montserrat, Inter } from 'next/font/google';
 import './globals.css';
 
-// 1. Configure Inter (Primary Font)
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter', // CSS variable name to use in Tailwind
-});
-
-// 2. Configure Montserrat (Secondary Font)
 const montserrat = Montserrat({
   subsets: ['latin'],
-  variable: '--font-montserrat', // CSS variable name to use in Tailwind
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-montserrat',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-inter',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Next.js 14 App',
-  description: 'Configured with Google Fonts and Lucide Icons',
+  title: 'Digital Sports Solutions | Software Consulting',
+  description: 'Bridging the gap between hardware and software for sports technology.',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      {/* 3. Inject the font variables into the body className */}
-      <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
-        {children}
-      </body>
+    <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

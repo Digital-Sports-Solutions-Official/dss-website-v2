@@ -1,0 +1,86 @@
+@theme {
+  /* ==========================================================================
+     1. COLOR SYSTEM (PRIMITIVES & SEMANTICS)
+     ========================================================================== */
+  
+  /* Brand Warm Palette (Top Row) */
+  --color-brand-pure-red: #FF0000;
+  --color-brand-vibrant-orange: #FF1900;
+  --color-brand-burnt-orange: #FF5900;
+  --color-brand-peach: #FD955D;
+  --color-brand-cream: #FBDECD;
+
+  /* Neutral Palette (Bottom Row) */
+  --color-neutral-white: #FAF9F6;
+  --color-neutral-light-gray: #D4D4D4;
+  --color-neutral-medium-gray: #AEAEAD;
+  --color-neutral-dark-gray: #3C3C3C;
+  --color-neutral-pure-black: #232323;
+
+  /* Semantic Mapping (Consulting & IoT Context) */
+  --color-bg-primary: var(--color-neutral-white);
+  --color-bg-secondary: var(--color-neutral-light-gray);
+  --color-bg-tertiary: var(--color-neutral-medium-gray);
+  --color-bg-dark: var(--color-neutral-pure-black);
+  
+  --color-text-primary: var(--color-neutral-pure-black);
+  --color-text-secondary: var(--color-neutral-dark-gray);
+  --color-text-inverse: var(--color-neutral-white);
+  
+  --color-accent-primary: var(--color-brand-vibrant-orange);
+  --color-accent-hover: var(--color-brand-burnt-orange);
+  --color-accent-subtle: var(--color-brand-cream);
+
+  /* ==========================================================================
+     2. TYPOGRAPHY SCALE (System UI + Technical Accents)
+     ========================================================================== */
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+
+  --text-xs: 0.75rem;     /* 12px - Captions, Small UI Data */
+  --text-sm: 0.875rem;    /* 14px - Body Secondary, Table Data */
+  --text-base: 1rem;      /* 16px - Standard Body Copy */
+  --text-lg: 1.125rem;    /* 18px - Subheadings, Card Titles */
+  --text-xl: 1.25rem;     /* 20px - Section Headings */
+  --text-2xl: 1.5rem;     /* 24px - Minor Page Headings */
+  --text-3xl: 1.875rem;   /* 30px - Major Page Headings */
+  --text-4xl: 2.25rem;    /* 36px - Marketing Sub-heroes */
+  --text-5xl: 3rem;       /* 48px - Primary Display/Hero Titles */
+
+  /* ==========================================================================
+     3. SPACING & LAYOUT SYSTEM
+     ========================================================================== */
+  --spacing-0: 0px;
+  --spacing-1: 0.25rem;   /* 4px */
+  --spacing-2: 0.5rem;    /* 8px */
+  --spacing-3: 0.75rem;   /* 12px */
+  --spacing-4: 1rem;      /* 16px */
+  --spacing-6: 1.5rem;    /* 24px */
+  --spacing-8: 2rem;      /* 32px */
+  --spacing-12: 3rem;     /* 48px */
+  --spacing-16: 4rem;     /* 64px */
+  --spacing-24: 6rem;     /* 96px */
+
+  /* ==========================================================================
+     4. ELEVATION, SHADOWS, & BORDERS
+     ========================================================================== */
+  /* Border Radii */
+  --radius-none: 0px;
+  --radius-sm: 0.25rem;   /* 4px - Small UI Elements, Badges */
+  --radius-md: 0.5rem;    /* 8px - Buttons, Inputs, Standard Cards */
+  --radius-lg: 1rem;      /* 16px - Large Product/Case Study Cards */
+  --radius-full: 9999px;  /* Pill Badges, Avatars */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(35, 35, 35, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(35, 35, 35, 0.1), 0 2px 4px -1px rgba(35, 35, 35, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(35, 35, 35, 0.1), 0 4px 6px -2px rgba(35, 35, 35, 0.05);
+  --shadow-hardware: 0px 8px 24px rgba(255, 25, 0, 0.15); /* Orange hue glow for IoT components */
+
+  /* ==========================================================================
+     5. ANIMATION & TRANSITIONS
+     ========================================================================== */
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration-fast: 150ms;
+  --transition-duration-normal: 300ms;
+}
