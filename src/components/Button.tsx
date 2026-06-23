@@ -1,54 +1,46 @@
+// components/Button.tsx
 import React from 'react';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'ghost';
-export type ButtonSize = 'sm' | 'md' | 'lg';
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: ButtonVariant;
-  size?: ButtonSize;
+interface ButtonProps {
   children: React.ReactNode;
+  href: string;
+  variant?: 'primary' | 'secondary' | 'ghost';
+  'aria-label'?: string; // Corrected to valid lowercase hyphenated HTML binding standard
+  className?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  variant = 'primary',
-  size = 'md',
   children,
-  className = '',
-  disabled,
-  ...props
+  href,
+  variant = 'ghost',
+  'aria-label': ariaLabel,
+  className = ''
 }) => {
-  // Base structural layout styles (handling focus rings for keyboard navigation)
-  const baseStyles = 'inline-flex items-center justify-center font-sans font-semibold rounded-md transition-all duration-fast ease-dss focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50';
-
-  // Variant design token mapping (WCAG AA Contrast Validated)
-  const variantStyles: Record<ButtonVariant, string> = {
-    primary: 'bg-brand-orange text-neutral-white hover:bg-brand-burnt active:bg-brand-burnt focus-visible:ring-brand-orange',
-    secondary: 'bg-neutral-black text-neutral-white hover:bg-neutral-dark active:bg-neutral-dark focus-visible:ring-neutral-black',
-    ghost: 'bg-transparent text-text-primary hover:bg-neutral-light focus-visible:ring-neutral-medium border border-transparent hover:border-neutral-medium',
-  };
-
-  // Size increments mapping
-  const sizeStyles: Record<ButtonSize, string> = {
-    sm: 'text-xs px-3 py-1.5 h-8',
-    md: 'text-sm px-4 py-2 h-10',
-    lg: 'text-base px-6 py-3 h-12',
-  };
-
-  const combinedClasses = `
-    ${baseStyles} 
-    ${variantStyles[variant]} 
-    ${sizeStyles[size]} 
-    ${className}
-  `.trim();
-
   return (
-    <button 
-      className={combinedClasses} 
-      disabled={disabled}
-      aria-disabled={disabled}
-      {...props}
+    <a
+      href={href}
+      aria-label={ariaLabel}
+      className={`inline-flex items-center focus:outline-none transition-all duration-300 transform hover:-translate-y-0.5 rounded ${className}`}
+      style={{
+        borderColor: 'rgba(253, 149, 93, 0.3)',
+        backgroundColor: 'rgba(0, 0, 0, 0.35)',
+        color: '#FD955D',
+        padding: '12px 24px',
+        borderWidth: '1px',
+        borderStyle: 'solid'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = '#FF1900';
+        e.currentTarget.style.backgroundColor = '#FF1900';
+        e.currentTarget.style.color = '#FFFFFF';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = 'rgba(253, 149, 93, 0.3)';
+        e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.35)';
+        e.currentTarget.style.color = '#FD955D';
+      }}
     >
       {children}
-    </button>
+    </a>
   );
 };
