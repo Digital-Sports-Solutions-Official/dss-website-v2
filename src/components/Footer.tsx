@@ -142,23 +142,6 @@ export const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-
-        </div>
-
-        {/* ==========================================================================
-           MIDDLE SECTION: SECURE SYSTEM CREATOR CREDITS BOUNDARY LAYER
-           ========================================================================== */}
-        <div 
-          className="w-full flex flex-wrap justify-between items-center gap-4 py-5 border-t border-[#232323] border-b border-[#232323] text-[11px] font-mono"
-        >
-          <div className="flex items-center gap-x-2">
-            <span className="text-[#737373] font-bold">GRAPHIC ELEMENTS CREATOR:</span>
-            <span className="text-[#AEAEAD] font-sans font-semibold">Matt Kerekanich</span>
-          </div>
-          <div className="flex items-center gap-x-2">
-            <span className="text-[#737373] font-bold">WEBSITE DESIGNER & CREATOR:</span>
-            <span className="text-[#AEAEAD] font-sans font-semibold">Anirudh Chinthagunta</span>
-          </div>
         </div>
 
         {/* ==========================================================================
