@@ -14,6 +14,9 @@ const montserrat = Montserrat({
 export const metadata = {
   title: 'Digital Sports Solutions | B2B Sports Tech Consulting',
   description: 'Low-latency embedded systems firmware and real-time cloud infrastructure.',
+  icons: {
+    icon: '/assets/logo-color.svg', // Maps to public/assets/logo-color.svg
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={montserrat.className}>
       <head>
+        <link 
+          rel="icon" 
+          type="image/svg+xml" 
+          href="/assets/logo-color.svg" 
+        />
         <link 
           rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 

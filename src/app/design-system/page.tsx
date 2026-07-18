@@ -140,7 +140,7 @@ export default function DesignSystemPage() {
                   }} 
                 />
                 <div>
-                  <Typography variant="h4" className="text-white text-sm font-semibold" style={{ margin: 0 }}>{c.name}</Typography>
+                  <Typography variant="h4" className="text-white text-sm font-semibold m-0">{c.name}</Typography>
                   <code className="text-xs text-[#FD955D] font-mono mt-0.5 block">{c.hex}</code>
                 </div>
               </div>

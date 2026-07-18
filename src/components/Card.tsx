@@ -1,137 +1,140 @@
-// components/Card.tsx
-import React, { useState } from 'react';
-import { Typography } from './Typography';
-
-export type CardVariant = 'service' | 'case-study' | 'team' | 'services-preview';
+import React from 'react';
 
 interface CardProps {
-  variant: CardVariant;
-  title: string;
-  subtitle?: string;
-  description: string;
+  variant: 'services-preview' | 'work' | 'case-study' | 'team';
   icon?: string;
-  tags?: string[];
+  title: string;
+  description: string;
   ctaText?: string;
   href?: string;
-  avatarUrl?: string;
-  imageUrl?: string;
+  logoUrl?: string;
+  logoAlt?: string;
+  categoryTag?: string;
 }
 
-export const Card: React.FC<CardProps> = ({
+export function Card({
   variant,
-  title,
-  subtitle,
-  description,
   icon,
-  tags = [],
+  title,
+  description,
   ctaText,
   href,
-  avatarUrl,
-  imageUrl
-}) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  // Fallback anchor routing safety
-  const linkPath = href || '#';
-
+  logoUrl,
+  logoAlt,
+  categoryTag,
+}: CardProps) {
+  
+  // ==========================================
+  // 1. SERVICES PREVIEW VARIANT
+  // ==========================================
   if (variant === 'services-preview') {
+    const renderIconSvg = (iconName?: string) => {
+      switch (iconName) {
+        case 'fa-microchip':
+          return (
+            <svg className="w-5 h-5 text-[#FD955D]" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 19H5V5h14v14zM9 0h2v2H9V0zm4 0h2v2h-2V0zM0 9h2v2H0V9zm0 4h2v2H0v-2zm9 9h2v2H9v-2zm4 0h2v2h-2v-2zm6-9h2v2h-2V9zm0 4h2v2h-2v-2zM7 7v10h10V7H7zm8 8H9V9h6v6z" />
+            </svg>
+          );
+        case 'fa-globe':
+          return (
+            <svg className="w-5 h-5 text-[#FD955D]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+            </svg>
+          );
+        case 'fa-chart-simple':
+          return (
+            <svg className="w-5 h-5 text-[#FD955D]" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4 11h3v10H4zm6-7h3v17h-3zm6 11h3v6h-3z" />
+            </svg>
+          );
+        default:
+          return null;
+      }
+    };
+
     return (
-      <a
-        href={linkPath}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className="relative flex flex-col justify-between w-full h-full rounded-xl overflow-hidden text-left decoration-0 focus:outline-none"
-        style={{
-          backgroundColor: '#2b2b2b',
-          border: '1px solid #3c3c3c',
-          padding: '32px 28px',
-          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-          transform: isHovered ? 'translateY(-3px)' : 'translateY(0)',
-          transition: 'transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease',
-          borderColor: isHovered ? '#4a4a4a' : '#3c3c3c',
-          minHeight: '340px'
-        }}
+      <a 
+        href={href || '#'} 
+        className="group flex flex-col justify-between bg-[#202020] border border-[#2B2B2B] rounded-xl pt-8 md:pt-10 px-8 md:px-10 pb-12 md:pb-14 w-full min-h-[460px] transition-all duration-200 hover:border-[#FD955D] hover:scale-[1.01] cursor-pointer outline-none focus-visible:border-[#FD955D]"
       >
-        {/* BRAND RED TOP ACCENT BAR - Animates from left to right on card hover */}
-        <div 
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            height: '3px',
-            backgroundColor: '#FF1900',
-            width: '100%',
-            transform: isHovered ? 'scaleX(1)' : 'scaleX(0)',
-            transformOrigin: 'left',
-            transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
-          }}
-        />
-
-        {/* TOP INTERNAL LAYER: ICON & TEXT BLURB */}
-        <div className="flex flex-col gap-y-5">
-          {/* 50x50px Red-Tinted Icon Tile */}
-          {icon && (
-            <div 
-              style={{ 
-                height: '50px', 
-                width: '50px', 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
-                backgroundColor: 'rgba(255, 25, 0, 0.1)', 
-                borderRadius: '8px' 
-              }} 
-              aria-hidden="true"
-            >
-              <i className={`fa-solid ${icon}`} style={{ color: '#FF1900', fontSize: '20px' }} />
-            </div>
-          )}
-
-          <div className="flex flex-col gap-y-3">
-            <Typography 
-              variant="h3" 
-              className="text-white tracking-tight" 
-              style={{ fontSize: '21px', fontWeight: '700', color: '#FAF9F6' }}
-            >
-              {title}
-            </Typography>
-            
-            <p 
-              className="text-[#AEAEAD] font-sans text-xs sm:text-sm font-medium leading-relaxed"
-              style={{ color: '#AEAEAD', margin: 0 }}
-            >
-              {description}
-            </p>
+        <div>
+          <div className="w-11 h-11 rounded-xl bg-[#2A1E18] flex items-center justify-center mb-11 transition-colors group-hover:bg-[#33251D]">
+            {renderIconSvg(icon)}
           </div>
+          
+          <h3 className="text-white text-xl font-bold font-sans tracking-tight mb-4">
+            {title}
+          </h3>
+          <p className="text-[#989898] text-[14px] font-sans font-normal leading-relaxed mb-3">
+            {description}
+          </p>
         </div>
 
-        {/* BOTTOM INTERNAL LAYER: DIVIDER & CTA */}
-        <div className="w-full mt-6">
-          {/* Semantic Border Line */}
-          <div className="w-full h-[1px] bg-[#3c3c3c] mb-4" aria-hidden="true" />
-          
-          <div 
-            className="inline-flex items-center text-xs font-mono font-bold tracking-wider uppercase transition-colors"
-            style={{ color: isHovered ? '#FD955D' : '#FF1900', fontSize: '11px' }}
-          >
-            {ctaText || 'Learn More'} 
-            <span 
-              className="ml-2 transition-transform duration-200" 
-              style={{ transform: isHovered ? 'translateX(3px)' : 'translateX(0)' }}
-            >
-              →
-            </span>
-          </div>
+        <div>
+          <div className="w-full h-[1px] bg-[#2B2B2B] group-hover:bg-[#363636]" />
+          <span className="inline-flex items-center text-xs font-mono font-bold tracking-wider text-[#FD955D] group-hover:text-[#ffab7c] transition-colors pt-3.5">
+            {ctaText || 'Learn More'} →
+          </span>
         </div>
       </a>
     );
   }
 
-  // Fallback layout legacy handlers left untouched to maintain backwards systems isolation
+  // ==========================================
+  // 2. OUR WORK VARIANT
+  // ==========================================
+  if (variant === 'work') {
+    return (
+      <a 
+        href={href || '#'} 
+        className="group flex flex-col justify-between bg-[#202020] border border-[#2B2B2B] rounded-xl pt-8 md:pt-10 px-8 md:px-10 pb-12 md:pb-14 w-full min-h-[460px] transition-all duration-200 hover:border-[#FD955D] hover:scale-[1.01] cursor-pointer outline-none focus-visible:border-[#FD955D]"
+      >
+        <div>
+          {/* Increased margin beneath the logo container to mb-11 */}
+          {logoUrl && (
+            <div className="h-14 w-auto flex items-end mb-11">
+              <img 
+                src={logoUrl} 
+                alt={logoAlt || 'Logo'} 
+                className="h-11 w-auto object-contain max-w-[180px]" 
+              />
+            </div>
+          )}
+
+          {/* Increased margin beneath the capsule badge container to mb-11 */}
+          {categoryTag && (
+            <div className="inline-block bg-[#2A1E18] border border-[#442B1F] rounded-md px-2.5 py-1 mb-11">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#FD955D]">
+                {categoryTag}
+              </span>
+            </div>
+          )}
+          
+          <p className="text-[#989898] text-[14px] font-sans font-normal leading-relaxed mb-3">
+            {description}
+          </p>
+        </div>
+
+        <div>
+          <div className="w-full h-[1px] bg-[#2B2B2B] group-hover:bg-[#363636]" />
+          <span className="inline-flex items-center text-xs font-mono font-bold tracking-wider text-[#FD955D] group-hover:text-[#ffab7c] transition-colors pt-3.5">
+            {ctaText || 'Learn More'} →
+          </span>
+        </div>
+      </a>
+    );
+  }
+
+  // ==========================================
+  // 3. FALLBACK DEFAULT VARIANT
+  // ==========================================
   return (
-    <article style={{ backgroundColor: '#232323', border: '1px solid #3C3C3C', borderRadius: '8px', padding: '24px' }}>
-      <Typography variant="h3" className="text-white">{title}</Typography>
-      <Typography variant="body" style={{ color: '#D4D4D4' }}>{description}</Typography>
-    </article>
+    <div className="flex flex-col justify-between bg-[#202020] border border-[#2B2B2B] rounded-xl p-8 w-full h-full">
+      <div>
+        <p className="text-[#D4D4D4] text-sm font-sans font-normal leading-relaxed mb-6">{description}</p>
+      </div>
+    </div>
   );
-};
+}
