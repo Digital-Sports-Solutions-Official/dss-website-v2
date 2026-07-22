@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Typography } from '@/components/Typography';
 import { Card } from '@/components/Card';
 import { ContentContainer } from '@/components/LayoutPrimitives';
@@ -272,18 +273,71 @@ export default function HomePage() {
                 </p>
                 <p>
                   For you, that means a team that listens first, stays accountable, and treats the success of your organization as the measure of our own. It also means a partner who stays with you from the first conversation through the final result, invested every step of the way.{' '}
-                  <button 
-                    onClick={() => scrollToSection('top')} 
+                  <Link 
+                    href="/contact" 
                     className="inline items-center font-sans font-bold text-[#FD955D] hover:text-[#ffab7c] transition-colors text-left focus:outline-none"
                   >
                     Let's turn your challenge into your next advantage! →
-                  </button>
+                  </Link>
                 </p>
               </div>
             </div>
           </div>
         </ContentContainer>
       </section>
+      <SectionDivider />
+
+      {/* CONTACT CTA SECTION */}
+      <section 
+        id="contact" 
+        className="w-full bg-[#181818] text-white py-24 md:py-32 px-6 relative overflow-hidden select-none"
+      >
+        <div className="max-w-[1000px] mx-auto flex flex-col items-center justify-center text-center relative z-10">
+          
+          {/* SUBTITLE ACCENT */}
+          <Typography 
+            variant="caption" 
+            className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px] mb-6"
+          >
+            CONTACT
+          </Typography>
+
+          {/* MAIN HEADING */}
+          <div className="max-w-4xl mb-10">
+            <h2 
+              className="font-extrabold tracking-tight text-[#FAF9F6] leading-[1.1] font-sans mx-auto text-balance"
+              style={{ fontSize: 'clamp(32px, 5.5vw, 60px)' }}
+            >
+              Let's Turn Your Challenge Into Your Next Advantage
+            </h2>
+          </div>
+
+          {/* CALL TO ACTION BUTTON -> LINKS TO /contact */}
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center gap-x-2 px-7 py-3.5 rounded-xl text-white font-semibold text-sm sm:text-base transition-all duration-200 group relative overflow-hidden active:scale-95 shadow-lg"
+            style={{
+              background: 'linear-gradient(135deg, #d86835 0%, #ba4d1d 100%)',
+              boxShadow: '0 4px 20px rgba(216, 104, 53, 0.35)'
+            }}
+          >
+            <span>Start a Conversation</span>
+            <span className="transition-transform duration-200 group-hover:translate-x-1 inline-block">
+              &rarr;
+            </span>
+          </Link>
+
+        </div>
+
+        {/* RADIAL BACKGROUND AMBIENT GLOW */}
+        <div 
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] pointer-events-none -z-0 opacity-15 blur-3xl"
+          style={{
+            background: 'radial-gradient(circle, rgba(253,149,93,0.8) 0%, rgba(24,24,24,0) 70%)'
+          }}
+        />
+      </section>
+
     </main>
   );
 }

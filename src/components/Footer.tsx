@@ -1,7 +1,7 @@
-// src/components/Footer.tsx
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { ContentContainer } from './LayoutPrimitives';
 
 export const Footer: React.FC = () => {
@@ -25,13 +25,13 @@ export const Footer: React.FC = () => {
         >
           {/* COLUMN 1: NAV LOGO, TAGLINE & SOCIAL CHANNELS */}
           <div className="flex flex-col items-start text-left w-full" style={{ minWidth: '0' }}>
-            <a href="/" className="focus:outline-none rounded block transition-transform active:scale-95" aria-label="DSS Home Anchor">
+            <Link href="/" className="focus:outline-none rounded block transition-transform active:scale-95" aria-label="DSS Home Anchor">
               <img 
                 src="/assets/dss-combination-mark-white.svg" 
                 alt="Digital Sports Solutions Logo" 
                 className="h-10 w-auto object-contain block"
               />
-            </a>
+            </Link>
             <p 
               className="text-[#999999] text-[11px] font-medium elegance leading-relaxed max-w-[220px] text-left"
               style={{ margin: 0, marginTop: '14px' }}
@@ -64,9 +64,9 @@ export const Footer: React.FC = () => {
               Services
             </span>
             <div className="flex flex-col gap-y-1.5 text-[11px] font-medium text-[#EEEEEE] text-left">
-              <a href="/services/smart-devices" className="hover:text-[#FF1900] transition-colors">Custom Smart Devices</a>
-              <a href="/services/web-mobile" className="hover:text-[#FF1900] transition-colors">Websites & Mobile Apps</a>
-              <a href="/services/data" className="hover:text-[#FF1900] transition-colors">Data & Insights</a>
+              <Link href="/services/smart-devices" className="hover:text-[#FF1900] transition-colors">Custom Smart Devices</Link>
+              <Link href="/services/web-mobile" className="hover:text-[#FF1900] transition-colors">Websites & Mobile Apps</Link>
+              <Link href="/services/data" className="hover:text-[#FF1900] transition-colors">Data & Insights</Link>
             </div>
           </div>
 
@@ -76,8 +76,8 @@ export const Footer: React.FC = () => {
               Work
             </span>
             <div className="flex flex-col gap-y-1.5 text-[11px] font-medium text-[#EEEEEE] text-left">
-              <a href="/work/ncda-nda" className="hover:text-[#FF1900] transition-colors">NCDA/NDA</a>
-              <a href="/work/2011-robotics" className="hover:text-[#FF1900] transition-colors">2011 Robotics</a>
+              <Link href="/work/ncda-nda" className="hover:text-[#FF1900] transition-colors">NCDA/NDA</Link>
+              <Link href="/work/2011-robotics" className="hover:text-[#FF1900] transition-colors">2011 Robotics</Link>
             </div>
           </div>
 
@@ -137,9 +137,9 @@ export const Footer: React.FC = () => {
           <span>© 2026 Digital Sports Solutions LLC</span>
           
           <div className="flex items-center gap-x-4 font-sans font-normal text-[#888888]">
-            <a href="/terms-of-service" className="hover:text-[#FFFFFF] transition-colors">Terms of Service</a>
+            <Link href="/terms" className="hover:text-[#FFFFFF] transition-colors">Terms of Service</Link>
             <span className="text-[#333333]">|</span>
-            <a href="/privacy-policy" className="hover:text-[#FFFFFF] transition-colors">Privacy Policy</a>
+            <Link href="/privacy" className="hover:text-[#FFFFFF] transition-colors">Privacy Policy</Link>
           </div>
         </div>
 

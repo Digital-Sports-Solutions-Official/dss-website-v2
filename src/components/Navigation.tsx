@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export const Navigation: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +28,13 @@ export const Navigation: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string, href?: string) => {
+    // If the item has a dedicated href (e.g. /contact, /tinyleague, or https://...), allow default navigation
+    if (href) {
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
     if (window.location.pathname !== '/') return;
 
     e.preventDefault();
@@ -40,14 +47,14 @@ export const Navigation: React.FC = () => {
     }
   };
 
-  // Nav items matching your menu configuration, including the explicit Docs external path
+  // Nav items configuration with explicit route for Contact
   const navItems = [
     { name: 'Home', id: 'top' },
     { name: 'Services', id: 'services' },
     { name: 'Work', id: 'work' },
     { name: 'tinyLeague', id: 'tinyleague-teaser', href: '/tinyleague' },
     { name: 'About', id: 'founding-story' },
-    { name: 'Contact', id: 'team' },
+    { name: 'Contact', id: 'contact-page', href: '/contact' },
     { name: 'Docs', id: 'docs', href: 'https://www.digitalsportssolutions.com/docs/' },
   ];
 
@@ -65,10 +72,10 @@ export const Navigation: React.FC = () => {
         <div className="w-full h-full mx-auto px-6 max-w-[1400px] flex items-center justify-between relative">
           
           {/* BRAND IDENTITY */}
-          <a href="/" className="focus:outline-none rounded p-1 flex items-center justify-center relative z-50 transition-transform active:scale-95">
+          <Link href="/" className="focus:outline-none rounded p-1 flex items-center justify-center relative z-50 transition-transform active:scale-95">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/assets/dss-combination-mark-white.svg" alt="Digital Sports Solutions Logo" className="h-11 w-auto object-contain block" />
-          </a>
+          </Link>
 
           {/* HAMBURGER CONTROLLER */}
           <button
@@ -89,13 +96,13 @@ export const Navigation: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 min-h-screen w-full bg-[#141414] z-40 flex flex-col justify-between items-center pt-28 pb-12 px-6 font-sans overflow-y-auto select-none">
           
-          {/* CENTERED LINK STACK - CALIBRATED DOWNWARD SLIGHTLY */}
+          {/* CENTERED LINK STACK */}
           <div className="flex flex-col items-center justify-center my-auto gap-y-4 w-full max-w-2xl">
             {navItems.map((item) => (
               <a
                 key={item.id}
                 href={item.href || `/#${item.id}`}
-                onClick={(e) => !item.href && handleScrollToSection(e, item.id)}
+                onClick={(e) => handleScrollToSection(e, item.id, item.href)}
                 className="text-white font-extrabold tracking-tight text-center transition-colors hover:text-[#FD955D] focus:outline-none py-1.5 px-6 rounded-lg w-auto active:scale-95 duration-150 block"
                 style={{ 
                   fontSize: 'clamp(26px, 5vw, 42px)', 
@@ -107,7 +114,7 @@ export const Navigation: React.FC = () => {
             ))}
           </div>
 
-          {/* LOWER ACCENT BRANDING WATERMARK - CONSTRAINED TO PREVENT CUTOFF */}
+          {/* LOWER ACCENT BRANDING WATERMARK */}
           <div className="flex justify-center items-center mt-6 h-5 opacity-25 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
