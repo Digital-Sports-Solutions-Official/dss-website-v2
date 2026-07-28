@@ -1,4 +1,3 @@
-// components/LayoutPrimitives.tsx
 import React from 'react';
 
 interface PageWrapperProps {
@@ -12,7 +11,7 @@ export const PageWrapper: React.FC<PageWrapperProps> = ({ children, className = 
       className={`w-full min-h-screen flex flex-col justify-between bg-[#3C3C3C] text-[#FAF9F6] ${className}`}
       style={{ minHeight: '100dvh' }}
     >
-      children
+      {children}
     </div>
   );
 };
@@ -27,20 +26,16 @@ interface SectionProps {
 }
 
 export const Section: React.FC<SectionProps> = ({ children, spacing = 'md', id, className = '' }) => {
-  const paddingMap = {
-    sm: '32px 0',
-    md: '64px 0',
-    lg: '128px 0',
+  const spacingClasses = {
+    sm: 'py-8 md:py-12',
+    md: 'py-16 md:py-20',
+    lg: 'py-24 md:py-32',
   };
 
   return (
     <section 
       id={id}
-      className={`w-full ${className}`}
-      style={{
-        padding: paddingMap[spacing],
-        transition: 'padding 0.2s ease-in-out',
-      }}
+      className={`w-full ${spacingClasses[spacing]} ${className}`}
     >
       {children}
     </section>
@@ -55,8 +50,7 @@ interface ContentContainerProps {
 export const ContentContainer: React.FC<ContentContainerProps> = ({ children, className = '' }) => {
   return (
     <div 
-      className={`mx-auto w-full px-4 sm:px-6 lg:px-8 ${className}`}
-      style={{ maxWidth: '1152px' }}
+      className={`mx-auto w-full max-w-[1152px] px-6 sm:px-8 md:px-12 lg:px-16 ${className}`}
     >
       {children}
     </div>

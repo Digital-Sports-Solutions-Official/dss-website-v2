@@ -1,166 +1,204 @@
-// src/components/ServicePageTemplate.tsx
 'use client';
 
 import React from 'react';
-import { SplitSection } from '@/components/SplitSection';
+import Link from 'next/link';
+import { Typography } from '@/components/Typography';
+import { ContentContainer } from '@/components/LayoutPrimitives';
 
-interface CapabilityCard {
+export interface CapabilityCard {
   title: string;
   description: string;
   icon: string;
 }
 
-interface ServicePageTemplateProps {
+export interface ServicePageTemplateProps {
   pageLabel: string;
   heading: string;
-  bodyText: React.ReactNode;
   imageUrl: string;
   imageAlt: string;
-  capabilitiesTitle?: string;
+  bodyText: React.ReactNode;
   capabilities: CapabilityCard[];
   processSteps: string[];
-  ctaHref?: string;
 }
 
 export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   pageLabel,
   heading,
-  bodyText,
   imageUrl,
   imageAlt,
-  capabilitiesTitle = "WHAT WE DELIVER",
+  bodyText,
   capabilities,
   processSteps,
-  ctaHref = "/contact"
 }) => {
+  // Check if image is a vertical/portrait asset (like mobile-showcase.webp)
+  const isPortrait = imageUrl.includes('.webp') || imageUrl.includes('mobile');
+
   return (
-    <main className="w-full bg-[#232323] min-h-screen text-[#FAF9F6] font-sans selection:bg-[#FD955D]/30 overflow-x-hidden">
-      
-      {/* PART 1: INTRO SPLIT SECTION */}
-      <div className="w-full">
-        <SplitSection
-          imageSide="right"
-          eyebrow={pageLabel}
-          title={heading}
-          imageUrl={imageUrl}
-          imageAlt={imageAlt}
-        >
-          <div className="text-sm sm:text-base md:text-[18px] text-[#AEAEAD] font-medium leading-loose flex flex-col gap-y-6">
-            {bodyText}
-          </div>
-        </SplitSection>
-      </div>
-
-      {/* ==========================================================================
-         PART 2: WHAT WE DELIVER CAPABILITIES GRID (Color-Matched to Brand Orange)
-         ========================================================================== */}
-      <section className="w-full bg-[#232323] pt-24 pb-20 px-4 sm:px-8 md:px-12 xl:px-16 relative">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#3A3A3A]" />
-        <div className="max-w-[1400px] mx-auto w-full">
+    <main className="w-full bg-[#181818] min-h-screen pt-32 sm:pt-40 pb-40 text-white font-sans select-none">
+      <ContentContainer className="flex flex-col gap-y-16 sm:gap-y-20">
+        
+        {/* ==========================================================================
+           HERO SECTION: HEADING + BODY (LEFT) & IMAGE (RIGHT)
+           ========================================================================== */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
-          {/* Updated section label header text color matching orange asset tokens */}
-          <span className="font-mono text-[10px] sm:text-[11px] font-bold tracking-[0.3em] text-[#FD955D] block uppercase mb-12">
-            {capabilitiesTitle}
-          </span>
+          {/* LEFT CONTENT COLUMN */}
+          <div className="lg:col-span-7 flex flex-col items-start text-left">
+            <Typography
+              variant="caption"
+              className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px] mb-3"
+            >
+              {pageLabel}
+            </Typography>
 
-          <div 
-            style={{ 
-              display: 'flex', 
-              flexWrap: 'wrap', 
-              gap: '32px', 
-              width: '100%' 
-            }}
+            <h1 
+              style={{ 
+                fontSize: 'clamp(32px, 4.5vw, 52px)', 
+                fontWeight: '800', 
+                letterSpacing: '-0.02em', 
+                color: '#FAF9F6', 
+                margin: '0 0 20px 0',
+                lineHeight: '1.15'
+              }}
+              className="font-sans text-balance"
+            >
+              {heading}
+            </h1>
+
+            <div className="text-[#D4D4D4] font-sans text-xs sm:text-sm md:text-base leading-relaxed space-y-4 max-w-xl">
+              {bodyText}
+            </div>
+          </div>
+
+          {/* RIGHT HERO IMAGE CONTAINER */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-end w-full">
+            {isPortrait ? (
+              /* PORTRAIT / MOBILE DEVICE SHOWCASE FRAME */
+              <div className="relative max-w-[280px] sm:max-w-[310px] w-full bg-[#121212] rounded-[32px] p-2 sm:p-2.5 border border-[#333333] shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+                <div className="w-full rounded-[24px] overflow-hidden border border-[#262626]">
+                  <img 
+                    src={imageUrl} 
+                    alt={imageAlt} 
+                    className="w-full h-auto object-contain block"
+                  />
+                </div>
+              </div>
+            ) : (
+              /* LANDSCAPE IMAGE FRAME */
+              <div className="w-full max-w-[520px] aspect-[4/3] rounded-2xl overflow-hidden border border-[#333333] shadow-2xl bg-[#202020]">
+                <img 
+                  src={imageUrl} 
+                  alt={imageAlt} 
+                  className="w-full h-full object-cover block"
+                />
+              </div>
+            )}
+          </div>
+
+        </div>
+
+        {/* SECTION DIVIDER */}
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FF1900]/30 to-transparent" />
+
+        {/* ==========================================================================
+           WHAT WE DELIVER SECTION
+           ========================================================================== */}
+        <div className="flex flex-col">
+          <Typography
+            variant="caption"
+            className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px] mb-8 sm:mb-10"
           >
+            WHAT WE DELIVER
+          </Typography>
+
+          {/* CARDS GRID WITH SPACING ABOVE */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 w-full items-stretch pt-4 sm:pt-6">
             {capabilities.map((card, idx) => (
               <div 
-                key={idx}
-                style={{ 
-                  flex: '1 1 calc(25% - 32px)', 
-                  minWidth: '260px',
-                  display: 'flex',
-                  flexDirection: 'column'
-                }}
-                className="bg-[#1b1b1b]/40 border border-[#3A3A3A]/60 rounded-xl p-8 hover:border-[#FD955D]/40 transition-all duration-300 group"
+                key={idx} 
+                className="bg-[#202020] border border-[#333333] rounded-2xl p-6 sm:p-7 flex flex-col items-start text-left hover:border-[#FD955D]/40 transition-colors duration-200"
               >
-                {/* Updated icon color state token definitions from brand-red to brand-orange */}
-                <div className="w-10 h-10 rounded-lg bg-[#2a2a2a] border border-[#3A3A3A] text-[#FD955D] flex items-center justify-center mb-6 group-hover:bg-[#FD955D] group-hover:text-[#171717] transition-all duration-300 shrink-0">
+                {/* ICON BADGE */}
+                <div className="w-10 h-10 rounded-xl bg-[#2A2A2A] border border-[#3A3A3A] flex items-center justify-center mb-5 text-[#FD955D]">
                   <i className={`fas ${card.icon} text-sm`} />
                 </div>
-                <h3 className="text-base sm:text-[17px] font-bold font-sans text-[#FAF9F6] mb-4 tracking-tight shrink-0">
+
+                {/* TITLE */}
+                <h3 className="text-base sm:text-lg font-bold text-[#FAF9F6] mb-2 font-sans">
                   {card.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-[#AEAEAD] font-medium leading-relaxed flex-grow">
+
+                {/* DESCRIPTION */}
+                <p className="text-[#A3A3A3] text-xs sm:text-sm leading-relaxed font-sans">
                   {card.description}
                 </p>
               </div>
             ))}
           </div>
-
         </div>
-      </section>
 
-      {/* ==========================================================================
-         PART 3: SIMPLE 5-STEP PROCESS DIAGRAM
-         ========================================================================== */}
-      <section className="w-full bg-[#232323] pt-24 pb-24 px-4 sm:px-8 md:px-12 xl:px-16 relative">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#3A3A3A]" />
-        <div className="max-w-[1400px] mx-auto w-full">
-          
-          <span className="font-mono text-[10px] sm:text-[11px] font-bold tracking-[0.3em] text-[#FD955D] block uppercase mb-16">
+        {/* SECTION DIVIDER */}
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FF1900]/30 to-transparent" />
+
+        {/* ==========================================================================
+           SIMPLE 5-STEP PROCESS SECTION
+           ========================================================================== */}
+        <div className="flex flex-col gap-y-10">
+          <Typography
+            variant="caption"
+            className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px]"
+          >
             SIMPLE 5-STEP PROCESS
-          </span>
+          </Typography>
 
-          <div 
-            style={{ 
-              display: 'flex', 
-              flexWrap: 'wrap', 
-              justifyContent: 'space-between', 
-              gap: '40px',
-              width: '100%'
-            }}
-          >
-            {processSteps.map((step, idx) => (
-              <div 
-                key={idx} 
-                style={{ flex: '1 1 calc(20% - 40px)', minWidth: '160px' }}
-                className="flex flex-row md:flex-col items-center md:items-start text-left relative z-10 group"
-              >
-                <div className="w-10 h-10 rounded-full bg-[#1b1b1b] border-2 border-[#3A3A3A] text-xs font-mono font-bold text-[#AEAEAD] flex items-center justify-center shrink-0 mr-4 md:mr-0 md:mb-6 group-hover:border-[#FD955D] group-hover:text-[#FAF9F6] transition-all duration-300">
-                  {String(idx + 1).padStart(2, '0')}
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xs font-mono tracking-widest text-[#AEAEAD] font-bold uppercase group-hover:text-[#FD955D] transition-colors">
-                    {step}
-                  </span>
-                </div>
-              </div>
-            ))}
+          {/* PROCESS STEPPER ROW */}
+          <div className="relative w-full">
+            {/* CONNECTOR LINE BEHIND BADGES */}
+            <div className="hidden md:block absolute top-5 left-[10%] right-[10%] h-[1px] bg-[#FD955D]/40 z-0" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 relative z-10">
+              {processSteps.map((step, index) => {
+                const stepNum = String(index + 1).padStart(2, '0');
+                return (
+                  <div key={index} className="flex flex-col items-center text-center">
+                    {/* STEP NUMBER BADGE */}
+                    <div className="w-10 h-10 bg-[#181818] border border-[#FD955D] flex items-center justify-center text-[#FD955D] font-mono text-xs font-bold shadow-md">
+                      {stepNum}
+                    </div>
+
+                    {/* GAP BEFORE WHITE TEXT */}
+                    <span className="text-xs sm:text-sm font-bold text-[#FAF9F6] font-mono tracking-wider uppercase mt-8 sm:mt-10">
+                      {step}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-
         </div>
-      </section>
 
-      {/* ==========================================================================
-         PART 4: FOOTER ACTION TRIGGER SECTION
-         ========================================================================== */}
-      <section className="w-full bg-[#232323] py-28 px-4 text-center relative border-b border-[#171717]">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#3A3A3A]" />
-        <div className="max-w-md mx-auto flex flex-col items-center">
-          <a
-            href={ctaHref}
-            className="inline-flex items-center justify-center font-mono text-xs font-bold uppercase tracking-widest text-[#FAF9F6] bg-[#FF1900] hover:bg-[#FAF9F6] hover:text-[#171717] transition-all duration-300 rounded shadow-lg shadow-[#FF1900]/10 hover:shadow-none"
-            style={{ 
-              minHeight: '48px',
-              paddingLeft: '36px',
-              paddingRight: '36px',
-              letterSpacing: '0.2em'
+        {/* SECTION DIVIDER */}
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FF1900]/30 to-transparent" />
+
+        {/* ==========================================================================
+           CALL TO ACTION BUTTON (MATCHING CONTACT SECTION BUTTON STYLE)
+           ========================================================================== */}
+        <div className="flex justify-center pt-8 pb-12">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center gap-x-2 px-12 sm:px-14 py-4 min-w-[240px] sm:min-w-[260px] rounded-2xl text-white font-semibold text-sm sm:text-base tracking-wide transition-all duration-300 hover:scale-[1.02] active:scale-95 group whitespace-nowrap shadow-[0_0_25px_rgba(200,90,50,0.35)]"
+            style={{
+              background: 'linear-gradient(135deg, #C85A32 0%, #B04A26 100%)',
             }}
           >
-            Learn More <span className="ml-2">→</span>
-          </a>
+            <span>Learn More</span>
+            <span className="transition-transform duration-200 group-hover:translate-x-1 inline-block">
+              &rarr;
+            </span>
+          </Link>
         </div>
-      </section>
 
+      </ContentContainer>
     </main>
   );
 };

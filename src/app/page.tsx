@@ -25,7 +25,7 @@ export default function HomePage() {
     <main className="w-full bg-[#181818] min-h-screen overflow-x-hidden select-none font-sans">
       
       {/* HERO CANVAS */}
-      <section id="top" className="relative w-full flex flex-col justify-between items-center overflow-hidden bg-cover bg-center px-4 sm:px-8 pt-28 pb-8" style={{ minHeight: '100vh', backgroundImage: `linear-gradient(to bottom, rgba(24, 24, 24, 0.65), rgba(24, 24, 24, 0.70)), url('/assets/court-referee-bg.jpg')` }}>
+      <section id="top" className="relative w-full flex flex-col justify-between items-center overflow-hidden bg-cover bg-center px-6 sm:px-8 pt-28 pb-8" style={{ minHeight: '100vh', backgroundImage: `linear-gradient(to bottom, rgba(24, 24, 24, 0.65), rgba(24, 24, 24, 0.70)), url('/assets/court-referee-bg.jpg')` }}>
         <div className="h-8 md:h-12" />
         <ContentContainer className="text-center flex flex-col items-center justify-center w-full z-10 my-auto">
           <Typography variant="caption" className="text-[#FD955D] font-mono tracking-[0.25em] font-bold block uppercase mb-4 text-[10px] sm:text-xs">Digital Sports Solutions</Typography>
@@ -64,7 +64,7 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="w-full pt-32 pb-20">
+      <section id="services" className="w-full pt-32 pb-20 px-6 sm:px-8">
         <ContentContainer>
           <div className="flex flex-col items-start text-left mb-16 md:mb-20">
             <Typography variant="caption" className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px] mb-3">
@@ -115,7 +115,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* OUR WORK */}
-      <section id="work" className="w-full pt-20 pb-20">
+      <section id="work" className="w-full pt-20 pb-20 px-6 sm:px-8">
         <ContentContainer>
           <div className="flex flex-col items-start text-left mb-16 md:mb-20">
             <Typography variant="caption" className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px] mb-3">
@@ -164,7 +164,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* TINYLEAGUE (OUR VISION) */}
-      <section id="tinyleague-teaser" className="w-full pt-20 pb-20">
+      <section id="tinyleague-teaser" className="w-full pt-20 pb-20 px-6 sm:px-8">
         <ContentContainer>
           <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
             <div className="w-full md:w-1/2 flex justify-center">
@@ -197,7 +197,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* ORIGIN */}
-      <section id="founding-story" className="w-full pt-20 pb-20">
+      <section id="founding-story" className="w-full pt-20 pb-20 px-6 sm:px-8">
         <ContentContainer>
           <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
             <div className="w-full md:w-1/2 flex flex-col items-start text-left">
@@ -241,7 +241,7 @@ export default function HomePage() {
       <SectionDivider />
 
       {/* TEAM */}
-      <section id="team" className="w-full pt-20 pb-20">
+      <section id="team" className="w-full pt-20 pb-20 px-6 sm:px-8">
         <ContentContainer>
           <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
             <div className="w-full md:w-1/2 flex justify-center">

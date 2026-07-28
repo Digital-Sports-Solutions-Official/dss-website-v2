@@ -29,8 +29,8 @@ export default function WebMobilePage() {
     <ServicePageTemplate
       pageLabel="WEBSITES & MOBILE APPS"
       heading="A Digital Presence Built Around You"
-      imageUrl="/assets/team-group.jpg"
-      imageAlt="Responsive dynamic custom web application rendering layouts"
+      imageUrl="/assets/mobile-showcase.webp"
+      imageAlt="Mobile shot clock controller interface application"
       capabilities={cards}
       processSteps={["Discover", "Design", "Build", "Refine", "Launch & Support"]}
       bodyText={

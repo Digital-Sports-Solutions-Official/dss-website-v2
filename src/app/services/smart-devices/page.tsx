@@ -29,8 +29,8 @@ export default function SmartDevicesPage() {
     <ServicePageTemplate
       pageLabel="CUSTOM SMART DEVICES"
       heading="Hardware Built Around You"
-      imageUrl="/assets/court-action.jpg"
-      imageAlt="DSS Custom sports hardware controller device in action"
+      imageUrl="/assets/shot-clock.jpg"
+      imageAlt="DSS Custom sports shot clock smart device"
       capabilities={cards}
       processSteps={["Discover", "Prototype", "Field-Test", "Iterate", "Deploy & Support"]}
       bodyText={

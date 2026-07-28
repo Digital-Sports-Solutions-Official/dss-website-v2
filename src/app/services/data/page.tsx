@@ -29,8 +29,8 @@ export default function DataPage() {
     <ServicePageTemplate
       pageLabel="DATA & INSIGHTS"
       heading="Insights Built Around You"
-      imageUrl="/assets/court-action.jpg"
-      imageAlt="DSS real-time telemetry administrative visualization dashboard"
+      imageUrl="/assets/analytics-dashboard.jpeg"
+      imageAlt="DSS custom analytics and historical team performance dashboard visualization"
       capabilities={cards}
       processSteps={["Discover", "Design", "Build", "Refine", "Deliver & Support"]}
       bodyText={
