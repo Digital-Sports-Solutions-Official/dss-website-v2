@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Typography } from '@/components/Typography';
-import { ContentContainer } from '@/components/LayoutPrimitives';
+import { ContentContainer, Rule } from '@/components/LayoutPrimitives';
 
 export interface CapabilityCard {
   title: string;
@@ -34,102 +34,78 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   const isPortrait = imageUrl.includes('.webp') || imageUrl.includes('mobile');
 
   return (
-    <main className="w-full bg-[#181818] min-h-screen pt-32 sm:pt-40 pb-40 text-white font-sans select-none">
-      <ContentContainer className="flex flex-col gap-y-16 sm:gap-y-20">
+    <main className="w-full min-h-screen bg-[#181818] pt-28 pb-20 font-sans text-white select-none sm:pt-36 sm:pb-28 md:pt-40 md:pb-32">
+      <ContentContainer className="flex flex-col gap-y-12 sm:gap-y-16 md:gap-y-20">
         
         {/* ==========================================================================
            HERO SECTION: HEADING + BODY (LEFT) & IMAGE (RIGHT)
            ========================================================================== */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
           
           {/* LEFT CONTENT COLUMN */}
-          <div className="lg:col-span-7 flex flex-col items-start text-left">
-            <Typography
-              variant="caption"
-              className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px] mb-3"
-            >
+          <div className="flex flex-col items-start text-left lg:col-span-7">
+            <Typography variant="caption" className="mb-3 block">
               {pageLabel}
             </Typography>
 
-            <h1 
-              style={{ 
-                fontSize: 'clamp(32px, 4.5vw, 52px)', 
-                fontWeight: '800', 
-                letterSpacing: '-0.02em', 
-                color: '#FAF9F6', 
-                margin: '0 0 20px 0',
-                lineHeight: '1.15'
-              }}
-              className="font-sans text-balance"
-            >
+            <Typography variant="h1" className="mb-5">
               {heading}
-            </h1>
+            </Typography>
 
-            <div className="text-[#D4D4D4] font-sans text-xs sm:text-sm md:text-base leading-relaxed space-y-4 max-w-xl">
+            <div className="max-w-xl space-y-4 font-sans text-[0.9375rem] leading-relaxed text-[#D4D4D4] md:text-base">
               {bodyText}
             </div>
           </div>
 
           {/* RIGHT HERO IMAGE CONTAINER */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end w-full">
+          <div className="flex w-full justify-center lg:col-span-5 lg:justify-end">
             {isPortrait ? (
               /* PORTRAIT / MOBILE DEVICE SHOWCASE FRAME */
-              <div className="relative max-w-[280px] sm:max-w-[310px] w-full bg-[#121212] rounded-[32px] p-2 sm:p-2.5 border border-[#333333] shadow-[0_0_40px_rgba(0,0,0,0.6)]">
-                <div className="w-full rounded-[24px] overflow-hidden border border-[#262626]">
-                  <img 
-                    src={imageUrl} 
-                    alt={imageAlt} 
-                    className="w-full h-auto object-contain block"
-                  />
+              <div className="relative w-full max-w-[260px] rounded-[32px] border border-[#333333] bg-[#121212] p-2 shadow-[0_0_40px_rgba(0,0,0,0.6)] sm:max-w-[310px] sm:p-2.5">
+                <div className="w-full overflow-hidden rounded-[24px] border border-[#262626]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={imageUrl} alt={imageAlt} className="block h-auto w-full object-contain" />
                 </div>
               </div>
             ) : (
               /* LANDSCAPE IMAGE FRAME */
-              <div className="w-full max-w-[520px] aspect-[4/3] rounded-2xl overflow-hidden border border-[#333333] shadow-2xl bg-[#202020]">
-                <img 
-                  src={imageUrl} 
-                  alt={imageAlt} 
-                  className="w-full h-full object-cover block"
-                />
+              <div className="aspect-[4/3] w-full max-w-[520px] overflow-hidden rounded-2xl border border-[#333333] bg-[#202020] shadow-2xl">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={imageUrl} alt={imageAlt} className="block h-full w-full object-cover" />
               </div>
             )}
           </div>
 
         </div>
 
-        {/* SECTION DIVIDER */}
-        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FF1900]/30 to-transparent" />
+        <Rule />
 
         {/* ==========================================================================
            WHAT WE DELIVER SECTION
            ========================================================================== */}
         <div className="flex flex-col">
-          <Typography
-            variant="caption"
-            className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px] mb-8 sm:mb-10"
-          >
-            WHAT WE DELIVER
+          <Typography variant="caption" className="mb-6 block sm:mb-8">
+            What We Deliver
           </Typography>
 
-          {/* CARDS GRID WITH SPACING ABOVE */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 w-full items-stretch pt-4 sm:pt-6">
+          <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-8">
             {capabilities.map((card, idx) => (
               <div 
                 key={idx} 
-                className="bg-[#202020] border border-[#333333] rounded-2xl p-6 sm:p-7 flex flex-col items-start text-left hover:border-[#FD955D]/40 transition-colors duration-200"
+                className="flex h-full flex-col items-start rounded-2xl border border-[#2B2B2B] bg-[#202020] p-6 text-left transition-[border-color,box-shadow] duration-200 hover:border-[#FD955D]/50 hover:shadow-[0_16px_40px_rgba(0,0,0,0.35)] sm:p-7"
               >
                 {/* ICON BADGE */}
-                <div className="w-10 h-10 rounded-xl bg-[#2A2A2A] border border-[#3A3A3A] flex items-center justify-center mb-5 text-[#FD955D]">
-                  <i className={`fas ${card.icon} text-sm`} />
-                </div>
+                <span className="mb-5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#3A3A3A] bg-[#2A1E18] text-[#FD955D]">
+                  <i className={`fas ${card.icon} text-sm`} aria-hidden />
+                </span>
 
                 {/* TITLE */}
-                <h3 className="text-base sm:text-lg font-bold text-[#FAF9F6] mb-2 font-sans">
+                <h3 className="mb-2.5 font-sans text-lg font-bold tracking-tight text-[#FAF9F6]">
                   {card.title}
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="text-[#A3A3A3] text-xs sm:text-sm leading-relaxed font-sans">
+                <p className="font-sans text-[0.9375rem] leading-relaxed text-[#9C9C9C]">
                   {card.description}
                 </p>
               </div>
@@ -137,37 +113,32 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
           </div>
         </div>
 
-        {/* SECTION DIVIDER */}
-        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FF1900]/30 to-transparent" />
+        <Rule />
 
         {/* ==========================================================================
            SIMPLE 5-STEP PROCESS SECTION
            ========================================================================== */}
-        <div className="flex flex-col gap-y-10">
-          <Typography
-            variant="caption"
-            className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px]"
-          >
-            SIMPLE 5-STEP PROCESS
+        <div className="flex flex-col gap-y-8 sm:gap-y-10">
+          <Typography variant="caption" className="block">
+            Simple 5-Step Process
           </Typography>
 
           {/* PROCESS STEPPER ROW */}
           <div className="relative w-full">
             {/* CONNECTOR LINE BEHIND BADGES */}
-            <div className="hidden md:block absolute top-5 left-[10%] right-[10%] h-[1px] bg-[#FD955D]/40 z-0" />
+            <div className="absolute left-[10%] right-[10%] top-5 z-0 hidden h-px bg-[#FD955D]/40 md:block" />
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 relative z-10">
+            <div className="relative z-10 grid grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8 md:grid-cols-5">
               {processSteps.map((step, index) => {
                 const stepNum = String(index + 1).padStart(2, '0');
                 return (
                   <div key={index} className="flex flex-col items-center text-center">
                     {/* STEP NUMBER BADGE */}
-                    <div className="w-10 h-10 bg-[#181818] border border-[#FD955D] flex items-center justify-center text-[#FD955D] font-mono text-xs font-bold shadow-md">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-[#FD955D] bg-[#181818] font-mono text-xs font-bold text-[#FD955D] shadow-md">
                       {stepNum}
-                    </div>
+                    </span>
 
-                    {/* GAP BEFORE WHITE TEXT */}
-                    <span className="text-xs sm:text-sm font-bold text-[#FAF9F6] font-mono tracking-wider uppercase mt-8 sm:mt-10">
+                    <span className="mt-4 font-mono text-xs font-bold uppercase tracking-wider text-[#FAF9F6] sm:mt-6 sm:text-sm md:mt-8">
                       {step}
                     </span>
                   </div>
@@ -177,22 +148,21 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
           </div>
         </div>
 
-        {/* SECTION DIVIDER */}
-        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FF1900]/30 to-transparent" />
+        <Rule />
 
         {/* ==========================================================================
-           CALL TO ACTION BUTTON (MATCHING CONTACT SECTION BUTTON STYLE)
+           CALL TO ACTION
            ========================================================================== */}
-        <div className="flex justify-center pt-8 pb-12">
+        <div className="flex justify-center pt-2 sm:pt-6">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-x-2 px-12 sm:px-14 py-4 min-w-[240px] sm:min-w-[260px] rounded-2xl text-white font-semibold text-sm sm:text-base tracking-wide transition-all duration-300 hover:scale-[1.02] active:scale-95 group whitespace-nowrap shadow-[0_0_25px_rgba(200,90,50,0.35)]"
+            className="group inline-flex min-h-12 w-full items-center justify-center gap-x-2 whitespace-nowrap rounded-2xl px-8 py-4 text-[0.9375rem] font-semibold tracking-wide text-white shadow-[0_0_25px_rgba(200,90,50,0.35)] transition-transform duration-300 hover:scale-[1.02] active:scale-95 sm:w-auto sm:min-w-[260px] sm:px-14 sm:text-base"
             style={{
               background: 'linear-gradient(135deg, #C85A32 0%, #B04A26 100%)',
             }}
           >
             <span>Learn More</span>
-            <span className="transition-transform duration-200 group-hover:translate-x-1 inline-block">
+            <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
               &rarr;
             </span>
           </Link>

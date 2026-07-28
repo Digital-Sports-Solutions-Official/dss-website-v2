@@ -1,12 +1,13 @@
 import React from 'react';
+import { ContentContainer } from '@/components/LayoutPrimitives';
 
 export default function TermsOfServicePage() {
   return (
-    <main className="w-full bg-[#232323] min-h-screen pt-[160px] pb-40 text-[#FAF9F6] font-sans">
-      <div className="max-w-[780px] mx-auto px-6 sm:px-8">
+    <main className="w-full bg-[#232323] min-h-screen pt-28 sm:pt-40 pb-24 sm:pb-40 text-[#FAF9F6] font-sans">
+      <ContentContainer size="prose">
         
         {/* PAGE HEADING */}
-        <h1 className="text-[32px] sm:text-[40px] font-extrabold tracking-tight leading-tight text-white mb-2">
+        <h1 className="text-[clamp(1.75rem,6vw,2.5rem)] font-extrabold tracking-tight leading-tight text-white mb-2">
           Terms of Service
         </h1>
         
@@ -112,7 +113,7 @@ export default function TermsOfServicePage() {
           </section>
 
         </div>
-      </div>
+      </ContentContainer>
     </main>
   );
 }

@@ -69,7 +69,7 @@ export const Navigation: React.FC = () => {
           height: '80px'
         }}
       >
-        <div className="w-full h-full mx-auto px-6 max-w-[1400px] flex items-center justify-between relative">
+        <div className="w-full h-full mx-auto px-5 sm:px-8 lg:px-12 max-w-[1400px] flex items-center justify-between relative">
           
           {/* BRAND IDENTITY */}
           <Link href="/" className="focus:outline-none rounded p-1 flex items-center justify-center relative z-50 transition-transform active:scale-95">
@@ -94,7 +94,7 @@ export const Navigation: React.FC = () => {
 
       {/* FULL SCREEN IMMERSIVE NAV OVERLAY */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 min-h-screen w-full bg-[#141414] z-40 flex flex-col justify-between items-center pt-28 pb-12 px-6 font-sans overflow-y-auto select-none">
+        <div className="fixed inset-0 min-h-[100svh] w-full bg-[#141414] z-40 flex flex-col justify-between items-center pt-28 pb-12 px-5 sm:px-8 font-sans overflow-y-auto select-none">
           
           {/* CENTERED LINK STACK */}
           <div className="flex flex-col items-center justify-center my-auto gap-y-4 w-full max-w-2xl">

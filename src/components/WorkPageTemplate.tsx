@@ -3,6 +3,8 @@
 
 import React from 'react';
 import { SplitSection } from './SplitSection';
+import { ContentContainer } from './LayoutPrimitives';
+import { Typography } from './Typography';
 
 export interface WorkPageSection {
   eyebrow: string;
@@ -22,6 +24,8 @@ export interface WorkPageTemplateProps {
   sections: WorkPageSection[];
 }
 
+const goldRule = 'h-px w-full bg-gradient-to-r from-transparent via-[#FD955D]/40 to-transparent';
+
 export const WorkPageTemplate: React.FC<WorkPageTemplateProps> = ({
   clientName,
   clientSubtitle,
@@ -31,52 +35,48 @@ export const WorkPageTemplate: React.FC<WorkPageTemplateProps> = ({
   sections,
 }) => {
   return (
-    <main className="w-full bg-[#121212] min-h-screen text-[#FAF9F6] pt-28 sm:pt-36 pb-24 px-4 sm:px-6 md:px-12">
-      <div className="max-w-[1400px] mx-auto">
+    <main className="w-full min-h-screen bg-[#121212] pt-28 pb-20 font-sans text-[#FAF9F6] sm:pt-36 sm:pb-24">
+      <ContentContainer size="wide">
         
         {/* HERO HEADER SECTION */}
-        <header className="flex flex-col items-start max-w-5xl mb-14 sm:mb-20">
+        <header className="flex max-w-5xl flex-col items-start">
           
           {/* TOP ROW: Accent Line + Logo + Orange Subtitle Text */}
-          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-            <div className="w-6 h-[2px] bg-[#FD955D]" />
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 sm:gap-x-4">
+            <span className="h-0.5 w-6 shrink-0 bg-[#FD955D]" aria-hidden />
 
             {logoUrl && (
-              <div className="h-7 sm:h-9 shrink-0 flex items-center max-w-[200px]">
+              <span className="flex h-7 max-w-[180px] shrink-0 items-center sm:h-9 sm:max-w-[200px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={logoUrl}
                   alt={clientName}
-                  className="h-full w-auto max-w-full object-contain block"
+                  className="block h-full w-auto max-w-full object-contain"
                 />
-              </div>
+              </span>
             )}
 
-            {/* Subtle, smaller orange top line */}
-            <span className="text-[#FD955D] font-mono text-[10px] sm:text-xs font-semibold uppercase tracking-[0.25em]">
+            <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.25em] text-[#FD955D] sm:text-xs">
               {clientName} — {clientSubtitle}
             </span>
           </div>
 
-          {/* LOWER CONTAINER: Headline & Tag shifted down */}
-          <div className="mt-6 sm:mt-8 flex flex-col items-start gap-y-5">
-            {/* Very prominent main hero title */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#FAF9F6] leading-[1.1]">
-              {headline}
-            </h1>
+          {/* LOWER CONTAINER: Headline & Tag */}
+          <div className="mt-6 flex flex-col items-start gap-y-5 sm:mt-8">
+            <Typography variant="display">{headline}</Typography>
 
             {categoryTag && (
-              <div className="inline-block px-2.5 py-1 border border-[#FD955D]/40 bg-[#FD955D]/10 rounded">
-                <span className="text-[#FD955D] font-mono text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.25em] block leading-none">
+              <span className="inline-block rounded border border-[#FD955D]/40 bg-[#FD955D]/10 px-2.5 py-1">
+                <span className="block font-mono text-[9px] font-semibold uppercase leading-none tracking-[0.25em] text-[#FD955D] sm:text-[10px]">
                   {categoryTag}
                 </span>
-              </div>
+              </span>
             )}
           </div>
         </header>
 
-        {/* HERO ORANGE GRADIENT DIVIDER */}
-        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FD955D]/40 to-transparent my-10 sm:my-14" />
+        {/* HERO GRADIENT DIVIDER */}
+        <div className={`${goldRule} my-10 sm:my-14`} />
 
         {/* WORK SECTIONS LIST */}
         <div className="flex flex-col">
@@ -86,7 +86,7 @@ export const WorkPageTemplate: React.FC<WorkPageTemplateProps> = ({
 
             return (
               <React.Fragment key={idx}>
-                <div className="py-12 sm:py-16 md:py-20">
+                <div className="py-10 sm:py-14 md:py-20">
                   <SplitSection
                     imageSide={imageSide}
                     eyebrow={section.eyebrow}
@@ -99,16 +99,13 @@ export const WorkPageTemplate: React.FC<WorkPageTemplateProps> = ({
                   </SplitSection>
                 </div>
 
-                {/* ORANGE GRADIENT SECTION DIVIDER */}
-                {idx < sections.length - 1 && (
-                  <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FD955D]/40 to-transparent" />
-                )}
+                {idx < sections.length - 1 && <div className={goldRule} />}
               </React.Fragment>
             );
           })}
         </div>
 
-      </div>
+      </ContentContainer>
     </main>
   );
 };

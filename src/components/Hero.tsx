@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
       }}
       className="w-full relative select-none overflow-hidden flex items-center justify-center border-b border-[#232323]"
     >
-      <div className="w-full mx-auto px-4 sm:px-8 md:px-12 xl:px-16 max-w-[1400px] relative z-10 flex flex-col items-center text-center">
+      <div className="w-full mx-auto px-5 sm:px-8 lg:px-12 max-w-[1400px] relative z-10 flex flex-col items-center text-center">
         
         {/* CONSTRAINED HEADING */}
         <h1 

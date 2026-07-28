@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Typography } from '@/components/Typography';
-import { ContentContainer } from '@/components/LayoutPrimitives';
+import { ContentContainer, Rule } from '@/components/LayoutPrimitives';
 
 interface FormData {
   name: string;
@@ -127,40 +127,27 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="w-full bg-[#181818] min-h-screen pt-36 sm:pt-44 pb-36 sm:pb-48 text-white font-sans select-none flex flex-col justify-between">
+    <main className="w-full bg-[#181818] min-h-screen pt-28 sm:pt-40 pb-24 sm:pb-40 text-white font-sans select-none flex flex-col justify-between">
       <ContentContainer className="flex flex-col items-center">
         
         {/* COMPACT CENTERED HEADER */}
-        <div className="text-center max-w-3xl mb-16 sm:mb-20 flex flex-col items-center">
-          <Typography
-            variant="caption"
-            className="text-[#FD955D] font-mono tracking-[0.3em] font-bold block uppercase text-[10px] sm:text-[11px] mb-4"
-          >
-            CONTACT
+        <div className="text-center max-w-3xl mb-10 sm:mb-16 flex flex-col items-center">
+          <Typography variant="caption" className="mb-4 block">
+            Contact
           </Typography>
           
-          <h1 
-            style={{ 
-              fontSize: 'clamp(28px, 4.5vw, 48px)', 
-              fontWeight: '800', 
-              letterSpacing: '-0.02em', 
-              color: '#FAF9F6', 
-              margin: '0 0 18px 0',
-              lineHeight: '1.15'
-            }}
-            className="font-sans text-balance text-center"
-          >
+          <Typography variant="h1" className="mb-4">
             Solutions Built Around Your Needs
-          </h1>
+          </Typography>
           
-          <p className="text-[#D4D4D4] font-sans text-xs sm:text-sm leading-relaxed max-w-lg mx-auto">
+          <p className="text-[#D4D4D4] font-sans text-[0.9375rem] leading-relaxed max-w-lg mx-auto">
             Interested in learning more, contact us and we'll be in touch within 1–2 business days.
           </p>
         </div>
 
-        {/* ORANGE GRADIENT SECTION DIVIDER (Increased bottom margin for extra separation) */}
-        <div className="w-full max-w-[800px] mx-auto px-6 mb-20 sm:mb-24">
-          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FF1900]/30 to-transparent" />
+        {/* ORANGE GRADIENT SECTION DIVIDER */}
+        <div className="w-full max-w-[800px] mx-auto mb-12 sm:mb-20">
+          <Rule />
         </div>
 
         {/* NARROW FORM COLUMN */}
@@ -208,7 +195,7 @@ export default function ContactPage() {
 
               {/* SERVER ERROR ALERT */}
               {serverError && (
-                <div className="p-4 rounded-xl bg-red-950/40 border border-red-500/50 text-red-300 text-xs sm:text-sm">
+                <div className="p-4 rounded-xl bg-red-950/40 border border-red-500/50 text-red-300 text-[0.9375rem]">
                   {serverError}
                 </div>
               )}
@@ -230,7 +217,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     className={`w-full bg-[#202020] border ${
                       errors.name ? 'border-red-500' : 'border-[#333333]'
-                    } rounded-xl px-5 py-3 text-xs sm:text-sm text-white placeholder-[#555555] focus:outline-none focus:border-[#FD955D] transition-colors`}
+                    } rounded-xl px-5 py-3 text-base sm:text-sm text-white placeholder-[#555555] focus:outline-none focus:border-[#FD955D] transition-colors`}
                   />
                   {errors.name && (
                     <span className="text-[11px] text-[#FD955D]">{errors.name}</span>
@@ -251,7 +238,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     className={`w-full bg-[#202020] border ${
                       errors.email ? 'border-red-500' : 'border-[#333333]'
-                    } rounded-xl px-5 py-3 text-xs sm:text-sm text-white placeholder-[#555555] focus:outline-none focus:border-[#FD955D] transition-colors`}
+                    } rounded-xl px-5 py-3 text-base sm:text-sm text-white placeholder-[#555555] focus:outline-none focus:border-[#FD955D] transition-colors`}
                   />
                   {errors.email && (
                     <span className="text-[11px] text-[#FD955D]">{errors.email}</span>
@@ -272,7 +259,7 @@ export default function ContactPage() {
                   placeholder="League, club, or company"
                   value={formData.organization}
                   onChange={handleChange}
-                  className="w-full bg-[#202020] border border-[#333333] rounded-xl px-5 py-3 text-xs sm:text-sm text-white placeholder-[#555555] focus:outline-none focus:border-[#FD955D] transition-colors"
+                  className="w-full bg-[#202020] border border-[#333333] rounded-xl px-5 py-3 text-base sm:text-sm text-white placeholder-[#555555] focus:outline-none focus:border-[#FD955D] transition-colors"
                 />
               </div>
 
@@ -292,7 +279,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className={`w-full bg-[#202020] border ${
                         errors.inquiryType ? 'border-red-500' : 'border-[#333333]'
-                      } rounded-xl pl-5 pr-10 py-3 text-xs sm:text-sm text-white appearance-none focus:outline-none focus:border-[#FD955D] transition-colors cursor-pointer ${
+                      } rounded-xl pl-5 pr-10 py-3 text-base sm:text-sm text-white appearance-none focus:outline-none focus:border-[#FD955D] transition-colors cursor-pointer ${
                         !formData.inquiryType ? 'text-[#555555]' : 'text-white'
                       }`}
                     >
@@ -325,7 +312,7 @@ export default function ContactPage() {
                       name="howHeard"
                       value={formData.howHeard}
                       onChange={handleChange}
-                      className={`w-full bg-[#202020] border border-[#333333] rounded-xl pl-5 pr-10 py-3 text-xs sm:text-sm text-white appearance-none focus:outline-none focus:border-[#FD955D] transition-colors cursor-pointer ${
+                      className={`w-full bg-[#202020] border border-[#333333] rounded-xl pl-5 pr-10 py-3 text-base sm:text-sm text-white appearance-none focus:outline-none focus:border-[#FD955D] transition-colors cursor-pointer ${
                         !formData.howHeard ? 'text-[#555555]' : 'text-white'
                       }`}
                     >
@@ -362,7 +349,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     className={`w-full bg-[#202020] border ${
                       errors.message ? 'border-red-500' : 'border-[#333333]'
-                    } rounded-xl px-5 py-3.5 text-xs sm:text-sm text-white placeholder-[#555555] focus:outline-none focus:border-[#FD955D] transition-colors resize-y min-h-[140px]`}
+                    } rounded-xl px-5 py-3.5 text-base sm:text-sm text-white placeholder-[#555555] focus:outline-none focus:border-[#FD955D] transition-colors resize-y min-h-[140px]`}
                   />
                 </div>
                 <div className="flex items-center justify-between mt-0.5">

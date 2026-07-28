@@ -25,54 +25,48 @@ export const SplitSection: React.FC<SplitSectionProps> = ({
   const isImageLeft = imageSide === 'left';
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center w-full py-4 sm:py-8">
+    <div className="grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-14">
       
       {/* TEXT CONTENT COLUMN */}
       <div
-        className={`lg:col-span-6 flex flex-col justify-center ${
+        className={`flex flex-col justify-center lg:col-span-6 ${
           isImageLeft ? 'lg:order-2 lg:pl-2' : 'lg:order-1 lg:pr-2'
         }`}
       >
         {/* Top Accent Dash + Eyebrow */}
         {eyebrow && (
-          <div className="flex flex-col items-start gap-y-2 mb-3">
-            {/* Orange dash matching the hero header accent */}
-            <div className="w-8 h-[2px] bg-[#FD955D]" />
-            <span className="text-[#FD955D] font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.3em] block">
+          <div className="mb-3 flex flex-col items-start gap-y-2">
+            <span className="h-0.5 w-8 bg-[#FD955D]" aria-hidden />
+            <span className="font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-[#FD955D] sm:text-[11px] sm:tracking-[0.3em]">
               {eyebrow}
             </span>
           </div>
         )}
 
-        {/* Large White Section Heading (matching the wireframe scale) */}
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#FAF9F6] tracking-tight leading-[1.1] mb-5">
+        <h2 className="mb-4 font-sans text-[clamp(1.625rem,5.5vw,3rem)] font-extrabold leading-[1.12] tracking-tight text-[#FAF9F6] text-balance sm:mb-5">
           {title}
         </h2>
 
         {/* Body Text */}
-        <div className="text-[#A3A3A3] text-sm sm:text-base leading-relaxed font-normal max-w-xl">
+        <div className="max-w-xl font-sans text-[0.9375rem] font-normal leading-relaxed text-[#A3A3A3] md:text-base">
           {children}
         </div>
       </div>
 
       {/* MEDIA COLUMN */}
       <div
-        className={`lg:col-span-6 flex items-center ${
+        className={`flex items-center lg:col-span-6 ${
           isImageLeft ? 'lg:order-1 lg:justify-start' : 'lg:order-2 lg:justify-end'
         }`}
       >
-        <div className="w-full max-w-[540px] aspect-[16/10] my-2 sm:my-4 rounded-2xl overflow-hidden bg-[#1A1A1A] border border-[#2A2A2A] shadow-2xl flex items-center justify-center relative shrink-0">
+        <div className="relative flex aspect-[16/10] w-full max-w-[540px] shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-[#2A2A2A] bg-[#1A1A1A] shadow-2xl">
           {customImageElement ? (
-            <div className="w-full h-full flex items-center justify-center overflow-hidden [&_video]:w-full [&_video]:h-full [&_video]:object-cover">
+            <div className="flex h-full w-full items-center justify-center overflow-hidden [&_video]:h-full [&_video]:w-full [&_video]:object-cover">
               {customImageElement}
             </div>
           ) : imageUrl ? (
             /* eslint-disable-next-line @next/next/no-img-element */
-            <img
-              src={imageUrl}
-              alt={imageAlt}
-              className="w-full h-full object-cover block"
-            />
+            <img src={imageUrl} alt={imageAlt} className="block h-full w-full object-cover" />
           ) : null}
         </div>
       </div>

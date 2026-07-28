@@ -2,136 +2,130 @@
 'use client';
 
 import React from 'react';
+import { ContentContainer, Section } from '@/components/LayoutPrimitives';
+import { Typography } from '@/components/Typography';
+
+const brandRule = 'h-px w-full bg-[#FF1900]/20';
 
 export default function TinyLeaguePage() {
   return (
-    <main className="w-full bg-[#232323] min-h-screen text-[#FAF9F6] font-sans selection:bg-[#FD955D]/30 overflow-x-hidden pt-20">
+    <main className="w-full min-h-screen overflow-x-hidden bg-[#232323] pt-20 font-sans text-[#FAF9F6] selection:bg-[#FD955D]/30">
       
       {/* ==========================================================================
-         PART 1: COMPACT HEADER BAND (Natural height with center-constrained stacks)
+         PART 1: COMPACT HEADER BAND
          ========================================================================== */}
-      <section className="w-full px-6 md:px-12 xl:px-16 pt-20 pb-16 relative text-center">
-        <div className="max-w-[1400px] mx-auto w-full flex flex-col items-center">
+      <Section className="relative text-center">
+        <ContentContainer size="wide" className="flex flex-col items-center">
           
           {/* WORDMARK / COMBINATION MARK PLACEHOLDER BOUNDS */}
-          <div className="mb-8 border border-dashed border-[#3A3A3A] bg-[#1b1b1b]/40 rounded-xl p-6 max-w-sm w-full flex flex-col items-center">
-            <i className="fas fa-image text-[#AEAEAD] text-lg mb-2" />
-            <span className="font-mono text-[9px] uppercase tracking-widest text-[#FD955D] font-bold mb-1">
+          <div className="mb-8 flex w-full max-w-sm flex-col items-center rounded-xl border border-dashed border-[#3A3A3A] bg-[#1b1b1b]/40 p-6">
+            <i className="fas fa-image mb-2 text-lg text-[#AEAEAD]" aria-hidden />
+            <span className="mb-1 font-mono text-[9px] font-bold uppercase tracking-widest text-[#FD955D]">
               IMAGE PLACEHOLDER
             </span>
-            <span className="text-xs text-[#FAF9F6] font-bold">
+            <span className="text-xs font-bold text-[#FAF9F6]">
               TinyLeague Combination Mark
             </span>
-            <span className="text-[10px] text-[#AEAEAD] mt-1 text-center font-medium">
+            <span className="mt-1 text-center text-[10px] font-medium text-[#AEAEAD]">
               White/peach variant for dark backgrounds
             </span>
           </div>
 
           {/* HEADLINE */}
-          <h1 
-            style={{ fontFamily: 'var(--font-montserrat), system-ui, sans-serif', fontSize: 'clamp(32px, 5vw, 52px)' }}
-            className="text-[#FAF9F6] font-extrabold tracking-tight leading-tight mb-6"
-          >
+          <Typography variant="display" className="mb-5">
             The Future of League Management
-          </h1>
+          </Typography>
 
-          {/* VALUE PROPOSITION CONTAINER */}
-          <p 
-            style={{ maxWidth: '720px' }}
-            className="text-[#AEAEAD] font-medium text-base sm:text-lg md:text-[19px] leading-relaxed text-balance"
-          >
-            TinyLeague is the all-in-one platform that manages your entire league, replacing manual work and scattered tools that drain your time and budget. It streamlines operations, promotes professionalism, and fosters engagement between players, coaches, and fans transforming your league into a community.
+          {/* VALUE PROPOSITION */}
+          <p className="max-w-[720px] text-pretty font-sans text-[0.9375rem] font-medium leading-relaxed text-[#AEAEAD] sm:text-base md:text-[19px]">
+            TinyLeague is the all-in-one platform that manages your entire league, replacing manual
+            work and scattered tools that drain your time and budget. It streamlines operations,
+            promotes professionalism, and fosters engagement between players, coaches, and fans
+            transforming your league into a community.
           </p>
 
           {/* SUBTLE SCROLL CUE */}
-          <div className="mt-12 text-[#AEAEAD] hover:text-[#FD955D] transition-colors duration-300">
-            <i className="fas fa-chevron-down text-base animate-bounce" />
+          <div className="mt-10 text-[#AEAEAD] transition-colors duration-300 hover:text-[#FD955D]">
+            <i className="fas fa-chevron-down animate-bounce text-base" aria-hidden />
           </div>
 
-        </div>
-      </section>
+        </ContentContainer>
+      </Section>
 
-      {/* THIN BRAND-RED DIVIDER LINE 1 */}
-      <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 xl:px-16">
-        <div className="w-full h-[1px] bg-[#FF1900]/20" />
-      </div>
+      <ContentContainer size="wide">
+        <div className={brandRule} />
+      </ContentContainer>
 
       {/* ==========================================================================
-         PART 2: THE VISION SECTION (Single comfortable reading column layout)
+         PART 2: THE VISION SECTION
          ========================================================================== */}
-      <section className="w-full px-6 md:px-12 xl:px-16 py-20 text-center">
-        <div className="max-w-[1400px] mx-auto w-full flex flex-col items-center">
+      <Section className="text-center">
+        <ContentContainer size="wide" className="flex flex-col items-center">
           
-          <span className="font-mono text-[10px] sm:text-[11px] font-bold tracking-[0.3em] text-[#FD955D] block uppercase mb-8">
-            THE VISION
-          </span>
+          <Typography variant="caption" className="mb-6 block sm:mb-8">
+            The Vision
+          </Typography>
 
           {/* COMFORTABLE READING COLUMN */}
-          <div 
-            style={{ maxWidth: '800px', lineHeight: '1.75' }}
-            className="text-sm sm:text-base md:text-[18px] text-[#AEAEAD] font-medium flex flex-col gap-y-6 text-center text-balance mb-16"
-          >
+          <div className="mb-10 flex max-w-[800px] flex-col gap-y-5 text-balance text-center font-sans text-[0.9375rem] font-medium leading-[1.75] text-[#AEAEAD] sm:mb-14 sm:text-base md:text-[18px]">
             <p>
-              Many leagues operate on a mess of spreadsheets, group chats, and apps that don't work together. This results in inaccurate data, wasted time, a league that looks unprofessional, and a worse experience for coaches, players, and fans.
+              Many leagues operate on a mess of spreadsheets, group chats, and apps that don&apos;t
+              work together. This results in inaccurate data, wasted time, a league that looks
+              unprofessional, and a worse experience for coaches, players, and fans.
             </p>
             <p>
-              That's where TinyLeague steps in: an all-in-one platform where live results, stats, and other critical information come together, easily accessible to staff, coaches, players, and fans whether they're at the event or catching up online. 
+              That&apos;s where TinyLeague steps in: an all-in-one platform where live results,
+              stats, and other critical information come together, easily accessible to staff,
+              coaches, players, and fans whether they&apos;re at the event or catching up online.
             </p>
             <p>
-              We make it happen with a connected suite of apps, websites, and smart devices that work in unison to streamline data collection and display. That's the future we're building at Digital Sports Solutions, and it's already taking shape.
+              We make it happen with a connected suite of apps, websites, and smart devices that
+              work in unison to streamline data collection and display. That&apos;s the future
+              we&apos;re building at Digital Sports Solutions, and it&apos;s already taking shape.
             </p>
           </div>
 
-          {/* OPTIONAL PLATFORM-PREVIEW VISUAL PLACEHOLDER */}
-          <div className="w-full max-w-4xl border border-dashed border-[#3A3A3A] bg-[#1b1b1b]/40 rounded-2xl p-12 flex flex-col items-center aspect-[16/9] justify-center">
-            <i className="fas fa-layer-group text-[#AEAEAD] text-2xl mb-3" />
-            <span className="font-mono text-[10px] uppercase tracking-widest text-[#FD955D] font-bold mb-2">
+          {/* PLATFORM-PREVIEW VISUAL PLACEHOLDER */}
+          <div className="flex aspect-[4/3] w-full max-w-4xl flex-col items-center justify-center rounded-2xl border border-dashed border-[#3A3A3A] bg-[#1b1b1b]/40 p-6 sm:aspect-[16/9] sm:p-12">
+            <i className="fas fa-layer-group mb-3 text-2xl text-[#AEAEAD]" aria-hidden />
+            <span className="mb-2 font-mono text-[10px] font-bold uppercase tracking-widest text-[#FD955D]">
               IMAGE PLACEHOLDER
             </span>
-            <span className="text-sm sm:text-base text-[#FAF9F6] font-bold">
+            <span className="text-sm font-bold text-[#FAF9F6] sm:text-base">
               Platform Preview Mockup
             </span>
-            <span className="text-xs text-[#AEAEAD] mt-2 max-w-md text-center font-medium leading-relaxed">
-              Composite mockup: TinyLeague app + live site + scoring device working together. Action photo from an event with the live scoreboard visible.
+            <span className="mt-2 max-w-md text-center text-xs font-medium leading-relaxed text-[#AEAEAD]">
+              Composite mockup: TinyLeague app + live site + scoring device working together.
+              Action photo from an event with the live scoreboard visible.
             </span>
           </div>
 
-        </div>
-      </section>
+        </ContentContainer>
+      </Section>
 
-      {/* THIN BRAND-RED DIVIDER LINE 2 */}
-      <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12 xl:px-16">
-        <div className="w-full h-[1px] bg-[#FF1900]/20" />
-      </div>
+      <ContentContainer size="wide">
+        <div className={brandRule} />
+      </ContentContainer>
 
       {/* ==========================================================================
-         PART 3: CLOSING CALL TO ACTION SECTION
+         PART 3: CLOSING CALL TO ACTION
          ========================================================================== */}
-      <section className="w-full bg-[#232323] py-24 px-6 text-center relative">
-        <div className="max-w-[1400px] mx-auto w-full flex flex-col items-center">
+      <Section spacing="lg" className="relative bg-[#232323] text-center">
+        <ContentContainer size="wide" className="flex flex-col items-center">
           
-          <h2 
-            style={{ fontSize: 'clamp(20px, 3.5vw, 28px)' }}
-            className="text-[#FAF9F6] font-bold font-sans tracking-tight mb-8 text-balance max-w-2xl"
-          >
+          <h2 className="mb-8 max-w-2xl text-balance font-sans text-[clamp(1.25rem,4vw,1.75rem)] font-bold tracking-tight text-[#FAF9F6]">
             Curious to learn about what TinyLeague can do for your league?
           </h2>
 
           <a
             href="/contact"
-            className="inline-flex items-center justify-center font-mono text-xs font-bold uppercase tracking-widest text-[#FAF9F6] bg-[#FF1900] hover:bg-[#FAF9F6] hover:text-[#171717] transition-all duration-300 rounded shadow-lg shadow-[#FF1900]/10"
-            style={{ 
-              minHeight: '48px',
-              paddingLeft: '36px',
-              paddingRight: '36px',
-              letterSpacing: '0.2em'
-            }}
+            className="inline-flex min-h-12 w-full items-center justify-center rounded bg-[#FF1900] px-9 font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#FAF9F6] shadow-lg shadow-[#FF1900]/10 transition-all duration-300 hover:bg-[#FAF9F6] hover:text-[#171717] sm:w-auto"
           >
-            Let's Talk <span className="ml-2">→</span>
+            Let&apos;s Talk <span className="ml-2">→</span>
           </a>
 
-        </div>
-      </section>
+        </ContentContainer>
+      </Section>
 
     </main>
   );
