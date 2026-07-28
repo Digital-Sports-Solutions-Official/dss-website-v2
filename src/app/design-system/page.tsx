@@ -243,28 +243,23 @@ export default function DesignSystemPage() {
             }}
           >
             <Card 
-              variant="service"
+              variant="services-preview"
               icon="fa-microchip"
               title="IoT Hardware Firmware Architecture"
-              subtitle="Embedded Systems Tier"
               description="Custom low-level system designs in VHDL and micro-controller assembly code tracking active athletic metadata fields cleanly."
               ctaText="Request Tech Capabilities"
             />
 
             <Card 
               variant="case-study"
-              imageUrl="/assets/case-tinyleague-preview.jpg"
-              subtitle="National Dodgeball Association (NDA)"
               title="The tinyLeague™ Low-Latency Scoreboard System"
               description="Constructed an end-to-end proprietary protocol suite natively paired over BLE to low-level controller units. Reduced signal transmission latency down to 4.2ms across 6 regional match deployments."
-              tags={['Firmware (C)', 'BLE Protocol', 'Next.js Router']}
               ctaText="Review Case Architecture"
             />
 
             <Card 
               variant="team"
               title="Alex Rivera"
-              subtitle="Principal Embedded Systems Engineer"
               description="Former Digital Logic Lab researcher at OSU specialized in ultra-low latency FPGA firmware design matrices and BLE token tracking maps over athletic tournament bounds."
             />
           </div>
@@ -283,7 +278,7 @@ export default function DesignSystemPage() {
           <Section spacing={activePadding} className="bg-[#232323] rounded-lg border border-[#3C3C3C] overflow-hidden">
             <ContentContainer>
               <div className="p-6 border border-dashed border-[#FF1900]/40 rounded bg-[#FF1900]/5 text-center">
-                <Typography variant="h3" className="text-white" style={{ fontSize: '15px', margin: 0 }}>
+                <Typography variant="h3" className="text-white text-[15px] m-0">
                   Active Section Primitive Box Frame
                 </Typography>
                 <p className="text-xs text-[#AEAEAD] mt-1 font-mono">

@@ -3,7 +3,7 @@ import React from 'react';
 interface CardProps {
   variant: 'services-preview' | 'work' | 'case-study' | 'team';
   icon?: string;
-  title: string;
+  title?: string;
   description: string;
   ctaText?: string;
   href?: string;
