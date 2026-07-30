@@ -8,7 +8,7 @@ export default function RoboticsWorkPage() {
   return (
     <WorkPageTemplate
       clientName="2011 Robotics"
-      clientSubtitle="World-Class Competitive Robotics"
+      clientSubtitle="World-Class Competitive Robotics Organization"
       logoUrl="/assets/robotics-2011-logo.png"
       headline="A World-Class Robotics Legacy"
       categoryTag="Websites & Data"
@@ -19,19 +19,25 @@ export default function RoboticsWorkPage() {
           imageUrl: "/assets/robotics-problem.jpeg",
           imageAlt: "Robotics arena match play with competing hardware platforms",
           body: (
-            <p className="text-[#A3A3A3] text-sm sm:text-base leading-relaxed font-normal max-w-xl">
-              On the field, Team 2011 is defined by a legacy of excellence. Off the field, however, the organization had no digital footprint to showcase its brand. Without a website, their rich history, competitive statistics, and the crucial sponsors supporting this world-class team remained entirely out of sight.
+            <p className="max-w-xl text-sm font-normal leading-relaxed text-[#A3A3A3] sm:text-base">
+              On the field, Team 2011 is defined by a legacy of excellence. Off the field,
+              however, the organization had no digital footprint to showcase its brand.
+              Without a website, their rich history, competitive statistics, and the crucial
+              sponsors supporting this world-class team remained entirely out of sight.
             </p>
           )
         },
         {
           eyebrow: "THE SOLUTION",
-          heading: "A Modern, Data-Driven Web Portal",
+          heading: "A Modern, Data-Driven Digital Portal",
           imageUrl: "/assets/robotics-solution.jpeg",
-          imageAlt: "Responsive design interface screenshot exhibiting modern administration CMS options",
+          imageAlt: "Responsive design interface screenshot exhibiting modern portal features",
           body: (
-            <p className="text-[#A3A3A3] text-sm sm:text-base leading-relaxed font-normal max-w-xl">
-              A modern, fully responsive website that serves as the organization’s digital portal, showcasing statistics, upcoming events, sponsors, and event photos. Alongside seamless data integration, the website features a full content management system (CMS), enabling administrators to update pages with minimal technical expertise.
+            <p className="max-w-xl text-sm font-normal leading-relaxed text-[#A3A3A3] sm:text-base">
+              A modern, fully responsive digital portal showcasing statistics, events, sponsors,
+              pictures, and more. Backed by seamless data integration, it looks great on every
+              device from phones to desktops and allows administrators to easily manage content
+              with minimal technical experience.
             </p>
           )
         },
@@ -41,24 +47,28 @@ export default function RoboticsWorkPage() {
           imageUrl: "/assets/robotics-outcome.jpeg",
           imageAlt: "Team members collaborating effectively with digital marketing portals",
           body: (
-            <div className="flex flex-col gap-y-4 text-base sm:text-lg md:text-xl text-[#FAF9F6] leading-relaxed max-w-xl">
+            <div className="flex max-w-xl flex-col gap-y-4 text-base leading-relaxed text-[#FAF9F6] sm:text-lg md:text-xl">
               <p className="font-semibold text-zinc-300">
-                Established a professional digital portal that matches the team's off-field presence to its elite on-field reputation.
+                Established a professional digital portal that matches the team&apos;s off-field
+                presence to its elite on-field reputation.
               </p>
-              
-              <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-normal">
-                Now, this organization can showcase their accomplishments to inspiring new members and sponsors worldwide.
+
+              <p className="text-sm font-normal leading-relaxed text-zinc-400 sm:text-base">
+                Now, this organization can showcase their accomplishments to inspire new members and
+                sponsors.
               </p>
 
               <div className="pt-2">
-                <a 
-                  href="https://www.2011robotics.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center text-[#FD955D] font-bold text-sm sm:text-base hover:text-white transition-colors group"
+                <a
+                  href="https://2011robotics.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center text-sm font-bold text-[#FD955D] transition-colors hover:text-white sm:text-base"
                 >
-                  Visit Website
-                  <span className="ml-2 transform group-hover:translate-x-1 transition-transform inline-block">→</span>
+                  See now!
+                  <span className="ml-2 inline-block transform transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
                 </a>
               </div>
             </div>

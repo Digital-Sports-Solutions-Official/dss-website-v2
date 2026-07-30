@@ -1,3 +1,4 @@
+// src/app/services/data/page.tsx
 import React from 'react';
 import { ServicePageTemplate } from '@/components/ServicePageTemplate';
 
@@ -5,22 +6,22 @@ export default function DataPage() {
   const cards = [
     {
       title: "Dashboards Built Around You",
-      description: "Live, visual dashboards designed around the decisions you actually need to make, so your most important numbers are always a glance away.",
+      description: "Live, visual dashboards that put your most important numbers a glance away.",
       icon: "fa-chart-bar"
     },
     {
       title: "Stats & Records",
-      description: "We track the stats and records that matter to you automatically, turning everyday activities into history you can learn from.",
+      description: "We capture the data that matters, turning everyday events into actionable insights to guide your next move.",
       icon: "fa-history"
     },
     {
       title: "Reports Worth Sharing",
-      description: "Turn your data into clean, professional reports ready for your team, your board, or your community.",
+      description: "Transform your data into professional reports ready to share with your team, your board, or your community members.",
       icon: "fa-file-invoice-dollar"
     },
     {
       title: "One Ecosystem",
-      description: "Your dashboards connect to the devices and apps we build alongside them, so your data flows into one place instead of scattered across tools.",
+      description: "Pair your dashboards with the devices and apps we build, so everything works together.",
       icon: "fa-network-wired"
     }
   ];
@@ -33,9 +34,13 @@ export default function DataPage() {
       imageAlt="DSS custom analytics and historical team performance dashboard visualization"
       capabilities={cards}
       processSteps={["Discover", "Design", "Build", "Refine", "Deliver & Support"]}
+      ctaText="Learn More →"
+      ctaHref="/contact"
       bodyText={
         <p>
-          Your organization already generates valuable data, but raw numbers in a spreadsheet rarely tell you much. DSS partners with you to turn that data into clear dashboards, live stats, and reports that actually mean something. We shape every view around the decisions you need to make, so the information you rely on is easy to read, easy to share, and easy to generate insights. The result is data that finally works for you.
+          You have the data; we make it meaningful. We partner with you to build dashboards and
+          reports designed around the decisions you need to make, not just the metrics you happen
+          to collect. The result? Clear, shareable insights that finally put your data to work.
         </p>
       }
     />
