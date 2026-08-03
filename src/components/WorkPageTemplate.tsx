@@ -24,7 +24,7 @@ export interface WorkPageTemplateProps {
   sections: WorkPageSection[];
 }
 
-const goldRule = 'h-px w-full bg-gradient-to-r from-transparent via-[#FD955D]/40 to-transparent';
+const redRule = 'h-px w-full bg-gradient-to-r from-transparent via-[#FF1900]/40 to-transparent';
 
 export const WorkPageTemplate: React.FC<WorkPageTemplateProps> = ({
   clientName,
@@ -35,16 +35,14 @@ export const WorkPageTemplate: React.FC<WorkPageTemplateProps> = ({
   sections,
 }) => {
   return (
-    <main className="w-full min-h-screen bg-[#121212] pt-28 pb-20 font-sans text-[#FAF9F6] sm:pt-36 sm:pb-24">
+    <main className="w-full min-h-screen bg-[#171717] pt-28 pb-20 font-sans text-[#FAF9F6] sm:pt-36 sm:pb-24">
       <ContentContainer size="wide">
         
         {/* HERO HEADER SECTION */}
         <header className="flex max-w-5xl flex-col items-start">
           
-          {/* TOP ROW: Accent Line + Logo + Orange Subtitle Text */}
+          {/* TOP ROW: Logo + Orange Subtitle Text */}
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2 sm:gap-x-4">
-            <span className="h-0.5 w-6 shrink-0 bg-[#FD955D]" aria-hidden />
-
             {logoUrl && (
               <span className="flex h-7 max-w-[180px] shrink-0 items-center sm:h-9 sm:max-w-[200px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -76,7 +74,7 @@ export const WorkPageTemplate: React.FC<WorkPageTemplateProps> = ({
         </header>
 
         {/* HERO GRADIENT DIVIDER */}
-        <div className={`${goldRule} my-10 sm:my-14`} />
+        <div className={`${redRule} my-10 sm:my-14`} />
 
         {/* WORK SECTIONS LIST */}
         <div className="flex flex-col">
@@ -99,7 +97,7 @@ export const WorkPageTemplate: React.FC<WorkPageTemplateProps> = ({
                   </SplitSection>
                 </div>
 
-                {idx < sections.length - 1 && <div className={goldRule} />}
+                {idx < sections.length - 1 && <div className={redRule} />}
               </React.Fragment>
             );
           })}

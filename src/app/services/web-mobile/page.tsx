@@ -22,7 +22,7 @@ export default function WebMobilePage() {
     {
       title: "One Ecosystem",
       description: "Pair your website and apps with the devices and dashboards we build, so everything works together.",
-      icon: "fa-sync-alt"
+      icon: "fa-share-nodes"
     }
   ];
 

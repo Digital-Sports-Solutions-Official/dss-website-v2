@@ -38,25 +38,27 @@ export const Footer: React.FC = () => {
               className="max-w-[220px] font-sans text-[11px] font-medium leading-relaxed text-[#999999] text-left"
               style={{ margin: 0, marginTop: '14px' }}
             >
-              Custom digital tools built to make your organization shine.
+              Custom digital tools built to make your organization stand out.
             </p>
             
+            {/* SOCIAL MEDIA ICONS CONTAINER (ALIGNED HEIGHT TO MATCH DOC BUTTON) */}
             <div 
               className="flex items-center text-left text-sm text-[#999999]" 
               style={{ 
-                marginTop: '28px',
+                marginTop: '16px',
                 width: '100%',
                 maxWidth: '220px',
-                display: 'flex',
-                justifyContent: 'space-between'
+                minHeight: '28px' // Aligns height with button line-height
               }}
             >
-              <a href="https://www.youtube.com/channel/UCj6qESOEGemvzRvgxagYHWg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-youtube" /></a>
-              <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-instagram" /></a>
-              <a href="https://www.linkedin.com/company/digitalsportssolutions/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-linkedin-in" /></a>
-              <a href="https://discord.gg/6HjeNJM6F4" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-discord" /></a>
-              <a href="https://www.facebook.com/people/Digital-Sports-Solutions/61558423260160/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-facebook-f" /></a>
-              <Link href="/contact" aria-label="Contact Us" className="transition-colors hover:text-[#FF1900]"><i className="fa-regular fa-envelope" /></Link>
+              <div className="flex w-full items-center justify-between">
+                <a href="https://www.youtube.com/channel/UCj6qESOEGemvzRvgxagYHWg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-youtube" /></a>
+                <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-instagram" /></a>
+                <a href="https://www.linkedin.com/company/digitalsportssolutions/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-linkedin-in" /></a>
+                <a href="https://discord.gg/6HjeNJM6F4" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-discord" /></a>
+                <a href="https://www.facebook.com/people/Digital-Sports-Solutions/61558423260160/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-facebook-f" /></a>
+                <Link href="/contact" aria-label="Contact Us" className="transition-colors hover:text-[#FF1900]"><i className="fa-regular fa-envelope" /></Link>
+              </div>
             </div>
           </div>
 
@@ -95,10 +97,11 @@ export const Footer: React.FC = () => {
               <a href="tel:2169245393" className="pt-0.5 font-bold">216-924-5393</a>
             </div>
             
-            <div className="w-full pt-1 text-left sm:w-auto">
+            {/* DOCUMENTATION BUTTON CONTAINER */}
+            <div className="flex min-h-[28px] items-center text-left" style={{ marginTop: '16px' }}>
               <Link 
-                href="/404"
-                className="inline-flex items-center justify-center rounded border border-[#2A2A2A] bg-transparent px-3 py-1.5 font-sans text-[10px] font-bold text-[#FD955D] transition-all duration-200 hover:border-[#FD955D] hover:bg-[#FD955D]/5"
+                href="/docs"
+                className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-[#D95B32] via-[#C85228] to-[#B6451E] px-3.5 py-1.5 font-sans text-[11px] font-semibold text-white shadow-md shadow-orange-950/30 transition-all duration-200 hover:from-[#EA6538] hover:to-[#C85228] hover:-translate-y-0.5 active:scale-95"
               >
                 Documentation
               </Link>

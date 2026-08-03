@@ -74,6 +74,9 @@ export const Navigation: React.FC = () => {
       if (href.startsWith('http')) {
         window.open(href, '_blank', 'noopener,noreferrer');
         e.preventDefault();
+      } else {
+        e.preventDefault();
+        router.push(href);
       }
       return;
     }
@@ -166,7 +169,7 @@ export const Navigation: React.FC = () => {
             : 'pointer-events-none scale-98 opacity-0'
         }`}
       >
-        {/* TOP EQUALIZER SPACER (Clears fixed navbar and balances bottom watermark height) */}
+        {/* TOP EQUALIZER SPACER */}
         <div className="h-20 w-full shrink-0" />
 
         {/* PERFECTLY CENTERED LINK STACK */}
@@ -189,7 +192,7 @@ export const Navigation: React.FC = () => {
           ))}
         </div>
 
-        {/* LOWER ACCENT BRANDING WATERMARK (Symmetric with top spacer height) */}
+        {/* LOWER ACCENT BRANDING WATERMARK */}
         <div className="flex h-20 w-full shrink-0 items-center justify-center opacity-25">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

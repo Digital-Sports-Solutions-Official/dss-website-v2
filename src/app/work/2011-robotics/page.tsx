@@ -10,7 +10,7 @@ export default function RoboticsWorkPage() {
       clientName="2011 Robotics"
       clientSubtitle="World-Class Competitive Robotics Organization"
       logoUrl="/assets/robotics-2011-logo.png"
-      headline="A World-Class Robotics Legacy"
+      headline="A World-Class Legacy"
       categoryTag="Websites & Data"
       sections={[
         {
@@ -47,18 +47,19 @@ export default function RoboticsWorkPage() {
           imageUrl: "/assets/robotics-outcome.jpeg",
           imageAlt: "Team members collaborating effectively with digital marketing portals",
           body: (
-            <div className="flex max-w-xl flex-col gap-y-4 text-base leading-relaxed text-[#FAF9F6] sm:text-lg md:text-xl">
-              <p className="font-semibold text-zinc-300">
-                Established a professional digital portal that matches the team&apos;s off-field
-                presence to its elite on-field reputation.
-              </p>
+            <div className="flex max-w-xl flex-col gap-y-4 text-sm sm:text-base text-[#A3A3A3]">
+              <ul className="list-disc pl-5 space-y-2 leading-relaxed font-normal">
+                <li>
+                  Established a professional digital portal that matches the team&apos;s off-field
+                  presence to its elite on-field reputation.
+                </li>
+                <li>
+                  Now, this organization can showcase their accomplishments to inspire new members and
+                  sponsors.
+                </li>
+              </ul>
 
-              <p className="text-sm font-normal leading-relaxed text-zinc-400 sm:text-base">
-                Now, this organization can showcase their accomplishments to inspire new members and
-                sponsors.
-              </p>
-
-              <div className="pt-2">
+              <div className="pt-1">
                 <a
                   href="https://2011robotics.com"
                   target="_blank"

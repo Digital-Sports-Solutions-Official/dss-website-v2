@@ -22,7 +22,7 @@ export default function DataPage() {
     {
       title: "One Ecosystem",
       description: "Pair your dashboards with the devices and apps we build, so everything works together.",
-      icon: "fa-network-wired"
+      icon: "fa-share-nodes"
     }
   ];
 

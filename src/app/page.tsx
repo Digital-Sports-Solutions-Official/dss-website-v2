@@ -1,11 +1,10 @@
-// src/app/page.tsx
 'use client';
 
 import React from 'react';
 import Link from 'next/link';
 import { Typography } from '@/components/Typography';
 import { Card } from '@/components/Card';
-import Image from 'next/image';
+import { Button } from '@/components/Button';
 import {
   ContentContainer,
   Section,
@@ -42,7 +41,7 @@ export default function HomePage() {
         <div aria-hidden />
 
         <ContentContainer className="z-10 my-auto flex w-full flex-col items-center py-8 text-center">
-          <Typography variant="caption" className="mb-4 block">
+          <Typography variant="caption" className="mb-4 block text-[#FD955D]">
             Digital Sports Solutions
           </Typography>
 
@@ -69,16 +68,22 @@ export default function HomePage() {
           </Link>
         </ContentContainer>
 
-        {/* SCROLL INDICATOR (Pure Visual Cue) */}
+        {/* UNIFIED ORANGE BOUNCE CARET SCROLL INDICATOR */}
         <div className="z-10 flex w-full flex-col items-center justify-center">
           <button
             onClick={() => scrollToSection('services')}
-            className="group flex min-h-11 items-center justify-center p-2 text-[#AEAEAD] transition-colors hover:text-[#FD955D]"
+            className="group flex min-h-12 min-w-12 items-center justify-center p-2 text-[#FD955D] transition-transform hover:scale-110 active:scale-95 focus:outline-none"
             aria-label="Scroll to services"
           >
-            <span className="text-2xl font-bold transition-transform duration-300 group-hover:translate-y-1">
-              ↓
-            </span>
+            <svg
+              className="h-7 w-7 animate-bounce stroke-current transition-colors duration-200 group-hover:text-[#ffab7c]"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2.5"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
           </button>
         </div>
       </section>
@@ -173,8 +178,9 @@ export default function HomePage() {
             <div className="flex w-full flex-col items-start text-left md:w-1/2">
               <SectionHeading
                 eyebrow="OUR VISION"
-                title="Meet tinyLeague"
+                eyebrowClassName="!text-[#FD955D]"
                 accent="orange"
+                title="Meet tinyLeague"
                 className="mb-4"
               />
               <p className={bodyCopy}>
@@ -227,63 +233,67 @@ export default function HomePage() {
 
       <SectionDivider />
 
-  {/* 6. OUR TEAM */}
-<Section id="team">
-  <ContentContainer>
-    <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
-      <div className="flex w-full justify-center md:w-1/2">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/assets/team-group.jpg"
-          alt="Core Team"
-          className="aspect-[4/3] h-auto w-full max-w-[540px] rounded-2xl object-cover shadow-xl"
-        />
-      </div>
+      {/* 6. OUR TEAM */}
+      <Section id="team">
+        <ContentContainer>
+          <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
+            <div className="flex w-full justify-center md:w-1/2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/team-group.jpg"
+                alt="Core Team"
+                className="aspect-[4/3] h-auto w-full max-w-[540px] rounded-2xl object-cover shadow-xl"
+              />
+            </div>
 
-      <div className="flex w-full flex-col items-start text-left md:w-1/2">
-        <SectionHeading
-          eyebrow="OUR TEAM"
-          title="A Team You Can Trust"
-          className="mb-5"
-        />
-        <div className={`${bodyCopy} flex max-w-[540px] flex-col gap-y-4`}>
-          <p>
-            Behind every solution we build is a team that has worked side by side for years.
-            That means a team that listens first, stays accountable, and treats your success as
-            the measure of our own, from the first conversation to the final result.
-          </p>
-        </div>
-        <Link href="/contact" className={`${inlineLink} mt-5 min-h-11`}>
-          <span>Let&apos;s turn your challenge into your next advantage</span>
-          <span className="ml-1.5" aria-hidden>→</span>
-        </Link>
-      </div>
-    </div>
-  </ContentContainer>
-</Section>
+            <div className="flex w-full flex-col items-start text-left md:w-1/2">
+              <SectionHeading
+                eyebrow="OUR TEAM"
+                title="A Team You Can Trust"
+                className="mb-5"
+              />
+              <div className={`${bodyCopy} flex max-w-[540px] flex-col gap-y-4`}>
+                <p>
+                  Behind every solution we build is a team that has worked side by side for years.
+                  That means a team that listens first, stays accountable, and treats your success as
+                  the measure of our own, from the first conversation to the final result.
+                </p>
+              </div>
+              <Link href="/contact" className={`${inlineLink} mt-5 min-h-11`}>
+                <span>Let&apos;s turn your challenge into your next advantage</span>
+                <span className="ml-1.5" aria-hidden>→</span>
+              </Link>
+            </div>
+          </div>
+        </ContentContainer>
+      </Section>
 
       <SectionDivider />
 
       {/* 7. CONTACT */}
       <Section id="contact" spacing="lg" className="relative overflow-hidden bg-[#181818]">
         <ContentContainer size="prose" className="relative z-10 flex flex-col items-center text-center">
-          <Typography variant="caption" className="mb-4 block sm:mb-5">
+          <Typography variant="caption" className="mb-4 block sm:mb-5 text-[#FD955D]">
             CONTACT
           </Typography>
 
-          <Typography variant="h1" className="mb-8">
+          <Typography variant="h1" className="mb-8 md:whitespace-nowrap">
             Your Next Advantage Awaits
           </Typography>
 
-          <Link
-            href="/contact"
-            className="group inline-flex min-h-12 w-full items-center justify-center gap-x-2 rounded-xl bg-[#FF1900] px-9 py-3.5 text-[0.9375rem] font-bold text-[#FAF9F6] shadow-lg shadow-[#FF1900]/25 transition-all duration-300 hover:bg-[#FD955D] hover:shadow-[#FD955D]/30 sm:w-auto sm:text-base"
-          >
-            <span>Start a Conversation</span>
-            <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
-              &rarr;
-            </span>
-          </Link>
+          {/* Full-width container to mirror the contact form layout */}
+          <div className="w-full max-w-xl">
+            <Button
+              href="/contact"
+              variant="primary"
+              className="group text-[0.9375rem] sm:text-base"
+            >
+              <span>Start a Conversation</span>
+              <span className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1">
+                &rarr;
+              </span>
+            </Button>
+          </div>
         </ContentContainer>
 
         <div

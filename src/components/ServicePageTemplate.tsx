@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import { Typography } from '@/components/Typography';
 import { ContentContainer, Rule } from '@/components/LayoutPrimitives';
+import { Button } from '@/components/Button';
 
 export interface CapabilityCard {
   title: string;
@@ -19,6 +19,8 @@ export interface ServicePageTemplateProps {
   bodyText: React.ReactNode;
   capabilities: CapabilityCard[];
   processSteps: string[];
+  ctaText?: string;
+  ctaHref?: string;
 }
 
 export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
@@ -29,6 +31,8 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
   bodyText,
   capabilities,
   processSteps,
+  ctaText = 'Learn More →',
+  ctaHref = '/contact',
 }) => {
   // Check if image is a vertical/portrait asset (like mobile-showcase.webp)
   const isPortrait = imageUrl.includes('.webp') || imageUrl.includes('mobile');
@@ -44,7 +48,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
           
           {/* LEFT CONTENT COLUMN */}
           <div className="flex flex-col items-start text-left lg:col-span-7">
-            <Typography variant="caption" className="mb-3 block">
+            <Typography variant="caption" className="mb-3 block text-[#FD955D]">
               {pageLabel}
             </Typography>
 
@@ -84,7 +88,7 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
            WHAT WE DELIVER SECTION
            ========================================================================== */}
         <div className="flex flex-col">
-          <Typography variant="caption" className="mb-6 block sm:mb-8">
+          <Typography variant="caption" className="mb-6 block sm:mb-8 text-[#FD955D]">
             What We Deliver
           </Typography>
 
@@ -119,26 +123,30 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
            SIMPLE 5-STEP PROCESS SECTION
            ========================================================================== */}
         <div className="flex flex-col gap-y-8 sm:gap-y-10">
-          <Typography variant="caption" className="block">
+          <Typography variant="caption" className="block text-left text-[#FD955D]">
             Simple 5-Step Process
           </Typography>
 
           {/* PROCESS STEPPER ROW */}
           <div className="relative w-full">
-            {/* CONNECTOR LINE BEHIND BADGES */}
+            {/* MOBILE CONTINUOUS VERTICAL CONNECTOR LINE */}
+            <div className="absolute top-5 bottom-8 left-1/2 w-px -translate-x-1/2 bg-[#FD955D]/40 md:hidden z-0" />
+
+            {/* DESKTOP CONTINUOUS HORIZONTAL CONNECTOR LINE */}
             <div className="absolute left-[10%] right-[10%] top-5 z-0 hidden h-px bg-[#FD955D]/40 md:block" />
 
-            <div className="relative z-10 grid grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8 md:grid-cols-5">
+            {/* STEP ITEMS CONTAINER */}
+            <div className="relative z-10 flex flex-col items-center gap-y-10 md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-0">
               {processSteps.map((step, index) => {
                 const stepNum = String(index + 1).padStart(2, '0');
                 return (
                   <div key={index} className="flex flex-col items-center text-center">
                     {/* STEP NUMBER BADGE */}
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-[#FD955D] bg-[#181818] font-mono text-xs font-bold text-[#FD955D] shadow-md">
+                    <span className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center border border-[#FD955D] bg-[#181818] font-mono text-xs font-bold text-[#FD955D] shadow-md">
                       {stepNum}
                     </span>
 
-                    <span className="mt-4 font-mono text-xs font-bold uppercase tracking-wider text-[#FAF9F6] sm:mt-6 sm:text-sm md:mt-8">
+                    <span className="mt-3 font-mono text-xs font-bold uppercase tracking-wider text-[#FAF9F6] sm:text-sm md:mt-8">
                       {step}
                     </span>
                   </div>
@@ -154,18 +162,15 @@ export const ServicePageTemplate: React.FC<ServicePageTemplateProps> = ({
            CALL TO ACTION
            ========================================================================== */}
         <div className="flex justify-center pt-2 sm:pt-6">
-          <Link
-            href="/contact"
-            className="group inline-flex min-h-12 w-full items-center justify-center gap-x-2 whitespace-nowrap rounded-2xl px-8 py-4 text-[0.9375rem] font-semibold tracking-wide text-white shadow-[0_0_25px_rgba(200,90,50,0.35)] transition-transform duration-300 hover:scale-[1.02] active:scale-95 sm:w-auto sm:min-w-[260px] sm:px-14 sm:text-base"
-            style={{
-              background: 'linear-gradient(135deg, #C85A32 0%, #B04A26 100%)',
-            }}
-          >
-            <span>Learn More</span>
-            <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
-              &rarr;
-            </span>
-          </Link>
+          <div className="w-full max-w-xl">
+            <Button
+              href={ctaHref}
+              variant="primary"
+              className="group text-[0.9375rem] sm:text-base"
+            >
+              <span>{ctaText}</span>
+            </Button>
+          </div>
         </div>
 
       </ContentContainer>

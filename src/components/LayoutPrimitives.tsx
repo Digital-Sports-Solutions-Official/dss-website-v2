@@ -85,8 +85,9 @@ interface SectionHeadingProps {
   eyebrow?: string;
   title: React.ReactNode;
   align?: 'left' | 'center';
-  accent?: 'peach' | 'orange';
+  accent?: 'red' | 'orange';
   className?: string;
+  eyebrowClassName?: string;
 }
 
 /** Eyebrow + heading pairing used at the top of nearly every section. */
@@ -94,17 +95,20 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   eyebrow,
   title,
   align = 'left',
-  accent = 'peach',
+  accent = 'orange',
   className = '',
+  eyebrowClassName = '',
 }) => {
   const alignment = align === 'center' ? 'items-center text-center' : 'items-start text-left';
-  const accentColor = accent === 'orange' ? 'text-[#FF1900]' : 'text-[#FD955D]';
+  
+  // FIXED: orange -> #FD955D, red -> #FF1900
+  const accentColor = accent === 'red' ? 'text-[#FF1900]' : 'text-[#FD955D]';
 
   return (
     <div className={`flex flex-col ${alignment} ${className}`}>
       {eyebrow && (
         <span
-          className={`${accentColor} font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-3`}
+          className={`${accentColor} font-mono text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] sm:tracking-[0.3em] mb-3 ${eyebrowClassName}`}
         >
           {eyebrow}
         </span>

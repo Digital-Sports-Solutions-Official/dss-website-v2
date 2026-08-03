@@ -3,44 +3,61 @@ import React from 'react';
 
 interface ButtonProps {
   children: React.ReactNode;
-  href: string;
+  href?: string;
+  type?: 'button' | 'submit' | 'reset';
   variant?: 'primary' | 'secondary' | 'ghost';
-  'aria-label'?: string; // Corrected to valid lowercase hyphenated HTML binding standard
+  onClick?: (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => void;
+  disabled?: boolean;
+  'aria-label'?: string;
   className?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
   children,
   href,
-  variant = 'ghost',
+  type = 'button',
+  variant = 'primary',
+  onClick,
+  disabled = false,
   'aria-label': ariaLabel,
   className = ''
 }) => {
+  const baseClasses =
+    'inline-flex items-center justify-center font-medium focus:outline-none transition-all duration-300 transform active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed';
+
+  const variantClasses = {
+    primary:
+      'w-full py-3.5 px-6 rounded-xl text-white font-semibold shadow-lg shadow-orange-950/40 bg-gradient-to-r from-[#D95B32] via-[#C85228] to-[#B6451E] hover:from-[#EA6538] hover:to-[#C85228] hover:shadow-orange-600/20 hover:-translate-y-0.5',
+    secondary:
+      'py-3 px-6 rounded-xl text-[#FD955D] bg-[#000000]/35 border border-[#FD955D]/30 hover:bg-[#FF1900] hover:border-[#FF1900] hover:text-white hover:-translate-y-0.5',
+    ghost:
+      'py-2 px-4 rounded-lg text-neutral-300 hover:text-white hover:bg-white/10'
+  };
+
+  const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        aria-label={ariaLabel}
+        className={combinedClasses}
+        onClick={onClick}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a
-      href={href}
+    <button
+      type={type}
+      disabled={disabled}
       aria-label={ariaLabel}
-      className={`inline-flex items-center focus:outline-none transition-all duration-300 transform hover:-translate-y-0.5 rounded ${className}`}
-      style={{
-        borderColor: 'rgba(253, 149, 93, 0.3)',
-        backgroundColor: 'rgba(0, 0, 0, 0.35)',
-        color: '#FD955D',
-        padding: '12px 24px',
-        borderWidth: '1px',
-        borderStyle: 'solid'
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.borderColor = '#FF1900';
-        e.currentTarget.style.backgroundColor = '#FF1900';
-        e.currentTarget.style.color = '#FFFFFF';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.borderColor = 'rgba(253, 149, 93, 0.3)';
-        e.currentTarget.style.backgroundColor = 'rgba(0, 0, 0, 0.35)';
-        e.currentTarget.style.color = '#FD955D';
-      }}
+      className={combinedClasses}
+      onClick={onClick}
     >
       {children}
-    </a>
+    </button>
   );
 };

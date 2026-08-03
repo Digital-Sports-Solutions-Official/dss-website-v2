@@ -12,8 +12,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'Digital Sports Solutions | B2B Sports Tech Consulting',
-  description: 'Low-latency embedded systems firmware and real-time cloud infrastructure.',
+  title: 'Digital Sports Solutions',
+  description: 'Custom Digital Tools Built to Make Your Organization Stand Out.',
   icons: {
     icon: '/assets/logo-color.svg', // Maps to public/assets/logo-color.svg
   },

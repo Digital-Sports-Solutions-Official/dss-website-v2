@@ -1,10 +1,10 @@
-// src/app/tinyleague/page.tsx
 'use client';
 
 import React from 'react';
 import Image from 'next/image';
 import { ContentContainer, Section } from '@/components/LayoutPrimitives';
 import { Typography } from '@/components/Typography';
+import { Button } from '@/components/Button';
 
 // Standardized section divider matching the rest of the site
 const StandardDivider = () => (
@@ -64,14 +64,24 @@ export default function TinyLeaguePage() {
             retention.
           </p>
 
-          {/* CLICKABLE ORANGE SCROLL ARROW */}
-          <button
-            onClick={scrollToVision}
-            aria-label="Scroll to Vision section"
-            className="mt-10 inline-flex items-center justify-center p-2 text-[#FF1900] transition-transform duration-300 hover:scale-110 hover:text-[#FD955D] focus:outline-none"
-          >
-            <i className="fas fa-chevron-down animate-bounce text-xl" aria-hidden />
-          </button>
+          {/* CLICKABLE ORANGE SCROLL ARROW (STANDARDIZED) */}
+          <div className="mt-10 flex w-full justify-center">
+            <button
+              onClick={scrollToVision}
+              aria-label="Scroll to Vision section"
+              className="group flex min-h-12 min-w-12 items-center justify-center p-2 text-[#FD955D] transition-transform hover:scale-110 active:scale-95 focus:outline-none"
+            >
+              <svg
+                className="h-7 w-7 animate-bounce stroke-current transition-colors duration-200 group-hover:text-[#ffab7c]"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2.5"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </button>
+          </div>
 
         </ContentContainer>
       </Section>
@@ -84,12 +94,13 @@ export default function TinyLeaguePage() {
       <Section id="vision" className="text-center">
         <ContentContainer size="wide" className="flex flex-col items-center">
           
-          <Typography variant="caption" className="mb-6 block sm:mb-8">
+          {/* UPDATED TO LARGE WHITE TITLE TEXT */}
+          <Typography variant="display" className="mb-6 block sm:mb-8">
             THE VISION
           </Typography>
 
           {/* COMFORTABLE READING COLUMN */}
-          <div className="mb-10 flex max-w-[800px] flex-col gap-y-5 text-balance text-center font-sans text-[0.9375rem] font-medium leading-[1.75] text-[#AEAEAD] sm:mb-14 sm:text-base md:text-[18px]">
+          <div className="mb-6 flex max-w-[800px] flex-col gap-y-5 text-balance text-center font-sans text-[0.9375rem] font-medium leading-[1.75] text-[#AEAEAD] sm:mb-8 sm:text-base md:text-[18px]">
             <p>
               Many organizations rely on a messy mix of spreadsheets, chats, and disconnected apps.
               This leads to inaccurate data, wasted time, drained budgets, and frustrated coaches,
@@ -105,8 +116,8 @@ export default function TinyLeaguePage() {
             </p>
           </div>
 
-          {/* PLATFORM-PREVIEW VISION DIAGRAM */}
-          <div className="relative w-full max-w-4xl overflow-hidden p-2 sm:p-4">
+          {/* PLATFORM-PREVIEW VISION DIAGRAM WITH CROPPED MARGINS */}
+          <div className="relative -my-6 w-full max-w-4xl overflow-hidden p-0 sm:-my-10">
             <Image
               src="/assets/TinyLeagueVision.png"
               alt="TinyLeague Connected Ecosystem Vision Diagram"
@@ -127,16 +138,23 @@ export default function TinyLeaguePage() {
       <Section spacing="lg" className="relative text-center">
         <ContentContainer size="wide" className="flex flex-col items-center">
           
-          <h2 className="mb-8 max-w-2xl text-balance font-sans text-[clamp(1.25rem,4vw,1.75rem)] font-bold tracking-tight text-[#FAF9F6]">
-            Curious to learn more about what tinyLeague can do for you?
-          </h2>
+          {/* UPDATED TITLE STYLING & COPY */}
+          <Typography variant="display" className="mb-8 max-w-3xl text-balance">
+            Curious to learn more about tinyLeague?
+          </Typography>
 
-          <a
-            href="/contact"
-            className="inline-flex min-h-12 w-full items-center justify-center rounded bg-[#FF1900] px-9 font-mono text-xs font-bold uppercase tracking-[0.2em] text-[#FAF9F6] shadow-lg shadow-[#FF1900]/25 transition-all duration-300 hover:bg-[#FD955D] hover:shadow-[#FD955D]/30 sm:w-auto"
-          >
-            Let&apos;s Talk <span className="ml-2">→</span>
-          </a>
+          <div className="w-full max-w-xl">
+            <Button
+              href="/contact"
+              variant="primary"
+              className="group text-[0.9375rem] sm:text-base"
+            >
+              <span>Let&apos;s Talk</span>
+              <span className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1">
+                &rarr;
+              </span>
+            </Button>
+          </div>
 
         </ContentContainer>
       </Section>

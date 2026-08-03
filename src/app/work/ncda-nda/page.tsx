@@ -2,6 +2,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { WorkPageTemplate } from '@/components/WorkPageTemplate';
 
 /* Helper Component to Ensure Autoplay Works Seamlessly */
@@ -38,7 +39,7 @@ export default function NcdaNdaWorkPage() {
   return (
     <WorkPageTemplate
       clientName="NCDA & NDA"
-      clientSubtitle="Collegiate & Semi-Pro Dodgeball"
+      clientSubtitle="Collegiate & Semi-Pro Dodgeball Leagues"
       logoUrl="/assets/ncda-nda-logo.png"
       headline="Bringing Accurate Timing to Competitive Dodgeball"
       categoryTag="Custom Smart Devices"
@@ -47,11 +48,14 @@ export default function NcdaNdaWorkPage() {
           eyebrow: "THE PROBLEM",
           heading: "Manual Counting Was Costing the Game",
           customElement: (
-            /* Stopwatch Placeholder Container matching Wireframe */
-            <div className="w-full aspect-[16/10] rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] flex items-center justify-center p-8 shadow-2xl">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#242424] border border-[#333333] flex items-center justify-center text-[#FD955D] shadow-inner">
-                <i className="fas fa-stopwatch text-2xl" />
-              </div>
+            <div className="relative w-full aspect-[16/10] rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] overflow-hidden shadow-2xl">
+              <Image
+                src="/assets/Hand Counting.png"
+                alt="Manual hand counting during a competitive dodgeball match"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           ),
           body: (
@@ -72,45 +76,42 @@ export default function NcdaNdaWorkPage() {
         },
         {
           eyebrow: "THE OUTCOME",
-          /* Transformed to large, high-impact wireframe typography */
           heading: "The Official Timing Technology of the Sport",
           imageUrl: "/assets/ncda-outcome.jpg",
           imageAlt: "Dodgeball players using the official DSS timing technology on the court",
           body: (
-            <div className="flex flex-col gap-y-4 text-base sm:text-lg md:text-xl text-[#FAF9F6] leading-relaxed max-w-xl">
-              <p className="font-semibold text-zinc-300">
-                Official timing partner for the{' '}
-                <a
-                  href="https://ncdadodgeball.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#FD955D] font-bold hover:underline transition-all"
-                >
-                  NCDA
-                </a>{' '}
-                and{' '}
-                <a
-                  href="https://www.ndadodgeball.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#FD955D] font-bold hover:underline transition-all"
-                >
-                  NDA
-                </a>
-              </p>
-              
-              <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-normal">
-                Tried and tested at regional and national championship events across numerous seasons.
-              </p>
-
-              <div className="pt-2">
-                <p className="italic font-serif text-lg sm:text-xl text-[#FAF9F6]">
-                  “Digital shot clocking is the future of the sport.”
-                </p>
-                <span className="block not-italic text-zinc-500 mt-2 font-mono text-xs uppercase tracking-widest">
+            <div className="flex flex-col max-w-xl text-sm sm:text-base text-[#A3A3A3]">
+              <ul className="list-disc pl-5 space-y-2 leading-relaxed font-normal">
+                <li>
+                  Official timing partner for the{' '}
+                  <a
+                    href="https://ncdadodgeball.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#FD955D] font-bold hover:underline transition-all"
+                  >
+                    NCDA
+                  </a>{' '}
+                  and{' '}
+                  <a
+                    href="https://www.ndadodgeball.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#FD955D] font-bold hover:underline transition-all"
+                  >
+                    NDA
+                  </a>.
+                </li>
+                <li>
+                  Tried and tested at regional and national championship events across numerous seasons.
+                </li>
+                <li>
+                  <span className="italic">
+                    “Digital shot clocking is the future of the sport.”
+                  </span>{' '}
                   — Former NCDA President
-                </span>
-              </div>
+                </li>
+              </ul>
             </div>
           )
         }

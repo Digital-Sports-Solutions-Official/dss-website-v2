@@ -25,15 +25,17 @@ export default function NotFound() {
           We couldn&apos;t find the page you&apos;re looking for.
         </p>
 
-        {/* REUSED RECTANGULAR BUTTON COMPONENT WITH EXPLICIT TOP MARGIN */}
-        <div className="mt-8 sm:mt-10">
+        {/* REUSED BUTTON COMPONENT WITH MATCHING FULL-WIDTH WRAPPER */}
+        <div className="mt-8 w-full max-w-xl sm:mt-10">
           <Button
             href="/"
             variant="primary"
-            className="!rounded-md px-7 py-3 text-xs sm:text-sm inline-flex items-center gap-x-2"
+            className="group text-[0.9375rem] sm:text-base"
           >
             <span>Back to Home</span>
-            <span className="text-base leading-none">→</span>
+            <span className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1">
+              &rarr;
+            </span>
           </Button>
         </div>
 

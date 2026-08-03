@@ -1,4 +1,3 @@
-// src/app/contact/page.tsx
 'use client';
 
 import React, { useState } from 'react';
@@ -289,9 +288,7 @@ export default function ContactPage() {
                         !formData.inquiryType ? 'text-[#555555]' : 'text-white'
                       }`}
                     >
-                      <option value="" disabled hidden>
-                        Select an inquiry type...
-                      </option>
+                      <option value="">Select an inquiry type...</option>
                       {INQUIRY_OPTIONS.map((opt) => (
                         <option key={opt} value={opt} className="bg-[#202020] text-white">
                           {opt}
@@ -322,9 +319,7 @@ export default function ContactPage() {
                         !formData.howHeard ? 'text-[#555555]' : 'text-white'
                       }`}
                     >
-                      <option value="" disabled hidden>
-                        Select an option...
-                      </option>
+                      <option value="">Select an option...</option>
                       {HEARD_OPTIONS.map((opt) => (
                         <option key={opt} value={opt} className="bg-[#202020] text-white">
                           {opt}
@@ -350,7 +345,7 @@ export default function ContactPage() {
                     name="message"
                     rows={5}
                     maxLength={2000}
-                    placeholder="Tell us about your league, event, or project..."
+                    placeholder="Tell us about your inquiry…"
                     value={formData.message}
                     onChange={handleChange}
                     className={`min-h-[140px] w-full resize-y rounded-xl border ${
