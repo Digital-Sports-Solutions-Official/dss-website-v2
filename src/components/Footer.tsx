@@ -41,23 +41,23 @@ export const Footer: React.FC = () => {
               Custom digital tools built to make your organization stand out.
             </p>
             
-            {/* SOCIAL MEDIA ICONS CONTAINER (ALIGNED HEIGHT TO MATCH DOC BUTTON) */}
+            {/* SOCIAL MEDIA ICONS CONTAINER */}
             <div 
               className="flex items-center text-left text-sm text-[#999999]" 
               style={{ 
                 marginTop: '16px',
                 width: '100%',
                 maxWidth: '220px',
-                minHeight: '28px' // Aligns height with button line-height
+                minHeight: '28px'
               }}
             >
               <div className="flex w-full items-center justify-between">
-                <a href="https://www.youtube.com/channel/UCj6qESOEGemvzRvgxagYHWg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-youtube" /></a>
-                <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-instagram" /></a>
-                <a href="https://www.linkedin.com/company/digitalsportssolutions/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-linkedin-in" /></a>
-                <a href="https://discord.gg/6HjeNJM6F4" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-discord" /></a>
-                <a href="https://www.facebook.com/people/Digital-Sports-Solutions/61558423260160/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors hover:text-[#FF1900]"><i className="fa-brands fa-facebook-f" /></a>
-                <Link href="/contact" aria-label="Contact Us" className="transition-colors hover:text-[#FF1900]"><i className="fa-regular fa-envelope" /></Link>
+                <a href="https://www.youtube.com/channel/UCj6qESOEGemvzRvgxagYHWg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-youtube" /></a>
+                <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-instagram" /></a>
+                <a href="https://www.linkedin.com/company/digitalsportssolutions/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-linkedin-in" /></a>
+                <a href="https://discord.gg/6HjeNJM6F4" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-discord" /></a>
+                <a href="https://www.facebook.com/people/Digital-Sports-Solutions/61558423260160/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-facebook-f" /></a>
+                <Link href="/contact" aria-label="Contact Us" className="transition-colors hover:text-[#FD955D]"><i className="fa-regular fa-envelope" /></Link>
               </div>
             </div>
           </div>
@@ -68,9 +68,9 @@ export const Footer: React.FC = () => {
               SERVICES
             </span>
             <div className="flex flex-col gap-y-1.5 text-left text-[11px] font-medium text-[#EEEEEE]">
-              <Link href="/services/smart-devices" className="transition-colors hover:text-[#FF1900]">Custom Smart Devices</Link>
-              <Link href="/services/web-mobile" className="transition-colors hover:text-[#FF1900]">Websites & Mobile Apps</Link>
-              <Link href="/services/data" className="transition-colors hover:text-[#FF1900]">Data & Insights</Link>
+              <Link href="/services/smart-devices" className="transition-colors hover:text-[#FD955D]">Custom Smart Devices</Link>
+              <Link href="/services/web-mobile" className="transition-colors hover:text-[#FD955D]">Websites & Mobile Apps</Link>
+              <Link href="/services/data" className="transition-colors hover:text-[#FD955D]">Data & Insights</Link>
             </div>
           </div>
 
@@ -80,9 +80,9 @@ export const Footer: React.FC = () => {
               WORK
             </span>
             <div className="flex flex-col gap-y-1.5 text-left text-[11px] font-medium text-[#EEEEEE]">
-              <Link href="/work/ncda-nda" className="transition-colors hover:text-[#FF1900]">NCDA/NDA</Link>
-              <Link href="/work/2011-robotics" className="transition-colors hover:text-[#FF1900]">2011 Robotics</Link>
-              <Link href="/tinyleague" className="transition-colors hover:text-[#FF1900]">tinyLeague</Link>
+              <Link href="/work/ncda-nda" className="transition-colors hover:text-[#FD955D]">NCDA/NDA</Link>
+              <Link href="/work/2011-robotics" className="transition-colors hover:text-[#FD955D]">2011 Robotics</Link>
+              <Link href="/tinyleague" className="transition-colors hover:text-[#FD955D]">tinyLeague</Link>
             </div>
           </div>
 
@@ -92,9 +92,9 @@ export const Footer: React.FC = () => {
               GET IN TOUCH
             </span>
             <div className="flex w-full flex-col gap-y-1 text-left text-[11px] font-medium text-[#EEEEEE]">
-              <a href="mailto:contact@digitalsportssolutions.com" className="transition-colors hover:text-[#FF1900]">contact@digitalsportssolutions.com</a>
-              <a href="mailto:support@digitalsportssolutions.com" className="transition-colors hover:text-[#FF1900]">support@digitalsportssolutions.com</a>
-              <a href="tel:2169245393" className="pt-0.5 font-bold">216-924-5393</a>
+              <a href="mailto:contact@digitalsportssolutions.com" className="transition-colors hover:text-[#FD955D]">contact@digitalsportssolutions.com</a>
+              <a href="mailto:support@digitalsportssolutions.com" className="transition-colors hover:text-[#FD955D]">support@digitalsportssolutions.com</a>
+              <a href="tel:2169245393" className="pt-0.5 font-bold transition-colors hover:text-[#FD955D]">216-924-5393</a>
             </div>
             
             {/* DOCUMENTATION BUTTON CONTAINER */}
@@ -141,9 +141,9 @@ export const Footer: React.FC = () => {
           <span>© 2026 Digital Sports Solutions LLC</span>
           
           <div className="flex items-center gap-x-4 font-sans font-normal text-[#888888]">
-            <Link href="/terms" className="transition-colors hover:text-[#FFFFFF]">Terms of Service</Link>
+            <Link href="/terms" className="transition-colors hover:text-[#FD955D]">Terms of Service</Link>
             <span className="text-[#333333]">|</span>
-            <Link href="/privacy" className="transition-colors hover:text-[#FFFFFF]">Privacy Policy</Link>
+            <Link href="/privacy" className="transition-colors hover:text-[#FD955D]">Privacy Policy</Link>
           </div>
         </div>
 

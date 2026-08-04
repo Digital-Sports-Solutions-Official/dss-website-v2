@@ -171,7 +171,7 @@ export default function ContactPage() {
               </div>
               <Link
                 href="/"
-                className="mt-2 inline-flex w-full items-center justify-center rounded-xl px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-200 active:scale-95 sm:w-auto"
+                className="mt-2 inline-flex w-full items-center justify-center rounded-xl px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-200 ease-out hover:-translate-y-0.5 hover:brightness-110 hover:shadow-orange-500/30 active:scale-95 sm:w-auto"
                 style={{
                   background: 'linear-gradient(135deg, #d86835 0%, #ba4d1d 100%)',
                   boxShadow: '0 4px 20px rgba(216, 104, 53, 0.35)',
@@ -370,7 +370,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="mt-2 inline-flex w-full items-center justify-center rounded-xl px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-200 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 sm:text-base"
+                className="mt-2 inline-flex w-full items-center justify-center rounded-xl px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-200 ease-out hover:-translate-y-0.5 hover:brightness-110 hover:shadow-orange-500/30 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0 disabled:hover:brightness-100 sm:text-base"
                 style={{
                   background: 'linear-gradient(135deg, #d86835 0%, #ba4d1d 100%)',
                   boxShadow: '0 4px 20px rgba(216, 104, 53, 0.35)',

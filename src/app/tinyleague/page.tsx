@@ -96,7 +96,7 @@ export default function TinyLeaguePage() {
           
           {/* UPDATED TO LARGE WHITE TITLE TEXT */}
           <Typography variant="display" className="mb-6 block sm:mb-8">
-            THE VISION
+            The Vision
           </Typography>
 
           {/* COMFORTABLE READING COLUMN */}

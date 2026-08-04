@@ -21,7 +21,7 @@ export default function TermsOfServicePage() {
           
           {/* SECTION: INTRODUCTION */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Introduction
             </h2>
@@ -35,7 +35,7 @@ export default function TermsOfServicePage() {
 
           {/* SECTION: USE OF WEBSITE */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Use of Website
             </h2>
@@ -49,7 +49,7 @@ export default function TermsOfServicePage() {
 
           {/* SECTION: USER CONDUCT */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               User Conduct
             </h2>
@@ -71,7 +71,7 @@ export default function TermsOfServicePage() {
 
           {/* SECTION: CONTACT FORM */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Contact Form
             </h2>
@@ -84,7 +84,7 @@ export default function TermsOfServicePage() {
 
           {/* SECTION: PRIVACY */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Privacy
             </h2>
@@ -97,7 +97,7 @@ export default function TermsOfServicePage() {
 
           {/* SECTION: THIRD-PARTY LINKS */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Third-Party Links
             </h2>
@@ -110,7 +110,7 @@ export default function TermsOfServicePage() {
 
           {/* SECTION: CHANGES TO THESE TERMS */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Changes to These Terms
             </h2>
@@ -123,7 +123,7 @@ export default function TermsOfServicePage() {
 
           {/* SECTION: CONTACT US */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Contact Us
             </h2>

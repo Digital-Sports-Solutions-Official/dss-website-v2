@@ -61,7 +61,7 @@ export default function HomePage() {
             href="/tinyleague"
             className="group inline-flex min-h-11 items-center justify-center px-3 font-mono text-xs font-bold tracking-widest text-[#AEAEAD] underline decoration-[#3C3C3C] underline-offset-4 transition-colors hover:text-[#FD955D] hover:decoration-[#FD955D]"
           >
-            Discover TinyLeague
+            Discover tinyLeague
             <span className="ml-2 inline-block transition-transform group-hover:translate-x-1">
               →
             </span>

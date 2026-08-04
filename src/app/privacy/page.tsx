@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
           
           {/* SECTION: INTRODUCTION */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Introduction
             </h2>
@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
 
           {/* SECTION: INFORMATION WE COLLECT */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Information We Collect
             </h2>
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
 
           {/* SECTION: THIRD-PARTY SERVICE PROVIDERS */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Third-Party Service Providers
             </h2>
@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
 
           {/* SECTION: COOKIES AND TRACKING */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Cookies and Tracking
             </h2>
@@ -87,7 +87,7 @@ export default function PrivacyPolicyPage() {
 
           {/* SECTION: EXTERNAL LINKS */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               External Links
             </h2>
@@ -101,7 +101,7 @@ export default function PrivacyPolicyPage() {
 
           {/* SECTION: CHANGES TO THIS POLICY */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Changes to This Policy
             </h2>
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
 
           {/* SECTION: CONTACT US */}
           <section>
-            <div className="mb-3 h-[2px] w-8 bg-[#FF1900]" />
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
             <h2 className="mb-3 text-[20px] font-semibold text-white">
               Contact Us
             </h2>
