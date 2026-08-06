@@ -41,7 +41,7 @@ export default function TinyLeaguePage() {
           {/* COMBINATION MARK IMAGE */}
           <div className="mb-8 flex w-full max-w-xs items-center justify-center">
             <Image
-              src="/assets/tinyLeague_CombinationMark_fullColorInWhite.png"
+              src="/assets/tinyLeague_CombinationMark_fullcolorInWHITE.png"
               alt="TinyLeague Logo"
               width={280}
               height={80}

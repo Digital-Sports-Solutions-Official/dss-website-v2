@@ -50,7 +50,7 @@ export default function NcdaNdaWorkPage() {
           customElement: (
             <div className="relative w-full aspect-[16/10] rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] overflow-hidden shadow-2xl">
               <Image
-                src="/assets/Hand Counting.png"
+                src="/assets/hand-counting.png"
                 alt="Manual hand counting during a competitive dodgeball match"
                 fill
                 className="object-cover"

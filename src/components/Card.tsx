@@ -46,7 +46,15 @@ function CardIcon({ name }: { name?: string }) {
     case 'fa-microchip':
       return (
         <svg className="h-5 w-5 text-[#FD955D]" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-          <path d="M19 19H5V5h14v14zM9 0h2v2H9V0zm4 0h2v2h-2V0zM0 9h2v2H0V9zm0 4h2v2H0v-2zm9 9h2v2H9v-2zm4 0h2v2h-2v-2zm6-9h2v2h-2V9zm0 4h2v2h-2v-2zM7 7v10h10V7H7zm8 8H9V9h6v6z" />
+          {/* Outer ring */}
+          <path
+            fillRule="evenodd"
+            d="M5 5h14v14H5V5zm2 2h10v10H7V7z"
+          />
+          {/* Center die */}
+          <path d="M9 9h6v6H9V9z" />
+          {/* Pins — top / bottom / left / right */}
+          <path d="M9 0h2v2H9V0zm4 0h2v2h-2V0zM9 22h2v2H9v-2zm4 0h2v2h-2v-2zM0 9h2v2H0V9zm0 4h2v2H0v-2zM22 9h2v2h-2V9zm0 4h2v2h-2v-2z" />
         </svg>
       );
     case 'fa-globe':
