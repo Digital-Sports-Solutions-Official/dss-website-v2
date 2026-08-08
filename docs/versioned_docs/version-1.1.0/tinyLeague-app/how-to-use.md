@@ -54,7 +54,7 @@ This is your main in-game control — one tap to reset and resume play instantly
 ### 🎚 High / Low Toggle Switch
 
 - Sets the max clock to High or Low, respective to the switch's position
-- Using this swaps the current max time with its high/low counterpart, which can be customized in [Timer Settings](/docs/tinyLeague-app/settings#-timer-settings)
+- Using this swaps the current max time with its high/low counterpart, which can be customized in [Timer Settings](/docs/tinyLeague-app/app-settings#-timer-settings)
 - New max clock will be applied upon next reset
 
 :::note

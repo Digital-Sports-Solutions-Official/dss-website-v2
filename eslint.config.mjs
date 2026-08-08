@@ -11,6 +11,12 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // 0. `docs/` holds markdown content plus the retired Docusaurus scaffolding.
+  //    It is read as data by /docs, never compiled as part of the app.
+  {
+    ignores: ["docs/**"],
+  },
+
   // 1. Load the core Next.js linting configurations
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   

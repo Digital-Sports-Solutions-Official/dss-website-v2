@@ -39,6 +39,7 @@ This codebase adheres to a strict dark-mode design specification:
 │   │   │   ├── data/           # Data services landing page
 │   │   │   └── web-mobile/     # Web & Mobile engineering page
 │   │   ├── tinyleague/         # Showcase / Product page
+│   │   ├── docs/               # tinyLeague™ documentation route (/docs)
 │   │   ├── layout.tsx          # Root layout & providers
 │   │   └── page.tsx            # Homepage
 │   ├── components/             # Reusable UI Component Library
@@ -47,6 +48,12 @@ This codebase adheres to a strict dark-mode design specification:
 │   │   ├── LayoutPrimitives.tsx# PageWrapper, Section, ContentContainer, Rule
 │   │   ├── ServicePageTemplate.tsx # Template for core service pages
 │   │   ├── Typography.tsx      # Standardized heading & caption components
-│   │   └── Footer.tsx          # Main site footer
+│   │   ├── Footer.tsx          # Main site footer
+│   │   └── docs/               # Sidebar, table of contents, admonitions, tabs
+│   ├── lib/docs/               # Markdown loader & MDX compilation for /docs
 │   └── public/                 # Static assets & webp image showcases
+├── docs/                       # Documentation content — see docs/README.md
+│   ├── versions.json           # Published versions, newest first
+│   └── versioned_docs/         # One markdown folder per version
 └── tailwind.config.js          # Extended color palette & styling rules
+```
