@@ -1,0 +1,39 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+ :root {
+  --dss-gray: #EEEE;
+  --dss-orange: #FF5900;
+  --dss-red: #FF0000;
+  --dss-black: #1F1F1F;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: var(--dss-orange);
+  --ifm-color-primary-dark: var(--dss-orange);
+  --ifm-color-primary-darker: var(--dss-orange);
+  --ifm-color-primary-darkest: var(--dss-orange);
+  --ifm-color-primary-light: var(--dss-orange);
+  --ifm-color-primary-lighter: var(--dss-orange);
+  --ifm-color-primary-lightest: var(--dss-orange);
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: var(--dss-orange);
+  --ifm-color-primary-dark: var(--dss-orange);
+  --ifm-color-primary-darker: var(--dss-orange);
+  --ifm-color-primary-darkest: var(--dss-orange);
+  --ifm-color-primary-light: var(--dss-orange);
+  --ifm-color-primary-lighter: var(--dss-orange);
+  --ifm-color-primary-lightest: var(--dss-orange);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
