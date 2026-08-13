@@ -346,4 +346,4 @@ No printer? Try a local makerspace or order online from [JLCPCB](https://jlcpcb.
 
 Got your prints? Proceed to the tripod [build](/docs/shotclock-stands/stand-option-2/tripod-build-guide)!
 
-Or contact us in [discord](https://discord.gg/gWaTMhhaU4) with any questions relating to any of these 3D prints. 
+Or contact us in [discord](https://discord.com/invite/6HjeNJM6F4) with any questions relating to any of these 3D prints. 

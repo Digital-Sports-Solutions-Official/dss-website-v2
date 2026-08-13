@@ -38,7 +38,7 @@ export function Tabs({ children }: { children?: React.ReactNode }) {
     <div className="docs-tabs my-6">
       <div
         role="tablist"
-        className="flex flex-wrap gap-1 border-b border-white/10"
+        className="flex flex-wrap gap-1 border-b border-docs-border"
       >
         {items.map((item) => {
           const isActive = item.props.value === current.props.value;
@@ -51,8 +51,8 @@ export function Tabs({ children }: { children?: React.ReactNode }) {
               onClick={() => setActive(item.props.value)}
               className={`-mb-px border-b-2 px-4 py-2 text-sm font-semibold transition-colors ${
                 isActive
-                  ? 'border-[#FD955D] text-[#FD955D]'
-                  : 'border-transparent text-[#AEAEAD] hover:text-[#FAF9F6]'
+                  ? 'border-docs-accent text-docs-accent'
+                  : 'border-transparent text-docs-muted hover:text-docs-heading'
               }`}
             >
               {item.props.label ?? item.props.value}

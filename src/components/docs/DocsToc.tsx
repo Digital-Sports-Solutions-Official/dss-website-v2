@@ -38,18 +38,18 @@ export function DocsToc({ entries }: { entries: TocEntry[] }) {
 
   return (
     <nav aria-label="On this page" className="text-sm">
-      <p className="mb-3 text-xs font-bold uppercase tracking-wide text-[#AEAEAD]">
+      <p className="mb-3 text-xs font-bold uppercase tracking-wide text-docs-muted">
         On this page
       </p>
-      <ul className="flex flex-col gap-1 border-l border-white/10">
+      <ul className="flex flex-col gap-1 border-l border-docs-border">
         {entries.map((entry) => (
           <li key={entry.id}>
             <a
               href={`#${entry.id}`}
               className={`-ml-px block border-l-2 py-1 transition-colors ${
                 activeId === entry.id
-                  ? 'border-[#FD955D] text-[#FD955D]'
-                  : 'border-transparent text-[#AEAEAD] hover:text-[#FAF9F6]'
+                  ? 'border-docs-accent text-docs-accent'
+                  : 'border-transparent text-docs-muted hover:text-docs-heading'
               }`}
               style={{ paddingLeft: `${12 + (entry.depth - 2) * 12}px` }}
             >

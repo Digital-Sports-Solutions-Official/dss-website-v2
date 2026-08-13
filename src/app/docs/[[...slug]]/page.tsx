@@ -22,7 +22,7 @@ import { DocsShell } from '@/components/docs/DocsShell';
 import { DocsSidebar } from '@/components/docs/DocsSidebar';
 import { DocsToc } from '@/components/docs/DocsToc';
 import { VersionSwitcher } from '@/components/docs/VersionSwitcher';
-import './docs.css';
+import { DocsThemeToggle } from '@/components/docs/DocsThemeToggle';
 
 // Every docs page is known at build time; anything else is a 404.
 export const dynamicParams = false;
@@ -69,15 +69,16 @@ export default async function DocPage({ params }: PageProps) {
   const { previous, next } = getNeighbors(version, routePath);
 
   return (
-    <main className="w-full bg-[#232323] pt-[80px] font-sans">
+    <main className="docs-root w-full pt-[80px] font-sans">
       <DocsShell
         sidebar={
           <div className="flex flex-col gap-4">
-            <div className="px-3">
+            <div className="flex items-center justify-between gap-2 px-3">
               <VersionSwitcher
                 current={version}
                 options={getVersionSwitchTargets(routePath)}
               />
+              <DocsThemeToggle />
             </div>
             <DocsSidebar items={getSidebar(version)} />
           </div>
@@ -85,9 +86,9 @@ export default async function DocPage({ params }: PageProps) {
         toc={<DocsToc entries={toc} />}
       >
         {version !== latest && (
-          <div className="mb-8 rounded-lg border border-[#FD955D]/40 bg-[#FD955D]/10 px-5 py-4 text-sm text-[#FAF9F6]">
+          <div className="mb-8 rounded-lg border border-docs-accent/40 bg-docs-active px-5 py-4 text-sm text-docs-heading">
             You are reading the documentation for version <strong>{version}</strong>.{' '}
-            <Link href={getVersionHref(latest, routePath)} className="font-semibold text-[#FD955D] underline">
+            <Link href={getVersionHref(latest, routePath)} className="font-semibold text-docs-accent underline">
               Go to the latest version ({latest})
             </Link>
             .
@@ -101,17 +102,17 @@ export default async function DocPage({ params }: PageProps) {
 
         <nav
           aria-label="Documentation pages"
-          className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:justify-between"
+          className="mt-16 flex flex-col gap-4 border-t border-docs-border pt-8 sm:flex-row sm:justify-between"
         >
           {previous ? (
             <Link
               href={previous.href}
-              className="group flex flex-1 items-center gap-3 rounded-lg border border-white/10 px-4 py-3 transition-colors hover:border-[#FD955D]"
+              className="group flex flex-1 items-center gap-3 rounded-lg border border-docs-border px-4 py-3 transition-colors hover:border-docs-accent"
             >
-              <ArrowLeft size={18} className="shrink-0 text-[#AEAEAD] transition-transform group-hover:-translate-x-1" aria-hidden="true" />
+              <ArrowLeft size={18} className="shrink-0 text-docs-muted transition-transform group-hover:-translate-x-1" aria-hidden="true" />
               <span className="min-w-0">
-                <span className="block text-xs uppercase tracking-wide text-[#AEAEAD]">Previous</span>
-                <span className="block truncate font-semibold text-[#FAF9F6]">{previous.label}</span>
+                <span className="block text-xs uppercase tracking-wide text-docs-muted">Previous</span>
+                <span className="block truncate font-semibold text-docs-heading">{previous.label}</span>
               </span>
             </Link>
           ) : (
@@ -121,13 +122,13 @@ export default async function DocPage({ params }: PageProps) {
           {next ? (
             <Link
               href={next.href}
-              className="group flex flex-1 items-center justify-end gap-3 rounded-lg border border-white/10 px-4 py-3 text-right transition-colors hover:border-[#FD955D]"
+              className="group flex flex-1 items-center justify-end gap-3 rounded-lg border border-docs-border px-4 py-3 text-right transition-colors hover:border-docs-accent"
             >
               <span className="min-w-0">
-                <span className="block text-xs uppercase tracking-wide text-[#AEAEAD]">Next</span>
-                <span className="block truncate font-semibold text-[#FAF9F6]">{next.label}</span>
+                <span className="block text-xs uppercase tracking-wide text-docs-muted">Next</span>
+                <span className="block truncate font-semibold text-docs-heading">{next.label}</span>
               </span>
-              <ArrowRight size={18} className="shrink-0 text-[#AEAEAD] transition-transform group-hover:translate-x-1" aria-hidden="true" />
+              <ArrowRight size={18} className="shrink-0 text-docs-muted transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </Link>
           ) : (
             <span className="flex-1" />

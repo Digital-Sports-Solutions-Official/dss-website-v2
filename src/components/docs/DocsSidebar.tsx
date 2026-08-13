@@ -17,13 +17,19 @@ function DocEntry({ href, label, depth }: { href: string; label: string; depth: 
   const pathname = usePathname();
   const isActive = pathname === href;
 
+  // A page at the root of the sidebar sits alongside categories, so it gets the
+  // same weight and colour they do — otherwise "Getting Started" and "FAQ" read
+  // as subordinate to "Founders Edition". Nested pages stay muted.
+  const restingStyle =
+    depth === 0
+      ? 'font-semibold text-docs-heading hover:bg-docs-hover'
+      : 'text-docs-muted hover:bg-docs-hover hover:text-docs-heading';
+
   return (
     <Link
       href={href}
       className={`block rounded-md py-1.5 pr-3 text-sm transition-colors ${
-        isActive
-          ? 'bg-white/[0.06] font-semibold text-[#FD955D]'
-          : 'text-[#AEAEAD] hover:bg-white/[0.04] hover:text-[#FAF9F6]'
+        isActive ? 'bg-docs-active font-semibold text-docs-accent' : restingStyle
       }`}
       style={{ paddingLeft: `${12 + depth * 14}px` }}
       aria-current={isActive ? 'page' : undefined}
@@ -49,13 +55,13 @@ function CategoryEntry({
         type="button"
         onClick={() => setIsOpen((open) => !open)}
         aria-expanded={isOpen}
-        className="flex w-full items-center justify-between gap-2 rounded-md py-1.5 pr-2 text-left text-sm font-semibold text-[#FAF9F6] transition-colors hover:bg-white/[0.04]"
+        className="flex w-full items-center justify-between gap-2 rounded-md py-1.5 pr-2 text-left text-sm font-semibold text-docs-heading transition-colors hover:bg-docs-hover"
         style={{ paddingLeft: `${12 + depth * 14}px` }}
       >
         <span>{category.label}</span>
         <ChevronDown
           size={15}
-          className={`shrink-0 text-[#AEAEAD] transition-transform duration-200 ${
+          className={`shrink-0 text-docs-muted transition-transform duration-200 ${
             isOpen ? '' : '-rotate-90'
           }`}
           aria-hidden="true"

@@ -34,7 +34,7 @@ Please keep in mind, this documentation is a **Work-In-Progress**. You may encou
     marginTop: '1rem'
   }}>
     <a
-      href="https://discord.gg/gWaTMhhaU4"
+      href="https://discord.com/invite/6HjeNJM6F4"
       target="_blank"
       rel="noopener noreferrer"
     >

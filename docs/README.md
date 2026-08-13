@@ -3,9 +3,11 @@
 The markdown in this folder is the source for the documentation at
 **<https://digitalsportssolutions.com/docs>**.
 
-It used to be a separate Docusaurus site. It is now rendered by the main
-Next.js app, so there is no second project, no second `package.json`, and no
-separate deploy — the docs ship with the website.
+It used to be a separate Docusaurus site — a second app in this repo with its
+own build, deploy and imitation navbar, which had to be kept in sync with the
+real site by hand. It is now rendered by the main Next.js app instead: one
+build, one deploy, one design system. The markdown did not have to change;
+Docusaurus syntax is translated at compile time by `src/lib/docs/mdx.ts`.
 
 ```text
 docs/
@@ -123,8 +125,7 @@ repository:
 />
 ```
 
-`<ImageSwitcher lightSrc="…" darkSrc="…" alt="…" />` still works. The site is
-dark-only, so it shows `darkSrc`.
+`<ImageSwitcher lightSrc="…" darkSrc="…" alt="…" />` follows the docs theme.
 
 **Tables**, GitHub-flavoured. Inline HTML and JSX with `style={{ … }}` also
 work.
@@ -144,6 +145,12 @@ Leftovers from Docusaurus that are ignored or removed at build time:
 - Do not wrap markdown in a `<p>` tag. Use `<div>` — a `<p>` containing block
   content is invalid HTML.
 
+## Light and dark
+
+The toggle next to the version dropdown is docs-only — the shared navigation
+and footer stay dark in both themes. Colours come from the twelve tokens at the
+top of `src/app/docs/[[...slug]]/docs.css`; use those, not new hex values.
+
 ## Publishing a new version
 
 1. Copy the newest folder: `cp -r versioned_docs/version-1.1.0 versioned_docs/version-1.2.0`
@@ -160,7 +167,8 @@ current docs.
 | Concern | Where |
 | --- | --- |
 | Page route, prev/next, version banner | `src/app/docs/[[...slug]]/page.tsx` |
-| Typography and prose styling | `src/app/docs/[[...slug]]/docs.css` |
+| Colour tokens, typography, prose styling | `src/app/docs/[[...slug]]/docs.css` |
+| Theme resolution before first paint | `src/app/docs/layout.tsx` |
 | Version list, sidebar tree, URL rules | `src/lib/docs/content.ts` |
 | Markdown compilation and compatibility fixes | `src/lib/docs/mdx.ts` |
 | Sidebar, table of contents, tabs, admonitions | `src/components/docs/` |

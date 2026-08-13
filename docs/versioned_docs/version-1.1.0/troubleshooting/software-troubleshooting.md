@@ -42,7 +42,7 @@ If you're experiencing issues with the **tinyLeague™ Hub**, or any of the tiny
 
 If your software issue isn’t listed here or persists after troubleshooting, feel free to:
 
-- [Join Our Discord for Support](https://discord.gg/gWaTMhhaU4)
+- [Join Our Discord for Support](https://discord.com/invite/6HjeNJM6F4)
 - [Contact DSS Directly](mailto:support@digitalsportssolutions.com)
 
 We're here to help!

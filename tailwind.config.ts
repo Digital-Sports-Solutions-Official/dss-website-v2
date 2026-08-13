@@ -39,6 +39,24 @@ export default {
           hover: 'var(--color-accent-hover)',
           subtle: 'var(--color-accent-subtle)',
         },
+        // Documentation-only palette, defined for light and dark in
+        // src/app/docs/[[...slug]]/docs.css and flipped by the docs theme
+        // toggle. Nothing outside /docs uses them.
+        //   surface       static raised fill (code, table head, drawer)
+        //   hover/active  interaction states, kept distinct so hovering a row
+        //                 never looks the same as selecting it
+        docs: {
+          bg: 'var(--docs-bg)',
+          surface: 'var(--docs-surface)',
+          heading: 'var(--docs-heading)',
+          text: 'var(--docs-text)',
+          muted: 'var(--docs-muted)',
+          border: 'var(--docs-border)',
+          hover: 'var(--docs-hover)',
+          active: 'var(--docs-active)',
+          accent: 'var(--docs-accent)',
+          'accent-hover': 'var(--docs-accent-hover)',
+        },
       },
       fontFamily: {
         sans: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],

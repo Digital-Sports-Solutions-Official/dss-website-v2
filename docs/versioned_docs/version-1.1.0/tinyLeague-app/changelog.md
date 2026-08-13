@@ -141,7 +141,7 @@ tinyLeague Hub - Version 1.0 Release Notes
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <a
-  href="https://discord.gg/gWaTMhhaU4"
+  href="https://discord.com/invite/6HjeNJM6F4"
   target="_blank"
   rel="noopener noreferrer"
 >

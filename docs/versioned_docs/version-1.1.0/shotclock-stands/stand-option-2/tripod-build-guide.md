@@ -322,7 +322,7 @@ You have completed the build for the tripod attachment. This stand attachment pr
   <p style={{ fontStyle: 'italic' }}>Tried and tested, perfect for big events</p>
 </div>
 
-If you have decided to build the full reliable stand, **PLEASE** reach out to the DSS team on [discord](https://discord.gg/gWaTMhhaU4) to share your results. We hope to help in any way we can.
+If you have decided to build the full reliable stand, **PLEASE** reach out to the DSS team on [discord](https://discord.com/invite/6HjeNJM6F4) to share your results. We hope to help in any way we can.
 
 **Trying to get started with your Founders Edition module now?**
 

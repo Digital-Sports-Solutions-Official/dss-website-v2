@@ -20,7 +20,7 @@ export function VersionSwitcher({
   const router = useRouter();
 
   return (
-    <label className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-[#AEAEAD]">
+    <label className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-docs-muted">
       Version
       <select
         value={current}
@@ -28,7 +28,7 @@ export function VersionSwitcher({
           const target = options.find((o) => o.version === event.target.value);
           if (target) router.push(target.href);
         }}
-        className="cursor-pointer rounded-md border border-white/15 bg-[#232323] px-2 py-1.5 text-sm font-semibold normal-case tracking-normal text-[#FAF9F6] transition-colors hover:border-[#FD955D] focus:border-[#FD955D] focus:outline-none"
+        className="cursor-pointer rounded-md border border-docs-border bg-docs-bg px-2 py-1.5 text-sm font-semibold normal-case tracking-normal text-docs-heading transition-colors hover:border-docs-accent focus:border-docs-accent focus:outline-none"
       >
         {options.map((option) => (
           <option key={option.version} value={option.version}>

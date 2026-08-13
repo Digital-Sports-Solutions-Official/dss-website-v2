@@ -37,7 +37,7 @@ export function DocsShell({
     <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8 lg:px-12">
       <div className="flex gap-8">
         {/* DESKTOP SIDEBAR */}
-        <aside className="sticky top-[80px] hidden h-[calc(100vh-80px)] w-64 shrink-0 overflow-y-auto border-r border-white/10 py-8 pr-3 lg:block">
+        <aside className="sticky top-[80px] hidden h-[calc(100vh-80px)] w-64 shrink-0 overflow-y-auto border-r border-docs-border py-8 pr-3 lg:block">
           {sidebar}
         </aside>
 
@@ -46,7 +46,7 @@ export function DocsShell({
           <button
             type="button"
             onClick={() => setIsDrawerOpen(true)}
-            className="mb-6 flex items-center gap-2 rounded-md border border-white/15 px-3 py-2 text-sm font-semibold text-[#FAF9F6] transition-colors hover:border-[#FD955D] hover:text-[#FD955D] lg:hidden"
+            className="mb-6 flex items-center gap-2 rounded-md border border-docs-border px-3 py-2 text-sm font-semibold text-docs-heading transition-colors hover:border-docs-accent hover:text-docs-accent lg:hidden"
           >
             <PanelLeft size={16} aria-hidden="true" />
             Browse docs
@@ -60,12 +60,16 @@ export function DocsShell({
         </aside>
       </div>
 
-      {/* MOBILE DRAWER */}
+      {/* MOBILE DRAWER
+          The sidebar is rendered twice, so while the drawer is closed its copy
+          is marked inert — that takes the duplicate version switcher, theme
+          toggle and links out of both the tab order and the accessibility tree.
+          aria-hidden alone would leave them focusable. */}
       <div
-        className={`fixed inset-0 z-40 lg:hidden ${
+        className={`fixed inset-x-0 bottom-0 top-[80px] z-40 lg:hidden ${
           isDrawerOpen ? 'pointer-events-auto' : 'pointer-events-none'
         }`}
-        aria-hidden={!isDrawerOpen}
+        inert={!isDrawerOpen}
       >
         <div
           onClick={() => setIsDrawerOpen(false)}
@@ -74,19 +78,19 @@ export function DocsShell({
           }`}
         />
         <div
-          className={`absolute left-0 top-0 flex h-full w-[85%] max-w-xs flex-col bg-[#171717] shadow-2xl transition-transform duration-200 ${
+          className={`absolute left-0 top-0 flex h-full w-[85%] max-w-xs flex-col bg-docs-bg shadow-2xl transition-transform duration-200 ${
             isDrawerOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
         >
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-4">
-            <span className="text-sm font-bold uppercase tracking-wide text-[#AEAEAD]">
+          <div className="flex items-center justify-between border-b border-docs-border px-4 py-4">
+            <span className="text-sm font-bold uppercase tracking-wide text-docs-muted">
               Documentation
             </span>
             <button
               type="button"
               onClick={() => setIsDrawerOpen(false)}
               aria-label="Close documentation menu"
-              className="rounded p-1 text-[#FAF9F6] transition-colors hover:text-[#FD955D]"
+              className="rounded p-1 text-docs-heading transition-colors hover:text-docs-accent"
             >
               <X size={20} aria-hidden="true" />
             </button>
