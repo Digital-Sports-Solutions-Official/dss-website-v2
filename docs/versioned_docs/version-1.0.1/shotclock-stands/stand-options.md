@@ -55,7 +55,7 @@ Both options use the built-in **¾" NPT threaded flange** at the base of each Fo
 - AV mounting equipment
 - Hardware store plumbing supplies
 
- #### You are welcome to attempt to design/build custom stand designs for mounting your shot clock modules. While DSS does not reccomend this route, please let us know what you come up with if you decide you would like to.
+ #### You are welcome to attempt to design/build custom stand designs for mounting your shot clock modules. While DSS™ does not reccomend this route, please let us know what you come up with if you decide you would like to.
 
  ---
 

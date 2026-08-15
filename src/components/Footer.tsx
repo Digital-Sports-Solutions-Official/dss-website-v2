@@ -82,7 +82,7 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col gap-y-1.5 text-left text-[11px] font-medium text-[#EEEEEE]">
               <Link href="/work/ncda-nda" className="transition-colors hover:text-[#FD955D]">NCDA/NDA</Link>
               <Link href="/work/2011-robotics" className="transition-colors hover:text-[#FD955D]">2011 Robotics</Link>
-              <Link href="/tinyleague" className="transition-colors hover:text-[#FD955D]">tinyLeague</Link>
+              <Link href="/tinyleague" className="transition-colors hover:text-[#FD955D]">tinyLeague™</Link>
             </div>
           </div>
 
@@ -115,14 +115,20 @@ export const Footer: React.FC = () => {
         <div style={{ width: '100%', borderTop: '1px solid #222222' }} />
 
         {/* ==========================================================================
-           ROW 2: INFORMATIONAL LEGAL DISCLAIMER
+           ROW 2: INFORMATIONAL LEGAL DISCLAIMER & TRADEMARK NOTICE
            ========================================================================== */}
-        <div className="flex items-center justify-center w-full text-center" style={{ paddingTop: '20px', paddingBottom: '20px' }}>
-          <p 
+        <div className="flex flex-col items-center justify-center w-full gap-2 text-center" style={{ paddingTop: '18px', paddingBottom: '18px' }}>
+          <p
             className="mx-auto max-w-3xl text-center font-sans text-[10px] font-medium leading-relaxed text-[#888888]"
             style={{ margin: 0 }}
           >
-            This website is for information purposes only and does not constitute legal advice. All names, logos, and brands are property of their respective owners. Use of these names, logos, and brands does not imply endorsement.
+            DSS™ and tinyLeague™, and their associated logos, are trademarks of Digital Sports Solutions, LLC.
+          </p>
+          <p
+            className="mx-auto max-w-3xl text-center font-sans text-[10px] font-medium leading-relaxed text-[#888888]"
+            style={{ margin: 0 }}
+          >
+            Informational purposes only; not legal advice. All other names, logos, and brands are property of their respective owners.
           </p>
         </div>
 

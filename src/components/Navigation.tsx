@@ -56,7 +56,7 @@ export const Navigation: React.FC = () => {
     { name: 'Home', id: 'top', targetId: 'top' },
     { name: 'Services', id: 'services', targetId: 'services' },
     { name: 'Work', id: 'work', targetId: 'work' },
-    { name: 'tinyLeague', id: 'tinyleague', href: '/tinyleague' },
+    { name: 'tinyLeague™', id: 'tinyleague', href: '/tinyleague' },
     { name: 'About', id: 'about', targetId: 'founding-story' },
     { name: 'Team', id: 'team', targetId: 'team' },
     { name: 'Contact', id: 'contact', href: '/contact' },

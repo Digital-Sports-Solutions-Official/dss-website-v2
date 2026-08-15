@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 🧱 Shot Clock Stands
 
-To get the most out of your **[Founders Edition Shot Clock](/docs/founders-edition/introduction)**, we strongly recommend mounting the device using a one of the [options](/docs/shotclock-stands/stand-options) provided by the DSS team. The **Founders Edition Shot Clock** even comes with an attached flange on the bottom, ideal for quick & easy mounting solutions.
+To get the most out of your **[Founders Edition Shot Clock](/docs/founders-edition/introduction)**, we strongly recommend mounting the device using a one of the [options](/docs/shotclock-stands/stand-options) provided by the DSS™ team. The **Founders Edition Shot Clock** even comes with an attached flange on the bottom, ideal for quick & easy mounting solutions.
 
 Stands increase **visibility**, enhance **professional presentation**, and improve the overall **user experience** for players, referees, and spectators.
 

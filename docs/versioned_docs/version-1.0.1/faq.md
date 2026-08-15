@@ -74,7 +74,7 @@ We’ve designed the system to be durable, but a hard fall may damage internal c
 
 > **“Can I leave my Founders Edition overnight in my car?”**
 
-While we have tried to build a durable product, DSS does not recommend leaving your shot clock modules overnight in your vehicle, especially during very cold weather.
+While we have tried to build a durable product, DSS™ does not recommend leaving your shot clock modules overnight in your vehicle, especially during very cold weather.
 
 ---
 

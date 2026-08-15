@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 To build the **Reliable Shot Clock Stand**, you’ll need several reliable components, as well as some tools.
 
-DSS reccomends you get your components at either **Lowe's** or **Home Depot**, but these parts should be available on Amazon or at any hardware store.
+DSS™ reccomends you get your components at either **Lowe's** or **Home Depot**, but these parts should be available on Amazon or at any hardware store.
 
 ---
 

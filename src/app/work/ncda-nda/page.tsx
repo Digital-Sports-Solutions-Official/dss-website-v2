@@ -46,7 +46,7 @@ export default function NcdaNdaWorkPage() {
       sections={[
         {
           eyebrow: "THE PROBLEM",
-          heading: "Manual Counting Was Costing the Game",
+          heading: "Manual Counting Was Ruining the Game",
           customElement: (
             <div className="relative w-full aspect-[16/10] rounded-2xl bg-[#1A1A1A] border border-[#2A2A2A] overflow-hidden shadow-2xl">
               <Image
@@ -66,24 +66,24 @@ export default function NcdaNdaWorkPage() {
         },
         {
           eyebrow: "THE SOLUTION",
-          heading: "A Wireless Shot Clock, Controlled From a Phone",
+          heading: "A Wireless Shot Clock, Controlled Via a Phone",
           customElement: <VideoPlayer src="/assets/ProductVideoFoundersEdition.mp4" />,
           body: (
             <p className="text-[#A3A3A3] text-sm sm:text-base leading-relaxed max-w-xl font-normal">
-              Engineered a wireless shot-clock system featuring a portable display controlled via a smartphone app. By enabling referees to reset the countdown from their phones, the system minimizes human error, reduces rule disputes, and ensures fair gameplay.
+              DSS™ engineered a wireless shot-clock system featuring a portable display controlled via a smartphone app. By enabling referees to reset the countdown from their phones, the DSS system minimizes human error, reduces rule disputes, and ensures fair gameplay.
             </p>
           )
         },
         {
           eyebrow: "THE OUTCOME",
-          heading: "The Official Timing Technology of the Sport",
+          heading: "The Official Timing Technology",
           imageUrl: "/assets/ncda-outcome.jpg",
           imageAlt: "Dodgeball players using the official DSS timing technology on the court",
           body: (
             <div className="flex flex-col max-w-xl text-sm sm:text-base text-[#A3A3A3]">
               <ul className="list-disc pl-5 space-y-2 leading-relaxed font-normal">
                 <li>
-                  Official timing partner for the{' '}
+                  DSS is the official timing partner for the{' '}
                   <a
                     href="https://ncdadodgeball.com/"
                     target="_blank"

@@ -38,7 +38,7 @@ export default function WebMobilePage() {
       ctaHref="/contact"
       bodyText={
         <p>
-          We partner with you to design and build websites, web apps, and mobile apps to
+          DSS™ partners with you to design and build websites, web apps, and mobile apps to
           represent your organization and brand. Your digital presence is often the people’s
           first impression, so it should be something you&apos;re proud to put your name on.
           Our websites and apps are modern and able to grow alongside your organization as
