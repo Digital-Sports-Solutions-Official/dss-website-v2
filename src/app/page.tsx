@@ -52,7 +52,7 @@ export default function HomePage() {
           </Typography>
 
           <p className={`${bodyCopy} mx-auto mb-8 max-w-[42rem] text-pretty`}>
-            You bring the challenge. We build the solution. We partner directly with your
+            You bring the challenge. DSS™ builds the solution. We partner directly with your
             organization to turn what&apos;s holding you back into custom digital tools that help you
             run more efficiently, look more professional, and grow with confidence.
           </p>
@@ -61,7 +61,7 @@ export default function HomePage() {
             href="/tinyleague"
             className="group inline-flex min-h-11 items-center justify-center px-3 font-mono text-xs font-bold tracking-widest text-[#AEAEAD] underline decoration-[#3C3C3C] underline-offset-4 transition-colors hover:text-[#FD955D] hover:decoration-[#FD955D]"
           >
-            Discover tinyLeague
+            Discover tinyLeague™
             <span className="ml-2 inline-block transition-transform group-hover:translate-x-1">
               →
             </span>
@@ -170,7 +170,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/assets/tinyLeague_CombinationMark_fullcolorInWHITE.png"
-                alt="tinyLeague"
+                alt="tinyLeague™"
                 className="h-auto w-full max-w-[240px] object-contain sm:max-w-[320px] md:max-w-[420px]"
               />
             </div>
@@ -210,8 +210,8 @@ export default function HomePage() {
               />
               <div className={`${bodyCopy} flex max-w-[540px] flex-col gap-y-4`}>
                 <p>
-                  Digital Sports Solutions began by solving a problem no off-the-shelf product
-                  could fix, and that&apos;s still what we do. We find what&apos;s holding an
+                  Digital Sports Solutions (DSS) began by solving a problem no off-the-shelf
+                  product could fix, and that&apos;s still what we do. We find what&apos;s holding an
                   organization back and turn it into custom solutions that help them run more
                   efficiently, look more professional, and grow with confidence. That&apos;s the
                   promise we make to every organization we work with.

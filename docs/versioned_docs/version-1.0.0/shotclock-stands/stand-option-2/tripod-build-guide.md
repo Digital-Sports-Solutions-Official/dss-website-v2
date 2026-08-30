@@ -327,4 +327,4 @@ If you have decided to build the full reliable stand, **PLEASE** reach out to th
 **Trying to get started with your Founders Edition module now?**
 
 👉 [How to Set Up the Founders Edition](/docs/founders-edition/how-set-up)  
-👉 [How to Connect to the App](/docs/tinyLeague-app/how-to-connect)
+👉 [How to Connect to the App](/docs/tinyLeague™-app/how-to-connect)

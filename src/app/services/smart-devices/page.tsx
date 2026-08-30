@@ -34,14 +34,14 @@ export default function SmartDevicesPage() {
       imageAlt="DSS Custom sports shot clock smart device"
       capabilities={cards}
       processSteps={["Discover", "Prototype", "Field-Test", "Iterate", "Deploy & Support"]}
-      ctaText="Learn More →"
+      ctaText="Order a DSS™ Smart Device"
       ctaHref="/contact"
       bodyText={
         <p>
-          When the smart device your organization needs doesn&apos;t exist yet, we partner with
-          you to design and build it exactly around your needs. No more settling for a generic,
-          off-the-shelf product that never quite fits. Our devices are portable, wireless, and
-          engineered to fit seamlessly into how your organization already works.
+          When the smart device your organization needs doesn&apos;t exist yet, DSS™ partners
+          with you to design and build it exactly around your needs. No more settling for a
+          generic, off-the-shelf product that never quite fits. Our devices are portable,
+          wireless, and engineered to fit seamlessly into how your organization already works.
         </p>
       }
     />

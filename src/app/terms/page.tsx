@@ -108,6 +108,31 @@ export default function TermsOfServicePage() {
             </p>
           </section>
 
+          {/* SECTION: INTELLECTUAL PROPERTY & TRADEMARKS */}
+          <section>
+            <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />
+            <h2 className="mb-3 text-[20px] font-semibold text-white">
+              Intellectual Property &amp; Trademarks
+            </h2>
+            <p className="mb-4 text-[16px] leading-[1.65] text-[#D4D4D4]">
+              All content on this website, including but not limited to text, graphics, logos,
+              icons, images, and software, is the property of Digital Sports Solutions LLC and is
+              protected by applicable intellectual property laws.
+            </p>
+            <p className="mb-4 text-[16px] leading-[1.65] text-[#D4D4D4]">
+              The following are trademarks of Digital Sports Solutions, LLC, with trademark
+              applications pending before the United States Patent and Trademark Office: DSS™,
+              tinyLeague™, tinyLeague Logo™, and DSS Logo™. The DSS LogoMark™ is a trademark of
+              Digital Sports Solutions, LLC with a trademark application accepted for registration,
+              pending issuance of the registration certificate.
+            </p>
+            <p className="text-[16px] leading-[1.65] text-[#D4D4D4]">
+              Unauthorized use, reproduction, or distribution of any DSS trademarks, logos, or
+              brand names — in whole or in part — without the express written consent of Digital
+              Sports Solutions LLC is strictly prohibited.
+            </p>
+          </section>
+
           {/* SECTION: CHANGES TO THESE TERMS */}
           <section>
             <div className="mb-3 h-[2px] w-8 bg-[#FD955D]" />

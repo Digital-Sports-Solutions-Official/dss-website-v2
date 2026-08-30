@@ -143,7 +143,7 @@ When enabled, the app will continue tracking clock time in the background after 
 Upon connecting to your shot clock module, you may be prompted to perform a wireless **firmware update** using **Over-The-Air (OTA)** technology. Please acknowledge all three checkboxes, and set the phone as close as possible to ensure the module recieves all needed data.
 
 :::tip
-**The DSS team reccommends all users update their firmware via OTA whenever prompted. This ensures your modules firmware is always working as best as possible!**
+**The DSS™ team reccommends all users update their firmware via OTA whenever prompted. This ensures your modules firmware is always working as best as possible!**
 :::
 
 

@@ -76,7 +76,7 @@ You may also optionally choose to check the grade of the 4x4 once it is in the b
   <p style={{ fontStyle: 'italic' }}>Place your 4x4 into your bucket, in the center</p>
 </div>
 
-DSS suggest using some scrap wood or other material to ensure the 4x4 is postioned correctly upright in the bucket.
+DSS™ suggest using some scrap wood or other material to ensure the 4x4 is postioned correctly upright in the bucket.
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
@@ -174,4 +174,4 @@ You have completed the build for the concrete bucket base. This stand provides a
 **Need help with Bluetooth pairing or app setup?**
 
 👉 [How to Set Up the Founders Edition](/docs/founders-edition/how-set-up)  
-👉 [How to Connect to the App](/docs/tinyLeague-app/how-to-connect)
+👉 [How to Connect to the App](/docs/tinyLeague™-app/how-to-connect)

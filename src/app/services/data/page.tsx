@@ -38,9 +38,10 @@ export default function DataPage() {
       ctaHref="/contact"
       bodyText={
         <p>
-          You have the data; we make it meaningful. We partner with you to build dashboards and
-          reports designed around the decisions you need to make, not just the metrics you happen
-          to collect. The result? Clear, shareable insights that finally put your data to work.
+          You have the data; DSS™ makes it meaningful. DSS partners with you to build
+          dashboards and reports designed around the decisions you need to make, not just the
+          metrics you happen to collect. The result? Clear, shareable insights that finally put
+          your data to work.
         </p>
       }
     />

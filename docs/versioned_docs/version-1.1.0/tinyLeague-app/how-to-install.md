@@ -13,7 +13,7 @@ sidebar_position: 2
     style={{ width: '120px', marginBottom: '1rem' }}
   />
 
-  <h2><strong>Install the tinyLeague Hub App to get started with your device!</strong></h2>
+  <h2><strong>Install the tinyLeague™ Hub App to get started with your device!</strong></h2>
 
   <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginTop: '1rem' }}>
 

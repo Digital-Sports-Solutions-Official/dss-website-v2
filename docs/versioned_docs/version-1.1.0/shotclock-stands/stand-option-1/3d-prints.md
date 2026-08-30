@@ -43,7 +43,7 @@ Weighted bases come in all different shapes and sizes, meaning there is not a st
 
 ### ✅ Picking the right 3D model
 
-The DSS team has created multiple different models to accommodate a wide range of commercially available base options. The naming scheme of the models reflects the outer-diameter of the lower cylinder (with ridges) that will interface with the pole-hole of the base. These adapters range from 1.375in to 2.500in in diameter, with 1/16th inch increments.
+The DSS™ team has created multiple different models to accommodate a wide range of commercially available base options. The naming scheme of the models reflects the outer-diameter of the lower cylinder (with ridges) that will interface with the pole-hole of the base. These adapters range from 1.375in to 2.500in in diameter, with 1/16th inch increments.
 
 ---
 

@@ -42,7 +42,7 @@ export default function TinyLeaguePage() {
           <div className="mb-8 flex w-full max-w-xs items-center justify-center">
             <Image
               src="/assets/tinyLeague_CombinationMark_fullcolorInWHITE.png"
-              alt="TinyLeague Logo"
+              alt="tinyLeague™ Logo"
               width={280}
               height={80}
               priority
@@ -57,7 +57,7 @@ export default function TinyLeaguePage() {
 
           {/* VALUE PROPOSITION */}
           <p className="max-w-[720px] text-pretty font-sans text-[0.9375rem] font-medium leading-relaxed text-[#AEAEAD] sm:text-base md:text-[19px]">
-            tinyLeague is the all-in-one platform built to replace the scattered tools, manual
+            tinyLeague™ is the all-in-one platform built to replace the scattered tools, manual
             work, and hidden costs draining your budget. Designed to scale, it grows right
             alongside your organization. The result is a modern, professional experience that
             keeps players, coaches, and fans connected while boosting long-term satisfaction and
@@ -120,7 +120,7 @@ export default function TinyLeaguePage() {
           <div className="relative -my-6 w-full max-w-4xl overflow-hidden p-0 sm:-my-10">
             <Image
               src="/assets/TinyLeagueVision.png"
-              alt="TinyLeague Connected Ecosystem Vision Diagram"
+              alt="tinyLeague™ Connected Ecosystem Vision Diagram"
               width={1200}
               height={800}
               className="h-auto w-full rounded-xl object-contain mix-blend-screen"
@@ -140,7 +140,7 @@ export default function TinyLeaguePage() {
           
           {/* UPDATED TITLE STYLING & COPY */}
           <Typography variant="display" className="mb-8 max-w-3xl text-balance">
-            Curious to learn more about tinyLeague?
+            Curious about tinyLeague?
           </Typography>
 
           <div className="w-full max-w-xl">
@@ -149,7 +149,7 @@ export default function TinyLeaguePage() {
               variant="primary"
               className="group text-[0.9375rem] sm:text-base"
             >
-              <span>Let&apos;s Talk</span>
+              <span>Request Access to tinyLeague™</span>
               <span className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1">
                 &rarr;
               </span>

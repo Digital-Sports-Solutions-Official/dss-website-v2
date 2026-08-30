@@ -24,10 +24,11 @@ interface FormErrors {
 
 const INQUIRY_OPTIONS = [
   'General Inquiry',
+  'Place an Order',
   'Custom Smart Devices',
   'Websites & Mobile Apps',
   'Data & Insights',
-  'tinyLeague',
+  'tinyLeague™',
   'Other',
 ];
 
