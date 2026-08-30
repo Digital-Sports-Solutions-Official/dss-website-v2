@@ -45,7 +45,7 @@ Using your saw of choice, begin by using a tape measure to place a mark at 16" f
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Measure and cut a 16" long peice from the 4x4</p>
+  <p style={{ fontStyle: 'italic' }}>Measure and cut a 16" long piece from the 4x4</p>
 </div>
 
 ---
@@ -76,7 +76,7 @@ You may also optionally choose to check the grade of the 4x4 once it is in the b
   <p style={{ fontStyle: 'italic' }}>Place your 4x4 into your bucket, in the center</p>
 </div>
 
-DSS™ suggest using some scrap wood or other material to ensure the 4x4 is postioned correctly upright in the bucket.
+DSS™ suggest using some scrap wood or other material to ensure the 4x4 is positioned correctly upright in the bucket.
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
@@ -91,10 +91,10 @@ DSS™ suggest using some scrap wood or other material to ensure the 4x4 is post
 
 ### 👷🏽 Step 3 – Pour Concrete into the Bucket
 
-You will now follow the directons on your specific bag of dry concrete to mix with water. There are basically two different paths to take to complete this step, either of which work perfectly fine:
+You will now follow the directions on your specific bag of dry concrete to mix with water. There are basically two different paths to take to complete this step, either of which work perfectly fine:
 
-- You can pour the dry concrete into the bucket, around the 4x4, and then pour water into the bucket and mix it all up
-- You can mix the concrete with water outside of the bucket, in another container, and then pour the mix into the bucket with your 4x4
+- You can pour the dry concrete into the bucket, around the 4x4, and then pour water into the bucket and mix it all up.
+- You can mix the concrete with water outside of the bucket, in another container, and then pour the mix into the bucket with your 4x4.
 
 Either way will produce the same product! Ensure you pour 40lbs of concrete into the bucket around the 4x4 wood post. Adding additional concrete (or putting a little too much by accident 😀) will only make the base better for keeping your stand upright.
 

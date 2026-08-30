@@ -33,11 +33,11 @@ A robust set of IOT enabled hardware devices that enhance the live player experi
   </TabItem>
   <TabItem value="gameclock-module" label="Mini Game Clock">
     <img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Full-Mini-Game-Clock.png')} alt="Mini Game Clock" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
-    tinyLeague™'s Mini Game Clock, for adding new levels of automatical match statistics to court sports. **Coming soon!**
+    tinyLeague™'s Mini Game Clock, for adding new levels of automatic match statistics to court sports. **Coming soon!**
   </TabItem>
   <TabItem value="clkBox" label="Hub Module">
     <img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/clkBox.png')} alt="Hub Module" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
-    tinyLeague™'s Hub module allows the connection of all game managagement hardware to the tinyLeague™ web interface. **Coming soon!**
+    tinyLeague™'s Hub module allows the connection of all game management hardware to the tinyLeague™ web interface. **Coming soon!**
   </TabItem>
 </Tabs>
 
@@ -56,7 +56,7 @@ An integrated set of tools that allow referees, players, and spectators alike to
   />
 
   <p style={{ margin: '1rem 0' }}>
-    The central control interface — available on iOS and Android. From resetting the clock to configuring settings, everything is controlled from this mobile app.
+    The central control interface, available on iOS and Android. From resetting the clock to configuring settings, everything is controlled from this mobile app.
   </p>
 
   <div style={{ display: 'inline-flex', alignItems: 'center', gap: '1rem' }}>
@@ -99,7 +99,7 @@ An integrated set of tools that allow referees, players, and spectators alike to
 
 ### 3. [Database](https://www.digitalsportssolutions.com/tinyLeague)
 
-The backbone of the tinyLeague™ ecosystem, storing and organizing the data captured during an event. Although the database is under construction, check out our page for more infomation about the database and its upcoming features.
+The backbone of the tinyLeague™ ecosystem, storing and organizing the data captured during an event. Although the database is under construction, check out our page for more information about the database and its upcoming features.
 
 <img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/database_graphic.png')} alt="Database Dashboard" />
 

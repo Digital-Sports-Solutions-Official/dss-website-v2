@@ -18,7 +18,7 @@ Getting started with your **Founders Edition** module is quick and easy. Follow 
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 6px 18px rgba(0,0,0,0.15)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Founders Edition Shot Clock — ready to power on</p>
+  <p style={{ fontStyle: 'italic' }}>Founders Edition Shot Clock, ready to power on</p>
 </div>
 
 ---
@@ -27,8 +27,8 @@ Getting started with your **Founders Edition** module is quick and easy. Follow 
 
 Each Founders Edition unit comes with a **10,000mAh rechargeable battery bank**.
 
-- 🔌 Charge the battery using a USB-C cable for best results
-- 💡 The provided banks have indicator LEDs to show charge level. Make sure the battery has at least **1–2 LEDs** before proceeding, but **3-4 LEDs** is reccomended.
+- 🔌 Charge the battery using a USB-C cable for best results.
+- 💡 The provided banks have indicator LEDs to show charge level. Make sure the battery has at least **1–2 LEDs** before proceeding, but **3-4 LEDs** is recommended.
 
 :::caution
 Do **not** attempt to power the module using a wall outlet or non-battery power source. Only use the included battery bank or a compatible USB power source.
@@ -38,7 +38,7 @@ Do **not** attempt to power the module using a wall outlet or non-battery power 
 
 ## 📡 Step 2 - Attach the antenna
 
-Attach the included RF antenna to the back antenna port on your module. This is done simply by screwing the antenna onto the RF jack. This will signifigantly increase the connection range of your module.
+Attach the included RF antenna to the back antenna port on your module. This is done simply by screwing the antenna onto the RF jack. This will significantly increase the connection range of your module.
 
 ---
 
@@ -61,8 +61,8 @@ The Type-C port on the compute module may be difficult to access. We recommend y
 
 Once the module powers on:
 
-- The **seven-segment display** will briefly flash
-- Then it will begin showing a **blue spinning dot animation**
+- The **seven-segment display** will briefly flash.
+- Then it will begin showing a **blue spinning dot animation**.
 
 This means the unit is **advertising itself via Bluetooth** and is ready to pair with the app.
 

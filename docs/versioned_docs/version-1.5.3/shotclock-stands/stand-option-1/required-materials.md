@@ -8,9 +8,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 🧰 Required Materials
 
-To build the **Recommended Shot Clock Stand**, you’ll need a few reliable components — most of which can be sourced online or at a local hardware store.
+To build the **Recommended Shot Clock Stand**, you’ll need a few reliable components, most of which can be sourced online or at a local hardware store.
 
-DSS™ reccomends you get your components at either **Lowe's** or **Home Depot**. All of these parts can be gotten in one quick trip to your local store.
+DSS™ recommends you get your components at either **Lowe's** or **Home Depot**. All of these parts can be gotten in one quick trip to your local store.
 
 Below is a breakdown with convenient links to popular retailers for these components:
 
@@ -82,7 +82,7 @@ A small adapter that ensures a secure and snug connection between the pipe and t
   📦 Download on GitHub
 </a>
 
-For a more detailed explaination about printing the adapter, please visit the [3D Printed Adapter](/docs/shotclock-stands/stand-option-1/3d-prints) page!
+For a more detailed explanation about printing the adapter, please visit the [3D Printed Adapter](/docs/shotclock-stands/stand-option-1/3d-prints) page!
 
 ---
 

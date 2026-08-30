@@ -15,7 +15,7 @@ Here are answers to the most common questions we get about the **tinyLeague™ e
 
 > **“Can I use the Founders Edition without a stand?”**
 
-Yes — but the unit cannot sit flat on a table or floor, and sitting on a floor or table is far from optimal visibility and safety. We strongly recommend mounting it on a stand. Check out [our stand overview](/docs/shotclock-stands/introduction) for more info.
+Yes, but the unit cannot sit flat on a table or floor, and sitting on a floor or table is far from optimal visibility and safety. We strongly recommend mounting it on a stand. Check out [our stand overview](/docs/shotclock-stands/introduction) for more info.
 
 ---
 
@@ -27,7 +27,7 @@ With a 10,000mAh battery bank, you can expect 8–12 hours of continuous use dep
 
 > **“Can I use any power bank?”**
 
-Yes — any USB-A battery pack capable of 5V 2.4A output should work. Your battery may not fit in the holder, but this is not the end of the world. We recommend using a flat or compact model that fits securely inside the base housing area.
+Yes, any USB-A battery pack capable of 5V 2.4A output should work. Your battery may not fit in the holder, but this is not the end of the world. We recommend using a flat or compact model that fits securely inside the base housing area.
 
 ---
 
@@ -64,7 +64,7 @@ Yes, the app is available on both Android and [iOS](https://apps.apple.com/us/ap
 
 > **“Is the clock waterproof?”**
 
-No — the Founders Edition is **not weatherproof** and should be kept dry. Outdoor use is possible under cover.
+No, the Founders Edition is **not weatherproof** and should be kept dry. Outdoor use is possible under cover.
 
 ---
 

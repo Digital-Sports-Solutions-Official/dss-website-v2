@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## 🛠 Recommended Stand – Build Overview
 
-The **Recommended Stand** is the most accessible way to mount your Founders Edition Shot Clock. It’s lightweight, stable, and requires minimal effort to assemble — no workshop required.
+The **Recommended Stand** is the most accessible way to mount your Founders Edition Shot Clock. It’s lightweight, stable, and requires minimal effort to assemble, with no workshop required.
 
 ---
 
@@ -36,7 +36,7 @@ This build is to create one stand, for one shot clocking unit. To get stands for
 This setup requires **no power tools**, minimal assembly time, and can be sourced from Amazon, Home Depot, or Lowe’s.
 
 :::tip
-This is the recommended option because it balances portability, cost, and professionalism — without the need for cutting, drilling, or measuring.
+This is the recommended option because it balances portability, cost, and professionalism, without the need for cutting, drilling, or measuring.
 :::
 
 ---

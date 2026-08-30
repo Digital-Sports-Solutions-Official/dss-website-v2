@@ -136,7 +136,7 @@ tinyLeague Hub - Version 1.0 Release Notes
 
 ---
 
-**Need help understanding a new feature, or have a reccomendation?**
+**Need help understanding a new feature, or have a recommendation?**
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

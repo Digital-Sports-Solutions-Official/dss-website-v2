@@ -77,7 +77,7 @@ If you have previously connected to your module, it will show up in the **Saved 
 
 > ✅ Make sure your unit is powered on and ready to be connected.
 
-5. Wait for the BLE connection to be established. If the connection is not established, re-select your deivce to try again.
+5. Wait for the BLE connection to be established. If the connection is not established, re-select your device to try again.
 6. Once connected, you'll see the Currently Paired section updated with your device name. Tapping the ⚙ icon will take to your [Device Settings](/docs/tinyLeague-app/device-settings).
 
 ---
@@ -90,7 +90,7 @@ To ensure a successful connection, the app may prompt you to grant the following
 - **Nearby Devices Permission** – Required for Bluetooth discovery on iOS and Android 12+.
 - **Location Permission** – Required by iOS and Android for Bluetooth device scanning.
 
-> 🔐 We do **not** collect or store your location — this is purely required by the Bluetooth APIs.
+> 🔐 We do **not** collect or store your location. This is purely required by the Bluetooth APIs.
 
 ---
 

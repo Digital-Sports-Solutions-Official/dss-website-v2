@@ -32,7 +32,7 @@ Stands increase **visibility**, enhance **professional presentation**, and impro
 - ⬆️ **Elevated position** makes the clock visible from all court angles  
 - 🎯 **Reduces referee burden** by making visual timing clearer  
 - 🏟 **Improves professionalism** for tournament and livestreamed events  
-- ⚡ **Allows for flexible placement** — courtside, scoreboard table, or player view
+- ⚡ **Allows for flexible placement**: courtside, scoreboard table, or player view
 
 ---
 
@@ -40,14 +40,14 @@ Stands increase **visibility**, enhance **professional presentation**, and impro
 
 All Founders Edition modules include a **¾" NPT flange**. This makes it easy to attach to easy-to-assemble custom stand solutions, with directions provided by DSS.
 
-**This is the solution the DSS team reccomends**, as it will allow you/your team/your league to build cheaper, custom stand hardware that is made to work specifically with your units.
+**This is the solution the DSS team recommends**, as it will allow you/your team/your league to build cheaper, custom stand hardware that is made to work specifically with your units.
 
-Or, while not reccomended, it is still possible to:
+Or, while not recommended, it is still possible to:
 
-- Use existing photography or AV tripods **(although this solution will be sub-optimal in almost all situations)**
-- Mount on additional stand solutions based on specific event conditions
+- Use existing photography or AV tripods **(although this solution will be sub-optimal in almost all situations)**.
+- Mount on additional stand solutions based on specific event conditions.
 
 :::info
 **Digital Sports Solutions does not currently sell or manufacture mounting stands.**
-We encourage teams to source components theselves or repurpose compatible pipe hardware to assemble their own.
+We encourage teams to source components themselves or repurpose compatible pipe hardware to assemble their own.
 :::

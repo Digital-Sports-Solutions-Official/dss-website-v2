@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 To build the **Reliable Shot Clock Stand**, you’ll need several reliable components, as well as some tools.
 
-DSS™ reccomends you get your components at either **Lowe's** or **Home Depot**, but these parts should be available on Amazon or at any hardware store.
+DSS™ recommends you get your components at either **Lowe's** or **Home Depot**, but these parts should be available on Amazon or at any hardware store.
 
 ---
 
@@ -116,7 +116,7 @@ A long ABS Pipe which will be cut into 3, 3ft long sections.
 
 ### 🧵 Nylon Paracord
 
-Paracord to provide additonal support for the ABS pipes.
+Paracord to provide additional support for the ABS pipes.
 
 | Amazon | Lowe’s | Home Depot |
 |--------|--------|------------|

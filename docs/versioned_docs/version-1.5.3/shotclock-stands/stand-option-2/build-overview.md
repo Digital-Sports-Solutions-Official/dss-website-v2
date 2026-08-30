@@ -14,10 +14,10 @@ The Reliable Stand is the most consistent & stable way to mount your Founders Ed
 
 This build is split into two parts:
 
-- **A Contrete Bucket Base**
+- **A Concrete Bucket Base**
 - **A Tripod**
 
-The **Contrete Bucket Base** uses:
+The **Concrete Bucket Base** uses:
 
 - A **5-Gallon Bucket**
 - A **16” 4x4 Wood Post**

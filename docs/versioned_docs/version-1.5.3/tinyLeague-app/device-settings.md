@@ -31,7 +31,7 @@ This section gives some important information for this connected device.
 
 ### ✏️ Rename Module
 
-Change the display name of the connected module — perfect for identifying clocks by location (e.g., "Court A", "Home Team").
+Change the display name of the connected module, perfect for identifying clocks by location (e.g., "Court A", "Home Team").
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher

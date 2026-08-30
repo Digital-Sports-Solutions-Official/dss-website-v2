@@ -12,7 +12,7 @@ If you're experiencing issues with your **Founders Edition Shot Clock**, start h
 
 > ### "My 7-segment display seems dim"
 
-- Ensure the wire on the side away from the compute module is connected. While it is not essential for data, it delivers additional current to the LEDs, allowing them to utilize their maximum brightness
+- Ensure the wire on the side away from the compute module is connected. While it is not essential for data, it delivers additional current to the LEDs, allowing them to utilize their maximum brightness.
 
 ---
 
@@ -20,7 +20,7 @@ If you're experiencing issues with your **Founders Edition Shot Clock**, start h
 
 - Ensure you have the antenna fully inserted (screwed in) to the compute module.
 - Disable Bluetooth connectivity on your smart device, wait a few moments, then re-enable. Then attempt to reconnect to your device.
-- Ensure the battery bank has sufficient charge to power your module
+- Ensure the battery bank has sufficient charge to power your module.
 
 **There is the possibility your smart-device has a bad Bluetooth transmitter. To verify your smart-device isn't the issue, connect to another BLE device and observe if the issue still occurs**
 
@@ -28,10 +28,10 @@ If you're experiencing issues with your **Founders Edition Shot Clock**, start h
 
 > ### "I lost my battery bank"
 
-- No worries! The founders edition unit works with any USB battery bank that can supply 5V 2.4A
-    - **NOTE: utilizing a different battery bank could impact unit up-time**
-    - **NOTE: purchasing a different battery bank likely means it will not fit in the holder on the unit**
-- The specific battery bank utilized in the Founders Edition is available [here](https://www.amazon.com/dp/B09JBKDSP9?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
+- No worries! The founders edition unit works with any USB battery bank that can supply 5V 2.4A.
+    - **NOTE: utilizing a different battery bank could impact unit up-time.**
+    - **NOTE: purchasing a different battery bank likely means it will not fit in the holder on the unit.**
+- The specific battery bank utilized in the Founders Edition is available [here](https://www.amazon.com/dp/B09JBKDSP9?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1).
 
 ---
 
