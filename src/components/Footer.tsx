@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
                 <a href="https://www.youtube.com/channel/UCj6qESOEGemvzRvgxagYHWg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-youtube" /></a>
                 <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-instagram" /></a>
                 <a href="https://www.linkedin.com/company/digitalsportssolutions/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-linkedin-in" /></a>
-                <a href="https://discord.gg/6HjeNJM6F4" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-discord" /></a>
+                <a href="https://discord.com/invite/6HjeNJM6F4" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-discord" /></a>
                 <a href="https://www.facebook.com/people/Digital-Sports-Solutions/61558423260160/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors hover:text-[#FD955D]"><i className="fa-brands fa-facebook-f" /></a>
                 <Link href="/contact" aria-label="Contact Us" className="transition-colors hover:text-[#FD955D]"><i className="fa-regular fa-envelope" /></Link>
               </div>

@@ -24,8 +24,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // `.variable` defines --font-montserrat, which tailwind's `font-sans` and the
+  // typography rules in globals.css reference. Without it that variable is
+  // undefined and every one of those rules silently falls back to inheritance.
   return (
-    <html lang="en" className={montserrat.className}>
+    <html lang="en" className={`${montserrat.variable} ${montserrat.className}`}>
       <head>
         <link 
           rel="icon" 
