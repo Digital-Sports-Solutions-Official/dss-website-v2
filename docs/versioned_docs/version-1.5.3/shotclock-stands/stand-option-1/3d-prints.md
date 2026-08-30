@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Weighted bases come in all different shapes and sizes, meaning there is not a standardized pole-hole size. To ensure a smooth construction process, we recommend picking the specific 3D model that best fits your hardware.
 
-**Using the reccomended umbrella base? Click here to download the corresponding adapter!**
+**Using the recommended umbrella base? Click here to download the corresponding adapter!**
 
 <a
   href="https://github.com/Digital-Sports-Solutions-Official/tinyLeague-files/blob/main/Adapters/Product-Specific-Adapters/StyleWell%2026lbs.%20Concrete%20and%20Resin%20Patio%20Umbrella%20Base.stl"

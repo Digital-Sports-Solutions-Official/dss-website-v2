@@ -89,7 +89,7 @@ This gusset serves as the main attachment point for the 1-½” ABS piping to th
 
 ### 🖨️ 3D Printed Feet
 
-These TPU feet slot into the 1-½“ inch ABS piping and remain fit by friction. The TPU filament ensures the feet stay suggly fit into the ends of the pipes, as well as maintaing stability with the ground.
+These TPU feet slot into the 1-½“ inch ABS piping and remain fit by friction. The TPU filament ensures the feet stay snugly fit into the ends of the pipes, as well as maintaining stability with the ground.
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img

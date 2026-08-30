@@ -9,7 +9,7 @@ import ImageSwitcher from '@site/src/components/ImageSwitcher';
 
 ## ⏱ Using the Shot Clock Timer Interface
 
-This guide walks you through the main timer interface of the tinyLeague™ Hub app. Whether you're resetting the clock, changing the time, or switching between high/low settings — here's what every button does.
+This guide walks you through the main timer interface of the tinyLeague™ Hub app, covering what every button does whether you're resetting the clock, changing the time, or switching between high/low settings.
 
 ---
 
@@ -43,10 +43,10 @@ Use these buttons during a pause to correct the clock, perfect for making quick 
 
 - Large central button
 - Resets the shot clock to current max time limit **and immediately unpauses it**
-- While the clock is running, this button will change to say **"Reset"**, as it cannot unpause the clock if it is already running
+- While the clock is running, this button will change to say **"Reset"**, as it cannot unpause the clock if it is already running.
 
 :::info
-This is your main in-game control — one tap to reset and resume play instantly.
+This is your main in-game control, one tap to reset and resume play instantly.
 :::
 
 ---
@@ -55,7 +55,7 @@ This is your main in-game control — one tap to reset and resume play instantly
 
 - Sets the max clock to High or Low, respective to the switch's position
 - Using this swaps the current max time with its high/low counterpart, which can be customized in [Timer Settings](/docs/tinyLeague-app/app-settings#-timer-settings)
-- New max clock will be applied upon next reset
+- New max clock will be applied upon next reset.
 
 :::note
 Switching to "Low" or "High" automatically updates the current shot clock reset time on your module as well via BLE.
@@ -65,9 +65,9 @@ Switching to "Low" or "High" automatically updates the current shot clock reset 
 
 ### ↩ Undo Button
 
-- Reverts the **most recent reset action**, regardless if it was a reset from unpased or paused
-- Helpful for quick corrections if the user needs to continue to allow the clock to run. If the user accidentally resets the clock for an invalid throw, undo can be pressed to return to the previous running shot clock
-- Undo has two modes, **Regular** and **True Undo**. Please see the App Settings docuementation for an in-depth guide on the difference between these two
+- Reverts the **most recent reset action**, regardless if it was a reset from unpaused or paused
+- Helpful for quick corrections if the user needs to continue to allow the clock to run. If the user accidentally resets the clock for an invalid throw, undo can be pressed to return to the previous running shot clock.
+- Undo has two modes, **Regular** and **True Undo**. Please see the App Settings documentation for an in-depth guide on the difference between these two.
 
 :::tip
 Accidentally hit Reset? Tap Undo to revert immediately without confusion.
@@ -85,7 +85,7 @@ Accidentally hit Reset? Tap Undo to revert immediately without confusion.
     - The button will read "Pause"
     - Pauses the timer at the value it was when pressed
 
-- Useful when play resumes without a full reset — great for clean pauses or timeouts.
+- Useful when play resumes without a full reset, great for clean pauses or timeouts.
 
 :::info
 When the pause button is pressed, the connected shot clock module will show **"-- --"** to indicate the clock is currently paused.

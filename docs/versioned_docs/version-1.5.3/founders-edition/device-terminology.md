@@ -44,7 +44,7 @@ The **seven-segment display** is the most visible component, showing large, high
 
 ### 💻 Compute Module
 
-The **compute module** is the brain of the unit — responsible for processing Bluetooth commands, managing the display, and executing timing logic. It runs lightweight firmware and connects to all other electronic components inside the shell.
+The **compute module** is the brain of the unit, responsible for processing Bluetooth commands, managing the display, and executing timing logic. It runs lightweight firmware and connects to all other electronic components inside the shell.
 
 ---
 
@@ -58,14 +58,14 @@ A compact **radio-frequency antenna** is mounted onto the compute module and ena
 
 The included **battery bank** powers the unit for a couple matches or full tournament days. It’s USB-rechargeable and secured within the body using a slide-lock enclosure.
 
-- 🔌 Battery Bank is rechargable/replaceable
-- 🔋 10,000mAh provides several hours of runtime on full brightness
+- 🔌 Battery Bank is rechargeable/replaceable.
+- 🔋 10,000mAh provides several hours of runtime on full brightness.
 
 ---
 
 ### 🧱 ¾" NPT Flange (Mounting Port)
 
-The ¾” NPT flange is a rugged, industry-standard threaded insert built directly into the bottom of the Founders Edition unit. This port allows you to securely mount your shot clock onto a variety of compatible stands — some even to be designed yourself!
+The ¾” NPT flange is a rugged, industry-standard threaded insert built directly into the bottom of the Founders Edition unit. This port allows you to securely mount your shot clock onto a variety of compatible stands, some even to be designed yourself!
 
 Whether you're setting up courtside or centerfield, the flange makes it easy to get a stable, elevated view of the timer display in any environment.
 

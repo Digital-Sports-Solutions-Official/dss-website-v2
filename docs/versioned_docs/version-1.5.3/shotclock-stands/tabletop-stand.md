@@ -24,7 +24,7 @@ The **Tabletop Stand** is a compact, all-3D-printed alternative to the full pipe
       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
     }}
   />
-  <p style={{ fontStyle: 'italic' }}>A compact tabletop stand — a single print with no assembly</p>
+  <p style={{ fontStyle: 'italic' }}>A compact tabletop stand, a single print with no assembly</p>
 </div>
 
 ---
@@ -32,7 +32,7 @@ The **Tabletop Stand** is a compact, all-3D-printed alternative to the full pipe
 ### 🔍 Why Choose a Tabletop Stand?
 
 > **Pros:**
-- 🧩 Fully 3D printable — no extra parts needed
+- 🧩 Fully 3D printable, no extra parts needed
 - 🖥 Great for demos, desk setup, or tournament tables
 - 💼 Ultra portable for training or backup use
 
@@ -59,7 +59,7 @@ If visibility and crowd awareness are key, check out the [Recommended Stand Buil
       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
     }}
   />
-  <p style={{ fontStyle: 'italic' }}>The tabletop stand layed out, ready to print</p>
+  <p style={{ fontStyle: 'italic' }}>The tabletop stand laid out, ready to print</p>
 </div>
 
 **Print orientation:**

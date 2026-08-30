@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## ⏱ What is Shotclocking?
 
-**Shot clocking** is the act of tracking a team's time limit to make a play. In dodgeball and other fast-paced sports, enforcing a shot clock encourages quicker decision-making, fairer gameplay, and better pacing — especially in competitive formats.
+**Shot clocking** is the act of tracking a team's time limit to make a play. In dodgeball and other fast-paced sports, enforcing a shot clock encourages quicker decision-making, fairer gameplay, and better pacing, especially in competitive formats.
 
 Without a clear time limit, teams can stall or play too passively. A shot clock solves this by holding players accountable to make a move within a set number of seconds.
 
@@ -25,7 +25,7 @@ Without a clear time limit, teams can stall or play too passively. A shot clock 
 
 ## 🧰 Introducing the Founders Edition Unit
 
-The **Founders Edition** is the first official shot clock display in the tinyLeague™ ecosystem — designed with competitive dodgeball in mind.
+The **Founders Edition** is the first official shot clock display in the tinyLeague™ ecosystem, designed with competitive dodgeball in mind.
 
 It’s compact, durable, Bluetooth-connected, and built to show large-format digits visible across a gym or arena, customized to your preferences.
 

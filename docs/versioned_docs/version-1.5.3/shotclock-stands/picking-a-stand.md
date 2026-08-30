@@ -18,7 +18,7 @@ Not sure which stand option to choose? Here’s a quick breakdown to help you de
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
-  <p style={{ fontStyle: 'italic' }}>This is the stand the DSS™ team reccomends</p>
+  <p style={{ fontStyle: 'italic' }}>This is the stand the DSS™ team recommends</p>
 </div>
 
 ### ✅ Recommended Stand

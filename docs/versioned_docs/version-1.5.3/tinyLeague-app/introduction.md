@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 📱 Welcome to the tinyLeague™ Hub App
 
-The **tinyLeague™ Hub App** is the official control interface for your shot clock module — designed for speed, simplicity, and reliability.
+The **tinyLeague™ Hub App** is the official control interface for your shot clock module, designed for speed, simplicity, and reliability.
 
 Whether you're managing a tournament, reffing a game, or training with your team, the app gives you direct Bluetooth control over your unit with just a few taps.
 

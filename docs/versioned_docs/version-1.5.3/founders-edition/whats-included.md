@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 📦 What’s Included in the Founders Edition Kit
 
-When you order the **Founders Edition**, you’ll receive a complete dual-shot clock system — ready to use right out of the box for competitive gameplay.
+When you order the **Founders Edition**, you’ll receive a complete dual-shot clock system, ready to use right out of the box for competitive gameplay.
 
 ---
 

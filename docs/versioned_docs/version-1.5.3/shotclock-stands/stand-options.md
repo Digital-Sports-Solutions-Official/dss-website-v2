@@ -17,7 +17,7 @@ Choose based on your needs, time, and available tools.
 If you want to get your clocks running immediately, the **Tabletop Stand** is the fastest way to start.  
 It requires no tools or extra parts and is perfect for demos, training, or testing your devices before committing to a full-height stand.
 
-- 🧩 Fully 3D printable — two pieces, one print, no assembly
+- 🧩 Fully 3D printable: two pieces, one print, no assembly
 - 💼 Ultra portable for training or backup use  
 - 🎯 Best for practice sessions or small events
 
@@ -33,13 +33,13 @@ If you’re looking for a fast and clean solution with minimal hardware work, th
 - 🖨️ **3D print a small adapter using TPU filament**
 - 🔩 Assemble and you're done!
 
-This option is great for teams without workshop access or technical skills — just plug and play. It’s lightweight, portable, and tournament-ready.
+This option is great for teams without workshop access or technical skills, just plug and play. It’s lightweight, portable, and tournament-ready.
 
 :::tip
 We provide free STL files and product links to make this build easy and repeatable.
 :::
 
-Click here to get started with the [reccomended stand build](/docs/shotclock-stands/stand-option-1/build-overview).
+Click here to get started with the [recommended stand build](/docs/shotclock-stands/stand-option-1/build-overview).
 
 ---
 
@@ -47,7 +47,7 @@ Click here to get started with the [reccomended stand build](/docs/shotclock-sta
 
 If you want something more rugged and tested to withstand heavy hits, this reliable stand option may be better suited to your needs.
 
-- 🧱 Uses 4x4 wood sections, ABS pipe, and several 3D printed componenets
+- 🧱 Uses 4x4 wood sections, ABS pipe, and several 3D printed components
 - 🔧 Requires cutting, drilling, and pouring some concrete.
 - ⚙️ More stable, but much less portable and longer construction time.
 
@@ -68,7 +68,7 @@ Both options use the built-in **¾" NPT threaded flange** at the base of each Fo
 - AV mounting equipment
 - Hardware store plumbing supplies
 
- #### You are welcome to attempt to design/build custom stand designs for mounting your shot clock modules. While DSS™ does not reccomend this route, please let us know what you come up with if you decide you would like to.
+ #### You are welcome to attempt to design/build custom stand designs for mounting your shot clock modules. While DSS™ does not recommend this route, please let us know what you come up with if you decide you would like to.
 
  ---
 
@@ -80,7 +80,7 @@ By choosing to build or use a custom stand, you acknowledge that:
 
 - You are fully responsible for the structural integrity and stability of the assembled stand.
 - DSS does not guarantee compatibility, durability, or safety of third-party materials (including hardware store fittings and 3D-printed parts).
-- DSS is not liable for any damage caused by a unit falling — including, but not limited to: damage to facilities, gym floors, people, or property.
+- DSS is not liable for any damage caused by a unit falling, including, but not limited to, damage to facilities, gym floors, people, or property.
 
 Always test the stability of your setup before using the shot clock in live environments.
 :::

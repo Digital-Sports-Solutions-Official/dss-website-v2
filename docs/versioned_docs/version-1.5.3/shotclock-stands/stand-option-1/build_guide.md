@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 🛠 Step-by-Step Build Guide
 
-This guide walks you through assembling the **Recommended Shot Clock Stand**. It’s quick, tool-free, and travel-friendly — just gather your components and follow each step below.
+This guide walks you through assembling the **Recommended Shot Clock Stand**. It’s quick, tool-free, and travel-friendly, so just gather your components and follow each step below.
 
 ---
 
@@ -38,7 +38,7 @@ Make sure you have everything before starting:
 
 ### 🧩 Step 2 – Insert TPU Adapter into Base
 
-Push the 3D-printed TPU adapter into the center hole of the umbrella base. It should fit snugly — apply light pressure until fully seated.
+Push the 3D-printed TPU adapter into the center hole of the umbrella base. It should fit snugly, so apply light pressure until fully seated.
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
@@ -55,7 +55,7 @@ Push the 3D-printed TPU adapter into the center hole of the umbrella base. It sh
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Apply light pressure to ensure the adapter fits snuggly.</p>
+  <p style={{ fontStyle: 'italic' }}>Apply light pressure to ensure the adapter fits snugly.</p>
 </div>
 
 ---
@@ -136,10 +136,10 @@ Screw the 36" pipe into the top of the coupler.
 
 ### ✅ Final Check
 
-- 🔩 Pipes are hand-tight and secure
-- ⚖️ Clock is upright and stable
-- 📏 Stand height is appropriate for visibility
-- 📱 Clock is ready to be powered and connected
+- 🔩 Pipes are hand-tight and secure.
+- ⚖️ Clock is upright and stable.
+- 📏 Stand height is appropriate for visibility.
+- 📱 Clock is ready to be powered and connected.
 
 You're now ready to set up your **shot clock module**!
 
