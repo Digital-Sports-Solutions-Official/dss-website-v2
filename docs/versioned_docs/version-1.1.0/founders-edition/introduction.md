@@ -16,8 +16,8 @@ Without a clear time limit, teams can stall or play too passively. A shot clock 
 
 ## 🎯 Why It Matters
 
-- 🕐 Keeps the game moving at a competitive pace  
-- ⚖️ Creates fairness between offensive and defensive transitions  
+- 🕐 Keeps the game moving at a competitive pace 
+- ⚖️ Creates fairness between offensive and defensive transitions 
 - 🎤 Helps referees make objective timing decisions  
 - 📣 Informs players and fans visually and audibly
 
@@ -29,7 +29,7 @@ The **Founders Edition** is the first official shot clock display in the tinyLea
 
 It’s compact, durable, Bluetooth-connected, and built to show large-format digits visible across a gym or arena, customized to your preferences.
 
-### Haven't gotten yours yet? Order yours [here](https://www.digitalsportssolutions.com/products).
+### Haven't gotten yours yet? [Click to reach out!](https://www.digitalsportssolutions.com/contact)
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <img
