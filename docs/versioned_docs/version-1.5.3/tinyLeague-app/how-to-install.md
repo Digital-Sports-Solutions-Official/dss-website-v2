@@ -56,6 +56,6 @@ sidebar_position: 2
 
 ## 📱 Device Compatibility
 
-- Requires **Android 12** or higher. We recommend using a **Google Pixel 6, Samsung Galaxy S21, A13, or newer** device.
-- Requires **iOS 16** or higher. We reccomend using an **iPhone 8 or newer** device.
+- Requires **Android 8.0** or higher, with working Bluetooth.
+- Requires **iOS 15.1** or higher, with working Bluetooth.
 - Optimized for phones, but also supports tablets.
