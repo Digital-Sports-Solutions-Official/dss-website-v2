@@ -23,7 +23,7 @@ Make sure you have everything before starting:
 - 3/4" NPT Pipe Flange
 - ¾" Coupling Fitting
 - 4x Wood Deck Screws
-- A [water source](https://i.sstatic.net/3hj04.gif) (to mix with the concrete)
+- A water source (to mix with the concrete)
 
 You will also need the following tools:
 
@@ -174,4 +174,4 @@ You have completed the build for the concrete bucket base. This stand provides a
 **Need help with Bluetooth pairing or app setup?**
 
 👉 [How to Set Up the Founders Edition](/docs/founders-edition/how-set-up)  
-👉 [How to Connect to the App](/docs/tinyLeague™-app/how-to-connect)
+👉 [How to Connect to the App](/docs/tinyLeague-app/how-to-connect)

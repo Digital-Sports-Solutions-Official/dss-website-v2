@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 🏆 tinyLeague™
 
-**tinyLeague™** is the flagship product line from Digital Sports Solutions. By combining modular hardware, software, and database technology, tinyLeague looks to change the way recreational and semi-professional leagues play.
+**[tinyLeague™](/tinyleague)** is the flagship product line from Digital Sports Solutions. By combining modular hardware, software, and database technology, tinyLeague looks to change the way recreational and semi-professional leagues play.
 
 Whether you're a tournament organizer, league official, casual team, or just an interested player, tinyLeague makes it easier to run matches with precision and consistency. tinyLeague is still in its early stages of development and will become a small part of a large sports management ecosystem that will revolutionize court sports like dodgeball in the future. Please stay tuned to be a part of the court sport revolution!
 
@@ -97,7 +97,7 @@ An integrated set of tools that allow referees, players, and spectators alike to
 
 ---
 
-### 3. [Database](https://www.digitalsportssolutions.com/tinyLeague)
+### 3. Database
 
 The backbone of the tinyLeague™ ecosystem, storing and organizing the data captured during an event. Although the database is under construction, check out our page for more infomation about the database and its upcoming features.
 
