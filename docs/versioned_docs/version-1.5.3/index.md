@@ -19,12 +19,12 @@ If you have just purchased a tinyLeague Founders Edition Shotclock, you are in t
 
 Here you will find documentation all about the **tinyLeague™ ecosystem**, including the hardware, software, and accessories available, with extensive guides on how to use your components.
 
+This documentation covers the **tinyLeague™ Hub** app at version 1.5.3. If you are running an older version of the app, please update so the screens you see match these guides.
+
 If you already know where you are headed, feel free to select your destination from the left navigation pane. If you are new here, feel free to explore, or jump in from the beginning!
 
-Please keep in mind, this documentation is a **Work-In-Progress**. You may encounter some incomplete pages, and some features may be coming soon.
-
 <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-  <p>Are we missing something? Let us know!</p>
+  <p>Have a question or feedback? Let us know!</p>
 
   <div style={{
     display: 'flex',
