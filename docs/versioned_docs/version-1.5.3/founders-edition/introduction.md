@@ -29,7 +29,7 @@ The **Founders Edition** is the first official shot clock display in the tinyLea
 
 It’s compact, durable, Bluetooth-connected, and built to show large-format digits visible across a gym or arena, customized to your preferences.
 
-### Haven't gotten yours yet? [Click to reach out!](https://www.digitalsportssolutions.com/contact)
+### Haven't gotten yours yet? [Click to reach out!](/contact)
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <img

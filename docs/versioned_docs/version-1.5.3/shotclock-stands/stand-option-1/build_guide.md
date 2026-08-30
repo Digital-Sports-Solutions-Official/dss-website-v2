@@ -145,4 +145,4 @@ You're now ready to set up your **shot clock module**!
 
 Need help with Bluetooth pairing or app setup? Visit the  
 👉 [How to Set Up the Founders Edition](/docs/founders-edition/how-set-up)  
-👉 [How to Connect to the App](/docs/tinyLeague™-app/how-to-connect)
+👉 [How to Connect to the App](/docs/tinyLeague-app/how-to-connect)

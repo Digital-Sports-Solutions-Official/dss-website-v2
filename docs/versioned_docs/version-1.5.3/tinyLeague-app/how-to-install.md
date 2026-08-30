@@ -4,8 +4,6 @@ title: How to Install
 sidebar_position: 2
 ---
 
-# How to Install
-
 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
   <img
     src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/application_icon.png"
