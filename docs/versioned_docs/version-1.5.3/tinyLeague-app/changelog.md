@@ -1,7 +1,8 @@
 ---
 id: changelog
 title: Changelog
-sidebar_position: 7
+description: Release notes for the tinyLeague™ Hub app, listing what changed in each version so you can see what is new since your last update.
+sidebar_position: 8
 ---
 
 ## 🗒️ Changelog

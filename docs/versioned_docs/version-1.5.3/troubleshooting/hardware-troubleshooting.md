@@ -1,6 +1,7 @@
 ---
 id: hardware-troubleshooting
 title: Hardware Troubleshooting
+description: Fixes for tinyLeague™ shot clock hardware problems, covering the antenna, LED brightness, power wiring, and Bluetooth pairing.
 sidebar_position: 1
 ---
 

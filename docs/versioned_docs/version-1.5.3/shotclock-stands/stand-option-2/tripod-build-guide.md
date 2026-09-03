@@ -1,6 +1,7 @@
 ---
 id: tripod-build-guide
 title: Tripod Build Guide
+description: Step-by-step build for the tripod on the reliable tinyLeague™ stand, covering pipe cutting, drilling, feet, tie-offs, and gussets.
 sidebar_position: 5
 ---
 

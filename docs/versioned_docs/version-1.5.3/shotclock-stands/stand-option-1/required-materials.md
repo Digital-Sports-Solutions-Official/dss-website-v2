@@ -1,6 +1,7 @@
 ---
 id: required-materials
 title: Required Materials
+description: The parts list for the recommended tinyLeague™ shot clock stand, covering a weighted base, two steel pipes, a coupling fitting, and a TPU adapter.
 sidebar_position: 2
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: build-overview
 title: Build Overview
+description: What the reliable tinyLeague™ shot clock stand is, what it takes to build, and how the concrete base and tripod come together.
 sidebar_position: 1
 ---
 

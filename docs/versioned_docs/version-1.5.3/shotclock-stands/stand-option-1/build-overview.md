@@ -1,6 +1,7 @@
 ---
 id: build-overview
 title: Build Overview
+description: What the recommended tinyLeague™ shot clock stand is, what it takes to build, and how the weighted base, pipes, and adapter come together.
 sidebar_position: 1
 ---
 

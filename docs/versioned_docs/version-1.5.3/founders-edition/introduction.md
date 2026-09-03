@@ -1,6 +1,7 @@
 ---
 id: introduction
 title: Introduction - What is a shotclock?
+description: Shot clocking keeps fast-paced games moving. Learn what it is, why it matters, and how the tinyLeague™ Founders Edition unit delivers it.
 sidebar_position: 1
 ---
 

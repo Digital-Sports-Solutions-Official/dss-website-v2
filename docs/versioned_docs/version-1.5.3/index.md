@@ -1,6 +1,7 @@
 ---
 id: getting-started
 title: Getting Started
+description: Setup guides, build instructions, app documentation, and troubleshooting for the tinyLeague™ shot clock and the tinyLeague™ Hub app.
 hide_title: true
 sidebar_position: 1
 ---

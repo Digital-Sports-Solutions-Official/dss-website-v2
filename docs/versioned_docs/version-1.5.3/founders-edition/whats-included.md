@@ -1,6 +1,7 @@
 ---
 id: whats-included
 title: What's Included?
+description: Everything in the tinyLeague™ Founders Edition kit, so you can check the box contents before setting up your dual shot clock system.
 sidebar_position: 3
 ---
 

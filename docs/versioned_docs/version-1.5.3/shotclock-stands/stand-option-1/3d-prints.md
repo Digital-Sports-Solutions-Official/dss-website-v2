@@ -1,6 +1,7 @@
 ---
 id: 3d-prints
 title: 3D Printed Adapter
+description: Pick, measure, and print the TPU adapter for the recommended tinyLeague™ stand, including print settings and how to test the fit.
 sidebar_position: 3
 ---
 

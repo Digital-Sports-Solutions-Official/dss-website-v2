@@ -1,6 +1,7 @@
 ---
 id: app-installation
 title: How to Install
+description: Download and install the tinyLeague™ Hub app on iOS or Android, including the device compatibility requirements for each platform.
 sidebar_position: 2
 ---
 

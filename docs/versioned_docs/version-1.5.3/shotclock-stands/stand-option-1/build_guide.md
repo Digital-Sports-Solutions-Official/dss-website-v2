@@ -1,6 +1,7 @@
 ---
 id: build-guide
 title: Step-By-Step Build Guide
+description: Step-by-step assembly of the recommended tinyLeague™ shot clock stand, from seating the TPU adapter to mounting the unit on the pipe.
 sidebar_position: 4
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: stand-options
 title: Stand Options
+description: Three ways to stand up your tinyLeague™ shot clock, from a 3D-printed tabletop stand to a low-effort recommended build and a traditional DIY build.
 sidebar_position: 2
 ---
 

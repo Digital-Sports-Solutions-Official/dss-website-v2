@@ -1,7 +1,8 @@
 ---
 id: device-settings
 title: Device Settings
-sidebar_position: 4
+description: Device settings in the tinyLeague™ Hub app, covering module information, renaming a module, the display color picker, and disconnecting.
+sidebar_position: 5
 ---
 
 ## ⚙️ Settings Menu Overview

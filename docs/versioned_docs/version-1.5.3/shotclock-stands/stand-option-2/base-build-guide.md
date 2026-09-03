@@ -1,6 +1,7 @@
 ---
 id: base-build-guide
 title: Base Build Guide
+description: Build the weighted bucket base for the reliable tinyLeague™ shot clock stand, from cutting the post to pouring concrete and fitting the flange.
 sidebar_position: 3
 ---
 

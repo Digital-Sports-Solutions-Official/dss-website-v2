@@ -1,6 +1,7 @@
 ---
 id: introduction
 title: tinyLeague™ Hub
+description: The tinyLeague™ Hub app gives you real-time Bluetooth control of your shot clocks, whether you are running a tournament, reffing, or training.
 sidebar_position: 1
 ---
 

@@ -1,7 +1,8 @@
 ---
 id: how-to-use
 title: How to Use
-sidebar_position: 5
+description: Every control on the tinyLeague™ Hub timer screen, including the increment buttons, reset, the high and low toggle, undo, and pause.
+sidebar_position: 4
 ---
 
 ## ⏱ Using the Shot Clock Timer Interface

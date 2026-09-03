@@ -1,6 +1,7 @@
 ---
 id: faq
 title: FAQ
+description: Answers to the most common questions about the tinyLeague™ ecosystem, covering general use, connectivity, the app, and hardware setup.
 sidebar_position: 7
 ---
 

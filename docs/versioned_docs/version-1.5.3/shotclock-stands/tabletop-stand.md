@@ -1,6 +1,7 @@
 ---
 id: tabletop-stand
 title: Easy Tabletop Stand
+description: Print and use the 3D-printed tabletop stand, the quickest way to set up a tinyLeague™ shot clock, with print details and recommended settings.
 sidebar_position: 4
 ---
 

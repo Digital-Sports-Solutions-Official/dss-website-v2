@@ -1,6 +1,7 @@
 ---
 id: device-terminology
 title: Device Terminology
+description: The physical parts of the tinyLeague™ Founders Edition shot clock, front and back, including the display, compute module, antenna, and battery.
 sidebar_position: 2
 ---
 

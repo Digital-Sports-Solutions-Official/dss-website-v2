@@ -1,6 +1,7 @@
 ---
 id: software-troubleshooting
 title: Software Troubleshooting
+description: Fixes for tinyLeague™ Hub app problems, covering paused clocks, the reset and unpause buttons, and other in-app behavior.
 sidebar_position: 2
 ---
 

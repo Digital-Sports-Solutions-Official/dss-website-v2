@@ -1,6 +1,7 @@
 ---
 id: what-is-tinyleague
 title: What is tinyLeague™?
+description: tinyLeague™ combines modular hardware, a mobile app, and database technology to change how recreational and semi-professional leagues play.
 sidebar_position: 1
 ---
 

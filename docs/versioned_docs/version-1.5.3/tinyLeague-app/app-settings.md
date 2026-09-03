@@ -1,7 +1,8 @@
 ---
 id: app-settings
 title: App Settings
-sidebar_position: 5
+description: App settings in the tinyLeague™ Hub, covering theme, timer defaults, the settings PIN, sound, true undo, and resetting to defaults.
+sidebar_position: 6
 ---
 
 ## ⚙️ Settings Menu Overview

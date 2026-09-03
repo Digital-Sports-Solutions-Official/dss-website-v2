@@ -1,6 +1,7 @@
 ---
 id: picking-a-stand
 title: Picking a Stand
+description: Compare the recommended and reliable tinyLeague™ shot clock stands on cost, build time, and portability so you can choose between them.
 sidebar_position: 3
 ---
 

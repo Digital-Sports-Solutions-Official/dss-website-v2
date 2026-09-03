@@ -1,6 +1,7 @@
 ---
 id: how-to-connect
 title: How to Connect
+description: Pair the tinyLeague™ Hub app with your shot clock module over Bluetooth, including the permissions it needs and what to try if it fails.
 sidebar_position: 3
 ---
 

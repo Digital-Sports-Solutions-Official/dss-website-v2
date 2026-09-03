@@ -1,6 +1,7 @@
 ---
 id: 3d-prints
 title: Tripod Attachment 3D-Prints
+description: Print the tripod parts for the reliable tinyLeague™ stand, covering the gusset, feet, tie-offs, center ring, and drilling jig, with print settings.
 sidebar_position: 4
 ---
 

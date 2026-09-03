@@ -1,6 +1,7 @@
 ---
 id: required-materials
 title: Required Materials
+description: The parts list for the reliable tinyLeague™ shot clock stand, covering the bucket base, concrete, wood post, flange, pipes, and hardware.
 sidebar_position: 2
 ---
 

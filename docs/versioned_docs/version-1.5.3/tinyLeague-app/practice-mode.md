@@ -1,7 +1,8 @@
 ---
 id: practice-mode
 title: Practice Mode
-sidebar_position: 6
+description: Practice Mode runs the tinyLeague™ Hub app with no module connected, for solo testing, referee training, and team practice.
+sidebar_position: 7
 ---
 
 ## 🏋️‍♂️ Practice Mode Overview

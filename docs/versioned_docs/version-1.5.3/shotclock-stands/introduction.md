@@ -1,6 +1,7 @@
 ---
 id: introduction
 title: Introduction - Stands
+description: Get your tinyLeague™ shot clock off the ground and into view. An introduction to the stand options and how each one mounts to your unit.
 sidebar_position: 1
 ---
 
