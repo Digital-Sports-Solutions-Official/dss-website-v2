@@ -13,7 +13,8 @@ Docusaurus syntax is translated at compile time by `src/lib/docs/mdx.ts`.
 docs/
 ├── versions.json                  # every published version, newest first
 └── versioned_docs/
-    ├── version-1.1.0/             # newest — served at /docs
+    ├── version-1.5.3/             # newest — served at /docs
+    ├── version-1.1.0/             # served at /docs/1.1.0
     ├── version-1.0.1/             # served at /docs/1.0.1
     └── version-1.0.0/             # served at /docs/1.0.0
 ```
@@ -30,7 +31,7 @@ npm run dev
 Then open <http://localhost:3000/docs>. Edit any `.md` file under
 `versioned_docs/` and the page reloads.
 
-Almost all edits belong in `version-1.1.0/` — the older folders are frozen
+Almost all edits belong in `version-1.5.3/` — the older folders are frozen
 snapshots of what shipped with those releases.
 
 ## How a page gets its URL
@@ -40,9 +41,9 @@ Everything before it is the folder path.
 
 | File | URL |
 | --- | --- |
-| `version-1.1.0/index.md` | `/docs` |
-| `version-1.1.0/faq.md` (`id: faq`) | `/docs/faq` |
-| `version-1.1.0/tinyLeague-app/how-to-install.md` (`id: app-installation`) | `/docs/tinyLeague-app/app-installation` |
+| `version-1.5.3/index.md` | `/docs` |
+| `version-1.5.3/faq.md` (`id: faq`) | `/docs/faq` |
+| `version-1.5.3/tinyLeague-app/how-to-install.md` (`id: app-installation`) | `/docs/tinyLeague-app/app-installation` |
 | `version-1.0.1/faq.md` | `/docs/1.0.1/faq` |
 
 Renaming a file is safe. **Changing `id` changes the live URL** and breaks
@@ -61,13 +62,16 @@ version.
 ```yaml
 ---
 id: how-set-up          # required — the URL segment
-title: How to set-up    # page heading, browser title, sidebar label
-sidebar_position: 4     # order within the folder, ascending
+title: How to set-up    # required — page heading, browser title, sidebar label
+sidebar_position: 4     # required — order within the folder, ascending
+description: …          # required — meta description for search engines
 hide_title: true        # optional — skip the auto <h1>
 sidebar_label: Setup    # optional — shorter label for the sidebar only
-description: …          # optional — meta description for search engines
 ---
 ```
+
+Write `description` as one sentence of 120 to 160 characters, the range search
+engines show in full. Avoid a colon so the value stays valid unquoted YAML.
 
 ## Sidebar
 
@@ -153,7 +157,7 @@ top of `src/app/docs/[[...slug]]/docs.css`; use those, not new hex values.
 
 ## Publishing a new version
 
-1. Copy the newest folder: `cp -r versioned_docs/version-1.1.0 versioned_docs/version-1.2.0`
+1. Copy the newest folder: `cp -r versioned_docs/version-1.5.3 versioned_docs/version-1.6.0`
 2. Add the new version to the **front** of `versions.json` — the first entry is
    the one served at `/docs` with no version prefix.
 3. Edit the new folder. The previous version freezes as an archive at its own
