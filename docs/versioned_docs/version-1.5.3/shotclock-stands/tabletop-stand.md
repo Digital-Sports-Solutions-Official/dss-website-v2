@@ -4,8 +4,6 @@ title: Easy Tabletop Stand
 sidebar_position: 4
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 3D Printed Tabletop Stand
 
 The **Tabletop Stand** is a compact, all-3D-printed alternative to the full pipe-based stand. It’s ideal for testing, personal use, or scenarios where portability and convenience matter most.
@@ -16,7 +14,7 @@ The **Tabletop Stand** is a compact, all-3D-printed alternative to the full pipe
 
 <div style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '2rem' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/tabletop_stand.JPG')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/tabletop_stand.JPG"
     alt="3D Printed Tabletop Stand"
     style={{
       maxWidth: '90%',
@@ -51,7 +49,7 @@ If visibility and crowd awareness are key, check out the [Recommended Stand Buil
 
 <div style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '2rem' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/tabletop_stand_print.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/tabletop_stand_print.png"
     alt="3D Printed Tabletop Stand"
     style={{
       maxWidth: '90%',

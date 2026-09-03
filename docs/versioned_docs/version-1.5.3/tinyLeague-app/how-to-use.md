@@ -4,9 +4,6 @@ title: How to Use
 sidebar_position: 5
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import ImageSwitcher from '@site/src/components/ImageSwitcher';
-
 ## ⏱ Using the Shot Clock Timer Interface
 
 This guide walks you through the main timer interface of the tinyLeague™ Hub app, covering what every button does whether you're resetting the clock, changing the time, or switching between high/low settings.

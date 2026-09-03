@@ -138,8 +138,6 @@ tinyLeague Hub - Version 1.0 Release Notes
 
 **Need help understanding a new feature, or have a recommendation?**
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 <a
   href="https://discord.com/invite/6HjeNJM6F4"
   target="_blank"
@@ -147,7 +145,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 >
   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
     <img
-      src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Logos/Discord-Symbol-Blurple.svg')}
+      src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Logos/Discord-Symbol-Blurple.svg"
       alt="Discord"
       style={{ width: '64px', height: '64px' }}
     />

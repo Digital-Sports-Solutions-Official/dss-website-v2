@@ -4,8 +4,6 @@ title: How to set-up
 sidebar_position: 4
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## ⚙️ Setting Up the Founders Edition Shot Clock
 
 Getting started with your **Founders Edition** module is quick and easy. Follow the steps below to power on the unit and prepare it for Bluetooth connection with the **tinyLeague™ Hub app**.
@@ -14,7 +12,7 @@ Getting started with your **Founders Edition** module is quick and easy. Follow 
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Front.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Front.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 6px 18px rgba(0,0,0,0.15)' }}
   />

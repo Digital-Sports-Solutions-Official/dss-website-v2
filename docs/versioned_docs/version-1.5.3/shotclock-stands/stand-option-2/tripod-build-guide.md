@@ -4,8 +4,6 @@ title: Tripod Build Guide
 sidebar_position: 5
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🛠 Step-by-Step Build Guide​
 
 This guide walks you through assembling the **Tripod Attachment**, compatible with both the [concrete bucket base](/docs/shotclock-stands/stand-option-2/base-build-guide) and [recommended stand](/docs/shotclock-stands/stand-option-1/build-overview).
@@ -23,7 +21,7 @@ Be sure to 3D print each part out of the specified filament, we highly recommend
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/all_3d_prints.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/all_3d_prints.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -57,7 +55,7 @@ Using your tape measure and saw, mark and cut your 10ft length of ABS pipe into 
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/cutting_pipe.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/cutting_pipe.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -78,7 +76,7 @@ Be sure to take caution when drilling your holes through each pipe. The jig does
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/drilling_jig.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/drilling_jig.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -90,7 +88,7 @@ The 3D printed [tripod gusset](/docs/shotclock-stands/stand-option-2/3d-prints#%
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/drilling_no_jig.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/drilling_no_jig.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -108,7 +106,7 @@ Ensure you do this for the side of the pipe **opposite** of the side where you j
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/feet_inserting.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/feet_inserting.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -123,7 +121,7 @@ Slide the paracord tieoff around the outer diameter of the ABS pipe. It should b
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_slid_on.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_slid_on.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -132,7 +130,7 @@ Slide the paracord tieoff around the outer diameter of the ABS pipe. It should b
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_prepped.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_prepped.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -150,7 +148,7 @@ The lower the better! This will be the secondary attachment point for the ABS le
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_ring_on.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_ring_on.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -165,7 +163,7 @@ Slide the tripod gusset onto your ¾” metal pipe, above the tieoff ring you ju
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/gusset_on_pipe.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/gusset_on_pipe.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -176,7 +174,7 @@ Now, utilizing the mounting holes you drilled previously, attach each of the ABS
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/pipe_on_gusset_away.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/pipe_on_gusset_away.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -185,7 +183,7 @@ Now, utilizing the mounting holes you drilled previously, attach each of the ABS
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/pipe_on_gusset_close.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/pipe_on_gusset_close.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -204,7 +202,7 @@ Once the leg tieoffs are positioned on the ABS legs such that the tie-off point 
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_on.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_on.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -229,7 +227,7 @@ To secure the paracord to the leg tie off, tie a knot in the paracord large enou
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/knot_in_tieoff.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/knot_in_tieoff.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -238,7 +236,7 @@ To secure the paracord to the leg tie off, tie a knot in the paracord large enou
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/cord_from_tieoff.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/cord_from_tieoff.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -247,7 +245,7 @@ To secure the paracord to the leg tie off, tie a knot in the paracord large enou
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/cord_with_tieoff.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/cord_with_tieoff.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -266,7 +264,7 @@ Loop the end of the paracord without a knot through an open hole on the center t
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/hitch_above.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/hitch_above.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -275,7 +273,7 @@ Loop the end of the paracord without a knot through an open hole on the center t
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_ring_hitch.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/tieoff_ring_hitch.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -294,7 +292,7 @@ Once the tripod assembly is positioned at the right height on the pipe, such tha
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/gusset_hardware.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/gusset_hardware.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -315,7 +313,7 @@ You have completed the build for the tripod attachment. This stand attachment pr
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/full_tripod_reliable_stand.JPG')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Tripod_Build/full_tripod_reliable_stand.JPG"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />

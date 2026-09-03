@@ -4,8 +4,6 @@ title: Practice Mode
 sidebar_position: 6
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🏋️‍♂️ Practice Mode Overview
 
 Practice Mode is a flexible state that allows you to use the tinyLeague™ Hub app **without connecting to a shot clock module**. This is ideal for solo testing, referee training, or team practice when a physical display isn't around.

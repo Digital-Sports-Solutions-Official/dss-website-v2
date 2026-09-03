@@ -4,8 +4,6 @@ title: Introduction - What is a shotclock?
 sidebar_position: 1
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## ⏱ What is Shotclocking?
 
 **Shot clocking** is the act of tracking a team's time limit to make a play. In dodgeball and other fast-paced sports, enforcing a shot clock encourages quicker decision-making, fairer gameplay, and better pacing, especially in competitive formats.
@@ -33,7 +31,7 @@ It’s compact, durable, Bluetooth-connected, and built to show large-format dig
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Front.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Front.png"
     alt="Founders Edition Shot Clock"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 6px 18px rgba(0,0,0,0.15)' }}
   />

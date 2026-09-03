@@ -4,9 +4,6 @@ title: How to Connect
 sidebar_position: 3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import ImageSwitcher from '@site/src/components/ImageSwitcher';
-
 ## 📶 Connecting to your Module
 
 #### Follow these steps to get connected and running in minutes!

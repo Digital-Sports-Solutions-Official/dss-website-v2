@@ -4,8 +4,6 @@ title: Required Materials
 sidebar_position: 2
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🧰 Required Materials
 
 To build the **Recommended Shot Clock Stand**, you’ll need a few reliable components, most of which can be sourced online or at a local hardware store.
@@ -76,8 +74,6 @@ A small adapter that ensures a secure and snug connection between the pipe and t
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)',
     transition: 'background-color 0.4s ease-in-out'
   }}
-  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FF0000')}
-  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FF5900')}
 >
   📦 Download on GitHub
 </a>

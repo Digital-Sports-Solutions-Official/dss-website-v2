@@ -4,8 +4,6 @@ title: 3D Printed Adapter
 sidebar_position: 3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🛠 Printing your Adapter
 
 Weighted bases come in all different shapes and sizes, meaning there is not a standardized pole-hole size. To ensure a smooth construction process, we recommend picking the specific 3D model that best fits your hardware.
@@ -33,8 +31,6 @@ Weighted bases come in all different shapes and sizes, meaning there is not a st
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)',
     transition: 'background-color 0.4s ease-in-out'
   }}
-  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FF0000')}
-  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FF5900')}
 >
   📦 Download on GitHub
 </a>
@@ -53,7 +49,7 @@ To accurately measure the inner-diameter of the pole-hole of your base we recomm
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/Caliper_Base_Measuring.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/Caliper_Base_Measuring.jpg"
     alt="Calipers measuring base"
   />
   <p style={{ fontStyle: 'italic' }}>Calipers measuring the inner-diameter of a base’s pole hole</p>
@@ -65,7 +61,7 @@ If you do not own a pair of calipers, other measuring devices can also be used. 
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/Ruler_Base_Measuring.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/Ruler_Base_Measuring.jpg"
     alt="Attaching 36-inch pipe to top of stand"
   />
   <p style={{ fontStyle: 'italic' }}>Ruler measuring the inner-diameter of the base’s pole hole</p>
@@ -100,15 +96,13 @@ Once you have determined your 1/16th of an inch increment, find and download you
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)',
     transition: 'background-color 0.4s ease-in-out'
   }}
-  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FF0000')}
-  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FF5900')}
 >
   📦 Download on GitHub
 </a>
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/github_general_adapters.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/github_general_adapters.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
@@ -123,7 +117,7 @@ We recommend 95A TPU Filament. You can find what we used [here](https://www.amaz
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/cura_adapter.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/cura_adapter.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
@@ -165,7 +159,7 @@ Depending on your specific stand needs/requirements, you may consider reprinting
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/tpu_adapter_entering_base.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/tpu_adapter_entering_base.jpg"
     alt="Attaching 36-inch pipe to top of stand"
   />
   <p style={{ fontStyle: 'italic' }}>It should be snug, but have a bit of give</p>

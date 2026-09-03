@@ -4,8 +4,6 @@ title: Base Build Guide
 sidebar_position: 3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🛠 Step-by-Step Build Guide
 
 This guide walks you through assembling the **Reliable Shot Clock Stand Bucket Base**
@@ -41,7 +39,7 @@ Using your saw of choice, begin by using a tape measure to place a mark at 16" f
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/cutting_wood.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/cutting_wood.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -58,7 +56,7 @@ While securing the 4x4 to bottom of the bucket it optional, it will help secure 
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/screw_into_bottom_bucket.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/screw_into_bottom_bucket.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -69,7 +67,7 @@ You may also optionally choose to check the grade of the 4x4 once it is in the b
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/wood_in_bucket.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/wood_in_bucket.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -80,7 +78,7 @@ DSS™ suggest using some scrap wood or other material to ensure the 4x4 is posi
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/bucket_concrete_prep.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/bucket_concrete_prep.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -102,7 +100,7 @@ Once pouring your concrete, let it sit in a ventilated space for 6-8 hours *mini
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/concrete_in_bucket.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/concrete_in_bucket.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -119,7 +117,7 @@ Using your electric drill, use your Wood Deck Screws to attach the flange in the
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/flange_on_wood.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/flange_on_wood.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -134,7 +132,7 @@ All thats left to do now is screw your **2x 36" ¾" Steel Pipes** together with 
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/coupler_hold_both_pipes.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/coupler_hold_both_pipes.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -145,7 +143,7 @@ All thats left to do now is screw your **2x 36" ¾" Steel Pipes** together with 
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/pipe_into_unit.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/pipe_into_unit.jpg"
     alt="Attaching 36-inch pipe to top of stand"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -158,7 +156,7 @@ You have completed the build for the concrete bucket base. This stand provides a
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/reliable_minus_tripod.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reliable_Stands_Build/reliable_minus_tripod.png"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%' }}
   />

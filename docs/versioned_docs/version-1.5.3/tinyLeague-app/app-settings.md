@@ -4,9 +4,6 @@ title: App Settings
 sidebar_position: 5
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import ImageSwitcher from '@site/src/components/ImageSwitcher';
-
 ## ⚙️ Settings Menu Overview
 
 This guide provides a breakdown of all app settings found in the tinyLeague™ Hub app, making it easy to change how your app works. Use the visuals below to get familiar with each feature.

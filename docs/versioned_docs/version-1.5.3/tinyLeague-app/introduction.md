@@ -4,8 +4,6 @@ title: tinyLeague™ Hub
 sidebar_position: 1
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 📱 Welcome to the tinyLeague™ Hub App
 
 The **tinyLeague™ Hub App** is the official control interface for your shot clock module, designed for speed, simplicity, and reliability.

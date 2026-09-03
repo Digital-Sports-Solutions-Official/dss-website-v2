@@ -4,8 +4,6 @@ title: Device Terminology
 sidebar_position: 2
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🧠 Founders Edition Device Terminology
 
 This page breaks down the physical components of the **tinyLeague™ Founders Edition** shot clock display. Understanding these parts will help with installation, maintenance, and future customization.
@@ -16,7 +14,7 @@ This page breaks down the physical components of the **tinyLeague™ Founders Ed
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Front.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Front.png"
     alt="Founders Edition Front View"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 6px 18px rgba(0,0,0,0.15)' }}
   />
@@ -33,7 +31,7 @@ The **seven-segment display** is the most visible component, showing large, high
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Back.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Back.png"
     alt="Founders Edition Back View"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 6px 18px rgba(0,0,0,0.15)' }}
   />

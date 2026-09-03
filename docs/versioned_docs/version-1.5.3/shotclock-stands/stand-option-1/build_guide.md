@@ -4,8 +4,6 @@ title: Step-By-Step Build Guide
 sidebar_position: 4
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🛠 Step-by-Step Build Guide
 
 This guide walks you through assembling the **Recommended Shot Clock Stand**. It’s quick, tool-free, and travel-friendly, so just gather your components and follow each step below.
@@ -27,7 +25,7 @@ Make sure you have everything before starting:
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/tpu_adapter.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/tpu_adapter.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -42,7 +40,7 @@ Push the 3D-printed TPU adapter into the center hole of the umbrella base. It sh
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/tpu_adapter_entering_base.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/tpu_adapter_entering_base.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -51,7 +49,7 @@ Push the 3D-printed TPU adapter into the center hole of the umbrella base. It sh
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/tpu_adapter_in_base.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/tpu_adapter_in_base.jpg"
     alt="Inserting TPU adapter into base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -66,7 +64,7 @@ Screw the ¾" coupling fitting onto one end of a 3-foot (36") steel pipe. Tighte
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/coupler_on_pipe.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/coupler_on_pipe.jpg"
     alt="Attaching coupling to 36-inch pipe"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -81,7 +79,7 @@ Slide the opposite end of the 36" pipe down into the TPU adapter. The pipe shoul
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/pipe_entering_stand.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/pipe_entering_stand.jpg"
     alt="Inserting 48-inch pipe into stand base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -90,7 +88,7 @@ Slide the opposite end of the 36" pipe down into the TPU adapter. The pipe shoul
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/pipe_in_stand.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/pipe_in_stand.jpg"
     alt="Inserting 48-inch pipe into stand base"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -105,7 +103,7 @@ Screw the 36" pipe into the top of the coupler.
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/coupler_hold_both_pipes.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/coupler_hold_both_pipes.jpg"
     alt="Attaching 36-inch pipe to top of stand"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -116,7 +114,7 @@ Screw the 36" pipe into the top of the coupler.
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/pipe_into_unit.jpg')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Reccomended_Stands_Build/pipe_into_unit.jpg"
     alt="Attaching 36-inch pipe to top of stand"
     style={{ maxWidth: '90%', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -128,7 +126,7 @@ Screw the 36" pipe into the top of the coupler.
 
 <div style={{ textAlign: 'center', margin: '1rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/reccomended_stand.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/reccomended_stand.png"
     alt="Attaching 36-inch pipe to top of stand"
   />
   <p style={{ fontStyle: 'italic' }}>Assembled stand with Founder Edition module on top.</p>

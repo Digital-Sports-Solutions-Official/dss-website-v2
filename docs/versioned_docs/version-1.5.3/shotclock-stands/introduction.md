@@ -4,8 +4,6 @@ title: Introduction - Stands
 sidebar_position: 1
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🧱 Shot Clock Stands
 
 To get the most out of your **[Founders Edition Shot Clock](/docs/founders-edition/introduction)**, we strongly recommend mounting the device using a one of the [options](/docs/shotclock-stands/stand-options) provided by the DSS™ team. The **Founders Edition Shot Clock** even comes with an attached flange on the bottom, ideal for quick & easy mounting solutions.
@@ -16,7 +14,7 @@ Stands increase **visibility**, enhance **professional presentation**, and impro
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/stands_reliable_full_assembly.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/stands_reliable_full_assembly.png"
     alt="Tripod Mounted Shot Clock"
   />
 </div>

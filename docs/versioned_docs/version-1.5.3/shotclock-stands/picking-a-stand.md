@@ -4,8 +4,6 @@ title: Picking a Stand
 sidebar_position: 3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🤔 How to pick a stand
 
 Not sure which stand option to choose? Here’s a quick breakdown to help you decide between the **Recommended** and **Reliable** paths.
@@ -14,7 +12,7 @@ Not sure which stand option to choose? Here’s a quick breakdown to help you de
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/reccomended_stand.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/reccomended_stand.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
@@ -37,7 +35,7 @@ Not sure which stand option to choose? Here’s a quick breakdown to help you de
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/stands_reliable_full_assembly.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/stands_reliable_full_assembly.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />

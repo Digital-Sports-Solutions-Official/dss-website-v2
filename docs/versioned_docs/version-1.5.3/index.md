@@ -5,9 +5,6 @@ hide_title: true
 sidebar_position: 1
 ---
 
-<!-- Custom component -->
-import ImageSwitcher from '@site/src/components/ImageSwitcher';
-
 <div style={{ textAlign: 'center' }}>
   <h1 style={{ margin: 0 }}>Welcome to</h1>
   <ImageSwitcher lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/tinyLeague_CombinationMark.svg" darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/tinyLeague_CombinationMark_White.svg" alt="tL Logo"/>

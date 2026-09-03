@@ -3,7 +3,6 @@ id: 3d-prints
 title: Tripod Attachment 3D-Prints
 sidebar_position: 4
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 🖨️ 3D Printed Parts
 
@@ -31,7 +30,7 @@ This gusset serves as the main attachment point for the 1-½” ABS piping to th
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/tripod_gusset_print.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/tripod_gusset_print.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
@@ -78,8 +77,6 @@ This gusset serves as the main attachment point for the 1-½” ABS piping to th
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)',
     transition: 'background-color 0.4s ease-in-out'
   }}
-  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FF0000')}
-  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FF5900')}
 >
   📦 Download on GitHub
 </a>
@@ -93,7 +90,7 @@ These TPU feet slot into the 1-½“ inch ABS piping and remain fit by friction.
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/pipe_feet_print.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/pipe_feet_print.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
@@ -140,8 +137,6 @@ These TPU feet slot into the 1-½“ inch ABS piping and remain fit by friction.
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)',
     transition: 'background-color 0.4s ease-in-out'
   }}
-  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FF0000')}
-  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FF5900')}
 >
   📦 Download on GitHub
 </a>
@@ -158,7 +153,7 @@ The model may also serve as a jig if you wish to drill mounting holes into the A
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/tieoffs_print.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/tieoffs_print.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
@@ -205,8 +200,6 @@ The model may also serve as a jig if you wish to drill mounting holes into the A
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)',
     transition: 'background-color 0.4s ease-in-out'
   }}
-  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FF0000')}
-  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FF5900')}
 >
   📦 Download on GitHub
 </a>
@@ -220,7 +213,7 @@ This part fits around the outer diameter of standard ¾“ metal piping. The 3 s
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/o_ring_prints.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/o_ring_prints.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
@@ -267,8 +260,6 @@ This part fits around the outer diameter of standard ¾“ metal piping. The 3 s
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)',
     transition: 'background-color 0.4s ease-in-out'
   }}
-  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FF0000')}
-  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FF5900')}
 >
   📦 Download on GitHub
 </a>
@@ -285,7 +276,7 @@ To properly affix the ABS legs to the TPU pipe gusset, holes must be drilled int
 
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/drilling_jig_print.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Stands_Renders/drilling_jig_print.png"
     alt="Founders Edition Unit"
     style={{ maxWidth: '90%' }}
   />
@@ -332,8 +323,6 @@ To properly affix the ABS legs to the TPU pipe gusset, holes must be drilled int
     boxShadow: '0 3px 10px rgba(0, 0, 0, 0.1)',
     transition: 'background-color 0.4s ease-in-out'
   }}
-  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#FF0000')}
-  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#FF5900')}
 >
   📦 Download on GitHub
 </a>

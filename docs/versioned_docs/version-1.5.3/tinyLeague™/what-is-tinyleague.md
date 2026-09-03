@@ -4,10 +4,6 @@ title: What is tinyLeague™?
 sidebar_position: 1
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🏆 tinyLeague™
 
 **[tinyLeague™](/tinyleague)** is the flagship product line from Digital Sports Solutions. By combining modular hardware, software, and database technology, tinyLeague looks to change the way recreational and semi-professional leagues play.
@@ -24,19 +20,19 @@ A robust set of IOT enabled hardware devices that enhance the live player experi
 
 <Tabs>
   <TabItem value="founders-edition" label="Founders Edition" default>
-    <img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Front.png')} alt="Founders Edition" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
+    <img src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Founders_Edition_Front.png" alt="Founders Edition" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
     A custom-built LED display that shows the active shot clock for a team, including many customizable features. The **Founders Edition Shot Clock Module** receives real-time commands from the app and provides clear, visible timing for players and referees.
   </TabItem>
   <TabItem value="pro-edition" label="Pro Edition">
-    <img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Double-Digit-Shot-Clock.png')} alt="Pro Edition" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
+    <img src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Double-Digit-Shot-Clock.png" alt="Pro Edition" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
     The pro edition shot clock module for the tinyLeague™ ecosystem. **Coming soon!**
   </TabItem>
   <TabItem value="gameclock-module" label="Mini Game Clock">
-    <img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Full-Mini-Game-Clock.png')} alt="Mini Game Clock" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
+    <img src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/Full-Mini-Game-Clock.png" alt="Mini Game Clock" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
     tinyLeague™'s Mini Game Clock, for adding new levels of automatic match statistics to court sports. **Coming soon!**
   </TabItem>
   <TabItem value="clkBox" label="Hub Module">
-    <img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/clkBox.png')} alt="Hub Module" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
+    <img src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/clkBox.png" alt="Hub Module" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
     tinyLeague™'s Hub module allows the connection of all game management hardware to the tinyLeague™ web interface. **Coming soon!**
   </TabItem>
 </Tabs>
@@ -50,7 +46,7 @@ An integrated set of tools that allow referees, players, and spectators alike to
 <Tabs>
   <TabItem value="tL_Hub_App" label="tinyLeague™ Hub App" default>
   <img
-    src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/application_icon.png')}
+    src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/application_icon.png"
     alt="tinyLeague™ Hub App"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
@@ -67,7 +63,7 @@ An integrated set of tools that allow referees, players, and spectators alike to
       rel="noopener noreferrer"
     >
       <img
-        src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Download_on_the_App_Store_Badge.svg')}
+        src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Download_on_the_App_Store_Badge.svg"
         alt="Download on the App Store"
         style={{ height: '4rem' }}
       />
@@ -80,7 +76,7 @@ An integrated set of tools that allow referees, players, and spectators alike to
       rel="noopener noreferrer"
     >
       <img
-        src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/GetItOnGooglePlay_Badge.png')}
+        src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/GetItOnGooglePlay_Badge.png"
         alt="Get it on Google Play"
         style={{ height: '4rem' }}
       />
@@ -90,7 +86,7 @@ An integrated set of tools that allow referees, players, and spectators alike to
 
 
   <TabItem value="tinyLeague™" label="tinyLeague™">
-    <img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/DSStowers.58.png')} alt="tinyLeague™" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
+    <img src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Product_Photos/DSStowers.58.png" alt="tinyLeague™" style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
     tinyLeague™ is the integrated sports ecosystem that acts as a one-stop-shop for recreational sports leagues. tinyLeague™ will be able to track and report match/player data, manage leagues and organize events, update real time livestreams with match specific information, and more. This web interface is under construction and **COMING SOON**.
   </TabItem>
 </Tabs>
@@ -101,7 +97,7 @@ An integrated set of tools that allow referees, players, and spectators alike to
 
 The backbone of the tinyLeague™ ecosystem, storing and organizing the data captured during an event. Although the database is under construction, check out our page for more information about the database and its upcoming features.
 
-<img src={useBaseUrl('https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/database_graphic.png')} alt="Database Dashboard" />
+<img src="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/database_graphic.png" alt="Database Dashboard" />
 
 
 

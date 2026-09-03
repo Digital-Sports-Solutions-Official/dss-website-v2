@@ -4,8 +4,6 @@ title: Required Materials
 sidebar_position: 2
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 ## 🧰 Required Materials
 
 To build the **Reliable Shot Clock Stand**, you’ll need several reliable components, as well as some tools.

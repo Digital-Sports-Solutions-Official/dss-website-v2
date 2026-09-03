@@ -4,9 +4,6 @@ title: Device Settings
 sidebar_position: 4
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import ImageSwitcher from '@site/src/components/ImageSwitcher';
-
 ## ⚙️ Settings Menu Overview
 
 This guide provides a breakdown of all device settings in the tinyLeague™ Hub app, used to modify and customize your device. Use the definitions below to become familiar with each feature.
