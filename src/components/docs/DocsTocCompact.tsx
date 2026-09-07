@@ -1,7 +1,7 @@
 // src/components/docs/DocsTocCompact.tsx
 'use client';
 
-import React, { useEffect, useId, useState } from 'react';
+import React, { useEffect, useId, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { ChevronDown, List } from 'lucide-react';
 import type { TocEntry } from '@/lib/docs/mdx';
@@ -10,16 +10,19 @@ import { useActiveHeading } from './useActiveHeading';
 /**
  * "On this page" for viewports below xl, where the third column is hidden.
  *
- * A disclosure rather than a drawer: it sticks under the navbar so the reader
- * keeps the outline and their current position at any scroll depth, which is
- * the part of the desktop aside worth carrying over. Collapsed, it names the
- * section currently in view.
+ * Sits in the sticky page bar DocsShell builds, next to the sidebar trigger,
+ * so the reader keeps the outline and their current position at any scroll
+ * depth. Collapsed, it names the section currently in view.
+ *
+ * The panel is absolutely positioned against that sticky bar, so opening it
+ * overlays the article rather than shoving it down the page.
  */
 export function DocsTocCompact({ entries }: { entries: TocEntry[] }) {
   const [isOpen, setIsOpen] = useState(false);
   const activeId = useActiveHeading(entries);
   const panelId = useId();
   const pathname = usePathname();
+  const containerRef = useRef<HTMLElement>(null);
 
   // A new page means a new outline; never carry the open state across.
   useEffect(() => {
@@ -28,11 +31,24 @@ export function DocsTocCompact({ entries }: { entries: TocEntry[] }) {
 
   useEffect(() => {
     if (!isOpen) return;
+
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setIsOpen(false);
     };
+    // The panel floats over the article, so a tap anywhere else should dismiss
+    // it the way any other dropdown would.
+    const onPointerDown = (event: MouseEvent | TouchEvent) => {
+      if (!containerRef.current?.contains(event.target as Node)) setIsOpen(false);
+    };
+
     window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
+    document.addEventListener('mousedown', onPointerDown);
+    document.addEventListener('touchstart', onPointerDown);
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      document.removeEventListener('mousedown', onPointerDown);
+      document.removeEventListener('touchstart', onPointerDown);
+    };
   }, [isOpen]);
 
   if (entries.length === 0) return null;
@@ -40,10 +56,7 @@ export function DocsTocCompact({ entries }: { entries: TocEntry[] }) {
   const active = entries.find((entry) => entry.id === activeId);
 
   return (
-    <nav
-      aria-label="On this page"
-      className="sticky top-[80px] z-30 mb-6 border-b border-docs-border bg-docs-bg xl:hidden"
-    >
+    <nav ref={containerRef} aria-label="On this page" className="min-w-0 flex-1">
       <button
         type="button"
         onClick={() => setIsOpen((open) => !open)}
@@ -74,7 +87,7 @@ export function DocsTocCompact({ entries }: { entries: TocEntry[] }) {
       <ul
         id={panelId}
         hidden={!isOpen}
-        className="max-h-[50vh] overflow-y-auto border-l border-docs-border pb-4"
+        className="absolute inset-x-0 top-full max-h-[60vh] overflow-y-auto border-b border-docs-border bg-docs-bg py-2 shadow-lg"
       >
         {entries.map((entry) => (
           <li key={entry.id}>

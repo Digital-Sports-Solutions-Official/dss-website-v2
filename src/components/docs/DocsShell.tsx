@@ -46,15 +46,34 @@ export function DocsShell({
 
         {/* ARTICLE COLUMN */}
         <div className="min-w-0 flex-1 py-8">
-          <button
-            type="button"
-            onClick={() => setIsDrawerOpen(true)}
-            className="mb-6 flex items-center gap-2 rounded-md border border-docs-border px-3 py-2 text-sm font-semibold text-docs-heading transition-colors hover:border-docs-accent hover:text-docs-accent lg:hidden"
+          {/* STICKY PAGE BAR
+              Carries the sidebar trigger below lg and the page outline below
+              xl, on one line rather than two stacked blocks. `sticky` also
+              makes it the containing block for the outline's floating panel.
+              With no outline to show it is only needed below lg, where the
+              sidebar itself is hidden. */}
+          <div
+            className={`sticky top-[80px] z-30 mb-6 flex items-center gap-3 border-b border-docs-border bg-docs-bg ${
+              tocCompact ? 'xl:hidden' : 'lg:hidden'
+            }`}
           >
-            <PanelLeft size={16} aria-hidden="true" />
-            Browse docs
-          </button>
-          {tocCompact}
+            <button
+              type="button"
+              onClick={() => setIsDrawerOpen(true)}
+              aria-label="Browse docs"
+              className="flex shrink-0 items-center gap-2 py-3 text-sm font-semibold text-docs-heading transition-colors hover:text-docs-accent lg:hidden"
+            >
+              <PanelLeft size={16} aria-hidden="true" />
+              <span className="hidden sm:inline">Browse docs</span>
+            </button>
+            {tocCompact && (
+              <span
+                aria-hidden="true"
+                className="h-5 w-px shrink-0 bg-docs-border lg:hidden"
+              />
+            )}
+            {tocCompact}
+          </div>
           {children}
         </div>
 
