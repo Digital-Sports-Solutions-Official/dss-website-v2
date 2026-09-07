@@ -116,6 +116,19 @@
   scroll-margin-top: 100px;
 }
 
+/* Below xl the compact "On this page" bar sticks under the navbar, so an
+   anchor target has to clear both or it lands underneath the bar. */
+@media (max-width: 1279px) {
+  .docs-prose h1,
+  .docs-prose h2,
+  .docs-prose h3,
+  .docs-prose h4,
+  .docs-prose h5,
+  .docs-prose h6 {
+    scroll-margin-top: 152px;
+  }
+}
+
 .docs-prose h1 {
   font-size: clamp(2rem, 4vw, 2.75rem);
   margin-bottom: 1.5rem;

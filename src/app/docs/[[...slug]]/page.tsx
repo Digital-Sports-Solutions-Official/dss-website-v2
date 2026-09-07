@@ -21,6 +21,7 @@ import { getMdxComponents } from '@/components/docs/MdxComponents';
 import { DocsShell } from '@/components/docs/DocsShell';
 import { DocsSidebar } from '@/components/docs/DocsSidebar';
 import { DocsToc } from '@/components/docs/DocsToc';
+import { DocsTocCompact } from '@/components/docs/DocsTocCompact';
 import { VersionSwitcher } from '@/components/docs/VersionSwitcher';
 import { DocsThemeToggle } from '@/components/docs/DocsThemeToggle';
 
@@ -84,6 +85,7 @@ export default async function DocPage({ params }: PageProps) {
           </div>
         }
         toc={<DocsToc entries={toc} />}
+        tocCompact={<DocsTocCompact entries={toc} />}
       >
         {version !== latest && (
           <div className="mb-8 rounded-lg border border-docs-accent/40 bg-docs-active px-5 py-4 text-sm text-docs-heading">

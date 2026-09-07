@@ -7,15 +7,18 @@ import { PanelLeft, X } from 'lucide-react';
 
 /**
  * Three-column documentation layout: sidebar, article, table of contents.
- * On small screens the sidebar collapses into a slide-in drawer.
+ * On small screens the sidebar collapses into a slide-in drawer and the table
+ * of contents into a sticky disclosure above the article.
  */
 export function DocsShell({
   sidebar,
   toc,
+  tocCompact,
   children,
 }: {
   sidebar: React.ReactNode;
   toc: React.ReactNode;
+  tocCompact: React.ReactNode;
   children: React.ReactNode;
 }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -51,6 +54,7 @@ export function DocsShell({
             <PanelLeft size={16} aria-hidden="true" />
             Browse docs
           </button>
+          {tocCompact}
           {children}
         </div>
 
