@@ -4,6 +4,7 @@ import React from 'react';
 import { Montserrat } from 'next/font/google';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
+import { SITE_URL } from '@/lib/site';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -12,6 +13,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
+  // Without this, the relative `alternates.canonical` the docs pages set has no
+  // origin to resolve against and ships as a relative canonical tag.
+  metadataBase: new URL(SITE_URL),
   title: 'Digital Sports Solutions',
   description: 'Custom Digital Tools Built to Make Your Organization Stand Out.',
   icons: {
