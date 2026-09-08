@@ -7,7 +7,7 @@ sidebar_position: 3
 
 ## 📶 Connecting to your Module
 
-#### Follow these steps to get connected and running in minutes!
+**Follow these steps to get connected and running in minutes!**
 
 ---
 

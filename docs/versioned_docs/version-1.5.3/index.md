@@ -7,8 +7,7 @@ sidebar_position: 1
 ---
 
 <div style={{ textAlign: 'center' }}>
-  <h1 style={{ margin: 0 }}>Welcome to</h1>
-  <ImageSwitcher lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/tinyLeague_CombinationMark.svg" darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/tinyLeague_CombinationMark_White.svg" alt="tL Logo"/>
+  <h1 style={{ margin: 0 }}>Welcome to<br /><ImageSwitcher lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/tinyLeague_CombinationMark.svg" darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/tinyLeague_CombinationMark_White.svg" alt="tinyLeague™"/></h1>
 </div>
 
 Welcome to the **tinyLeague™** documentation center! View start-up instructions, installation guides, troubleshooting, design files and much more.
