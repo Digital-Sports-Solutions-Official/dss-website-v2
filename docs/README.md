@@ -131,6 +131,26 @@ repository:
 
 `<ImageSwitcher lightSrc="…" darkSrc="…" alt="…" />` follows the docs theme.
 
+App screenshots are versioned: `img/Updated_tL_Hub_App_Screenshots/v1.5/`, split
+into `Light_Mode/` and `Dark_Mode/`. Point the current docs at the newest folder.
+
+**Never delete an old version folder.** Archived docs still read from it —
+`version-1.1.0` references `v1.4/` 28 times, so removing that folder breaks live
+images in the archive.
+
+Crop to the region a section actually describes rather than repeating a full
+screen under several headings:
+
+- Keep one full-screen shot per screen as an orientation anchor; crop for
+  individual controls.
+- Crop light and dark to the identical box, or the page shifts when the theme
+  toggles.
+- Derive crops from the existing captures. Do not re-shoot.
+- Name them `<Screen>_<Section>_<Theme>.png`.
+
+Alt text describes the screen, not the brand. `alt="tL Logo"` on a screenshot of
+a settings panel tells a screen reader nothing.
+
 **Tables**, GitHub-flavoured. Inline HTML and JSX with `style={{ … }}` also
 work.
 

@@ -19,9 +19,9 @@ sidebar_position: 3
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/Main_Timer_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/Main_Timer_Dark.png"
-    alt="tL Logo"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Main_Timer_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Main_Timer_Dark.png"
+    alt="The tinyLeague Hub main timer screen, with the shot clock icon in the top left"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
   <p style={{ fontStyle: 'italic' }}>Select the button in the top left corner of your screen</p>
@@ -29,9 +29,9 @@ sidebar_position: 3
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/ShotClk_Icon_black.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/ShotClk_Icon_white.png"
-    alt="tL Logo"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/ShotClk_Icon_black.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/ShotClk_Icon_white.png"
+    alt="The shot clock icon that opens the Connections Menu"
     style={{ maxWidth: '90%' }}
   />
   <p style={{ fontStyle: 'italic' }}>Tap this button to navigate to the Connections Menu</p>
@@ -41,33 +41,33 @@ sidebar_position: 3
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/Permission_Screen_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/Permission_Screen_Dark.png"
-    alt="tL Logo"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Permission_Screen_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Permission_Screen_Dark.png"
+    alt="The Android permission prompt requesting nearby device access"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
   <p style={{ fontStyle: 'italic' }}>Allow the needed permissions to access connections</p>
 </div>
 
-4. The app will scan for nearby shot clock modules via **BLE**. Under the **Available Devices Section**, tap the ➕ next to **Founders**, or if you have renamed your device, select your device name from the list.
+4. The app will scan for nearby shot clock modules via **BLE**. Under **Available**, tap the ➕ next to **Founders**, or if you have renamed your device, select your device name from the list.
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/Available_Devices_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/Available_Devices_Dark.png"
-    alt="tL Logo"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Available_Devices_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Available_Devices_Dark.png"
+    alt="The Connections Menu listing available devices found over Bluetooth"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
   <p style={{ fontStyle: 'italic' }}>Example of the available devices list in the Connections Menu</p>
 </div>
 
-If you have previously connected to your module, it will show up in the **Saved Devices Section**. Tap the ➕ to connect to your device.
+If you have previously connected to your module, it will show up under **Saved**. Tap the ➕ to connect to your device.
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/Saved_Devices_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/Saved_Devices_Dark.png"
-    alt="tL Logo"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Saved_Devices_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Saved_Devices_Dark.png"
+    alt="The Connections Menu showing a previously connected device under Saved"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
   <p style={{ fontStyle: 'italic' }}>Example of the saved devices list in the Connections Menu</p>
@@ -76,7 +76,17 @@ If you have previously connected to your module, it will show up in the **Saved 
 > ✅ Make sure your unit is powered on and ready to be connected.
 
 5. Wait for the BLE connection to be established. If the connection is not established, re-select your device to try again.
-6. Once connected, you'll see the Currently Paired section updated with your device name. Tapping the ⚙ icon will take to your [Device Settings](/docs/tinyLeague-app/device-settings).
+6. Once connected, your device moves to the **Paired** section at the top of the Connections Menu. Tapping the ⚙ icon will take you to your [Device Settings](/docs/tinyLeague-app/device-settings).
+
+<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
+  <ImageSwitcher
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Paired_Devices_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Paired_Devices_Dark.png"
+    alt="The Connections Menu with a connected device listed under Paired, showing the settings icon"
+    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+  />
+  <p style={{ fontStyle: 'italic' }}>A connected device sits under Paired, with the ⚙ icon replacing the ➕</p>
+</div>
 
 ---
 

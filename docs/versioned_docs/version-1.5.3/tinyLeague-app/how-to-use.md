@@ -13,9 +13,9 @@ This guide walks you through the main timer interface of the tinyLeague™ Hub a
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/Main_Timer_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/Main_Timer_Dark.png"
-    alt="tL Logo"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Main_Timer_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Main_Timer_Dark.png"
+    alt="The tinyLeague Hub main timer screen, with the increment, reset, toggle, undo and pause controls"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
   <p style={{ fontStyle: 'italic' }}>The main timer interface</p>
@@ -29,10 +29,11 @@ This guide walks you through the main timer interface of the tinyLeague™ Hub a
 
 - Located at the top, beside the current shot clock
 - **Decrease or increase the time on the current shot clock** by 1 second, or 0.1 seconds for the last 5 seconds of the clock
+- Active while the clock is running only when [Live Adjustment](/docs/tinyLeague-app/app-settings#-live-adjustment) is enabled
 - Dynamically updates the displayed time on both the application and on your connected module
 
 :::tip
-Use these buttons during a pause to correct the clock, perfect for making quick adjustments.
+Use these buttons to correct the clock, perfect for making quick adjustments. With Live Adjustment off, pause first.
 :::
 
 ---
@@ -52,7 +53,7 @@ This is your main in-game control, one tap to reset and resume play instantly.
 ### 🎚 High / Low Toggle Switch
 
 - Sets the max clock to High or Low, respective to the switch's position
-- Using this swaps the current max time with its high/low counterpart, which can be customized in [Timer Settings](/docs/tinyLeague-app/app-settings#-timer-settings)
+- Using this swaps the current max time with its high/low counterpart, which can be customized under [Timer Logic](/docs/tinyLeague-app/app-settings#-timer-logic)
 - New max clock will be applied upon next reset.
 
 :::note
