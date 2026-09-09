@@ -1,6 +1,6 @@
 ---
 id: how-set-up
-title: How to set-up
+title: How to Set Up
 description: Power up your tinyLeague™ Founders Edition shot clock in five steps, from charging the battery to pairing with the tinyLeague™ Hub app.
 sidebar_position: 4
 ---
