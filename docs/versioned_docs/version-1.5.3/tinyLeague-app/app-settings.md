@@ -13,20 +13,20 @@ This guide provides a breakdown of all app settings found in the tinyLeague™ H
   <ImageSwitcher
     lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_1_Light.png"
     darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_1_Dark.png"
-    alt="The top of the app settings screen, showing the General and Timer Logic groups"
+    alt="The app settings screen as it opens, showing the General and Timer Logic groups with Audio and Cues continuing past the bottom of the screen"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>The General and Timer Logic groups</p>
+  <p style={{ fontStyle: 'italic' }}>The screen as it opens: General, Timer Logic, and the start of Audio &amp; Cues</p>
 </div>
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
     lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_2_Light.png"
     darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_2_Dark.png"
-    alt="The lower part of the app settings screen, showing the Audio and Cues group"
+    alt="The app settings screen scrolled down, showing the end of the Audio and Cues group above the version footer"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Scrolling down reveals the Audio &amp; Cues group</p>
+  <p style={{ fontStyle: 'italic' }}>Scrolling down brings the rest of Audio &amp; Cues into view</p>
 </div>
 
 ---
