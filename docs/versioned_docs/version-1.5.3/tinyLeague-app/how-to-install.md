@@ -56,7 +56,7 @@ sidebar_position: 2
 
 ## 🔢 Check Your App Version
 
-The documentation is published per app version, so the guides you read should match the build on your phone. To see which version you have, open **App Settings** and scroll to the bottom of the screen.
+Open **App Settings** and scroll to the bottom.
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
@@ -65,10 +65,10 @@ The documentation is published per app version, so the guides you read should ma
     alt="The bottom of the App Settings screen, showing the app name and version number beneath the last settings group"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>The version sits below the last settings group</p>
+  <p style={{ fontStyle: 'italic' }}>Below the last settings group</p>
 </div>
 
-If that number is lower than the version named at the top of these docs, update the app using the store links above. If you would rather read the guides that match your current build, use the **version selector** at the top of the sidebar.
+Older than the version these docs cover? Update with the links above, or switch the **version selector** in the sidebar to match your build.
 
 ---
 
