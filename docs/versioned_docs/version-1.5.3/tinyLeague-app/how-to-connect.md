@@ -53,24 +53,24 @@ sidebar_position: 3
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Available_Devices_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Available_Devices_Dark.png"
-    alt="The Connections Menu listing available devices found over Bluetooth"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Connections_Available_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Connections_Available_Dark.png"
+    alt="The Available section of the Connections Menu, listing nearby devices each with a plus button, still scanning"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Example of the available devices list in the Connections Menu</p>
+  <p style={{ fontStyle: 'italic' }}>Nearby modules appear under Available, each with a ➕ to connect</p>
 </div>
 
 If you have previously connected to your module, it will show up under **Saved**. Tap the ➕ to connect to your device.
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Saved_Devices_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Saved_Devices_Dark.png"
-    alt="The Connections Menu showing a previously connected device under Saved"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Connections_Saved_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Connections_Saved_Dark.png"
+    alt="The Saved section above the Available list, the saved device showing a trash button and a plus button"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Example of the saved devices list in the Connections Menu</p>
+  <p style={{ fontStyle: 'italic' }}>A previously connected module sits under Saved, with 🗑 and ➕ beside it</p>
 </div>
 
 > ✅ Make sure your unit is powered on and ready to be connected.
@@ -80,9 +80,9 @@ If you have previously connected to your module, it will show up under **Saved**
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Paired_Devices_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Paired_Devices_Dark.png"
-    alt="The Connections Menu with a connected device listed under Paired, showing the settings icon"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Connections_Paired_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Connections_Paired_Dark.png"
+    alt="The Paired section above the Available list, the connected device showing a single gear button"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
   <p style={{ fontStyle: 'italic' }}>A connected device sits under Paired, with the ⚙ icon replacing the ➕</p>
