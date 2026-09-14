@@ -13,25 +13,25 @@ This guide provides a breakdown of all app settings found in the tinyLeague™ H
   <ImageSwitcher
     lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_1_Light.png"
     darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_1_Dark.png"
-    alt="The app settings screen as it opens, showing the General and Timer Logic groups with Audio and Cues continuing past the bottom of the screen"
+    alt="The tinyLeague Hub app settings screen, showing the General, Timer Logic and Audio and Cues groups stacked in one scrolling list"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>The screen as it opens: General, Timer Logic, and the start of Audio &amp; Cues</p>
-</div>
-
-<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
-  <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_2_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_2_Dark.png"
-    alt="The app settings screen scrolled down, showing the end of the Audio and Cues group above the version footer"
-    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
-  />
-  <p style={{ fontStyle: 'italic' }}>Scrolling down brings the rest of Audio &amp; Cues into view</p>
+  <p style={{ fontStyle: 'italic' }}>The settings screen as it opens</p>
 </div>
 
 ---
 
 ### ⚙️ General
+
+<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
+  <ImageSwitcher
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_General_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_General_Dark.png"
+    alt="The General group, containing the Theme switch, the Settings Pin toggle and the Reset to Default button"
+    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+  />
+  <p style={{ fontStyle: 'italic' }}>Theme, Settings Pin and Reset to Default</p>
+</div>
 
 #### 🌙 Theme
 
@@ -48,6 +48,16 @@ This button will restore your app to default settings.
 ---
 
 ### ⏱ Timer Logic
+
+<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
+  <ImageSwitcher
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_TimerLogic_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_TimerLogic_Dark.png"
+    alt="The Timer Logic group, containing the High Limit and Low Limit values and the Live Adjustment and True Undo toggles"
+    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+  />
+  <p style={{ fontStyle: 'italic' }}>High Limit, Low Limit, Live Adjustment and True Undo</p>
+</div>
 
 #### High Limit and Low Limit
 
@@ -68,6 +78,16 @@ When enabled, the app will continue tracking clock time in the background after 
 ---
 
 ### 🔊 Audio &amp; Cues
+
+<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
+  <ImageSwitcher
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_AudioCues_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_AudioCues_Dark.png"
+    alt="The Audio and Cues group, containing the End Buzzer and Timer Cues toggles, the Cue Interval value and the Final 5s Cues toggle"
+    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+  />
+  <p style={{ fontStyle: 'italic' }}>End Buzzer, Timer Cues, Cue Interval and Final 5s Cues</p>
+</div>
 
 #### End Buzzer
 

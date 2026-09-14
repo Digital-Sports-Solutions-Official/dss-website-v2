@@ -147,6 +147,12 @@ screen under several headings:
   toggles.
 - Derive crops from the existing captures. Do not re-shoot.
 - Name them `<Screen>_<Section>_<Theme>.png`.
+- No image appears twice on a page. Two headings needing the same screen need
+  two crops, not one image repeated.
+- Publish the full captures even when a page only references crops. The crops
+  are cut from them, so losing them means the next version starts over.
+- Take the crop bounds from the card borders in the capture, not by eye. A crop
+  judged by eye clips a border about as often as not.
 
 Alt text describes the screen, not the brand. `alt="tL Logo"` on a screenshot of
 a settings panel tells a screen reader nothing.
