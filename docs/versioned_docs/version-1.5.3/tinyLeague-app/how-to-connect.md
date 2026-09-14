@@ -41,12 +41,12 @@ sidebar_position: 3
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Permission_Screen_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Permission_Screen_Dark.png"
-    alt="The Android permission prompt requesting nearby device access"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Connections_Permissions_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Connections_Permissions_Dark.png"
+    alt="The Permissions Required panel, with toggles for Location (Precise) and Nearby Devices (Bluetooth) above an Open App Settings button"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Allow the needed permissions to access connections</p>
+  <p style={{ fontStyle: 'italic' }}>Both toggles must be on; Open App Settings is the fallback if they will not move</p>
 </div>
 
 4. The app will scan for nearby shot clock modules via **BLE**. Under **Available**, tap the ➕ next to **Founders**, or if you have renamed your device, select your device name from the list.
