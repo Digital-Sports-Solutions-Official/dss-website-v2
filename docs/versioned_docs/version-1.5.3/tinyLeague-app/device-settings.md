@@ -9,16 +9,6 @@ sidebar_position: 5
 
 This guide provides a breakdown of all device settings in the tinyLeague™ Hub app, used to modify and customize your device. Use the definitions below to become familiar with each feature.
 
-<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
-  <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/Device_Settings_1_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/Device_Settings_1_Dark.png"
-    alt="The tinyLeague Hub device settings screen, showing the Information, Rename and Color Picker sections in one scrolling list"
-    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
-  />
-  <p style={{ fontStyle: 'italic' }}>The device settings screen as it opens</p>
-</div>
-
 ---
 
 ### 📶 Device Information

@@ -9,16 +9,6 @@ sidebar_position: 6
 
 This guide provides a breakdown of all app settings found in the tinyLeague™ Hub app, making it easy to change how your app works. The settings screen is arranged in three groups, covered below in the order they appear.
 
-<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
-  <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_1_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_1_Dark.png"
-    alt="The tinyLeague Hub app settings screen, showing the General, Timer Logic and Audio and Cues groups stacked in one scrolling list"
-    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
-  />
-  <p style={{ fontStyle: 'italic' }}>The settings screen as it opens</p>
-</div>
-
 ---
 
 ### ⚙️ General
