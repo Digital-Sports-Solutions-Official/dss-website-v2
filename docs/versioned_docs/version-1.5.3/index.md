@@ -16,7 +16,7 @@ If you have just purchased a tinyLeague Founders Edition Shotclock, you are in t
 
 Here you will find documentation all about the **tinyLeague™ ecosystem**, including the hardware, software, and accessories available, with extensive guides on how to use your components.
 
-This documentation covers the **tinyLeague™ Hub** app at version 1.5.3. If you are running an older version of the app, please update so the screens you see match these guides.
+This documentation covers the **tinyLeague™ Hub** app at version 1.5.3. If you are running an older version of the app, please update so the screens you see match these guides — [here is how to check which version you have](/docs/tinyLeague-app/app-installation#-check-your-app-version).
 
 If you already know where you are headed, feel free to select your destination from the left navigation pane. If you are new here, feel free to explore, or jump in from the beginning!
 
