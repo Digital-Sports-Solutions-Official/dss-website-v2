@@ -32,7 +32,7 @@ sidebar_position: 3
     lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/ShotClk_Icon_black.png"
     darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/ShotClk_Icon_white.png"
     alt="The shot clock icon that opens the Connections Menu"
-    style={{ maxWidth: '90%' }}
+    style={{ maxWidth: '110px' }}
   />
   <p style={{ fontStyle: 'italic' }}>Tap this button to navigate to the Connections Menu</p>
 </div>
