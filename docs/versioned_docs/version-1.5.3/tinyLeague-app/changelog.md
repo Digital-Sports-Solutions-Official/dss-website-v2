@@ -7,7 +7,7 @@ sidebar_position: 8
 
 ## 🗒️ Changelog
 
-Stay up to date with the latest improvements to the **tinyLeague™ Hub** app. This page includes recent updates and version info.
+Stay up to date with the latest improvements to the **tinyLeague™ Hub** app. This page includes recent updates and version info. Not sure what you are running? [Check your app version](/docs/tinyLeague-app/app-installation#-check-your-app-version).
 
 ---
 

@@ -131,6 +131,39 @@ repository:
 
 `<ImageSwitcher lightSrc="…" darkSrc="…" alt="…" />` follows the docs theme.
 
+App screenshots are versioned: `img/Updated_tL_Hub_App_Screenshots/v1.5/`, split
+into `Light_Mode/` and `Dark_Mode/`. Point the current docs at the newest folder.
+
+**Never delete an old version folder.** Archived docs still read from it —
+`version-1.1.0` references `v1.4/` 28 times, so removing that folder breaks live
+images in the archive.
+
+Crop to the region a section actually describes rather than repeating a full
+screen under several headings:
+
+- Show the crop, not the whole screen. A settings page does not need a
+  full-screen shot before its sections; go from the overview straight into the
+  first heading. Each heading carries the crop of the thing it describes.
+- Crop light and dark to the identical box, or the page shifts when the theme
+  toggles.
+- Derive crops from the existing captures. Do not re-shoot.
+- Name them `<Screen>_<Section>_<Theme>.png`.
+- No image appears twice on a page. Two headings needing the same screen need
+  two crops, not one image repeated.
+- Publish the full captures even when no page references them. The crops are cut
+  from them, so losing them means the next version starts over.
+- Take the crop bounds from the capture itself, not by eye. Scan for the card
+  borders; where a screen has no cards, measure how far the content actually
+  extends against the background. A crop judged by eye clips a border about as
+  often as not, and "it has no cards" is not evidence the frame is full.
+- Size by role, not by rule. Screens and crops share one `maxWidth` so the page
+  keeps a consistent width; an icon gets a small explicit width. An 821x1006
+  icon at `maxWidth: 90%` renders larger on the page than the screen it lives
+  in.
+
+Alt text describes the screen, not the brand. `alt="tL Logo"` on a screenshot of
+a settings panel tells a screen reader nothing.
+
 **Tables**, GitHub-flavoured. Inline HTML and JSX with `style={{ … }}` also
 work.
 

@@ -1,101 +1,97 @@
 ---
 id: app-settings
 title: App Settings
-description: App settings in the tinyLeague™ Hub, covering theme, timer defaults, the settings PIN, sound, true undo, and resetting to defaults.
+description: App settings in the tinyLeague™ Hub, covering theme, the settings pin, timer limits, live adjustment, true undo, and the audio cue controls.
 sidebar_position: 6
 ---
 
 ## ⚙️ Settings Menu Overview
 
-This guide provides a breakdown of all app settings found in the tinyLeague™ Hub app, making it easy to change how your app works. Use the visuals below to get familiar with each feature.
+This guide provides a breakdown of all app settings found in the tinyLeague™ Hub app, making it easy to change how your app works. The settings screen is arranged in three groups, covered below in the order they appear.
 
 ---
 
+### ⚙️ General
 
-### 🌙 Theme Toggle
+<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
+  <ImageSwitcher
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_General_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_General_Dark.png"
+    alt="The General group, containing the Theme switch, the Settings Pin toggle and the Reset to Default button"
+    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+  />
+</div>
+
+#### 🌙 Theme
 
 Set your app theme to light or dark mode!
 
-<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
-  <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/App_Settings_1_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/App_Settings_1_Dark.png"
-    alt="tL Logo"
-    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
-  />
-  <p style={{ fontStyle: 'italic' }}>#darkmodebetter</p>
-</div>
+#### 🔒 Settings Pin
+
+Add a layer of protection by requiring a PIN to access settings. Great for ensuring volunteers or players don’t modify critical configuration.
+
+#### 🧹 Reset to Default
+
+This button will restore your app to default settings.
 
 ---
 
-### ⏱ Timer Settings
-
-Adjust the default values for high and low player count shot clock durations. These will affect how much time appears on the clock when reset after the [High/Low Switch](/docs/tinyLeague-app/how-to-use#-high--low-toggle-switch) is toggled.
+### ⏱ Timer Logic
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/App_Settings_1_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/App_Settings_1_Dark.png"
-    alt="tL Logo"
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_TimerLogic_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_TimerLogic_Dark.png"
+    alt="The Timer Logic group, containing the High Limit and Low Limit values and the Live Adjustment and True Undo toggles"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Fine-tune timing presets for game flow</p>
 </div>
+
+#### High Limit and Low Limit
+
+Adjust the default values for high and low player count shot clock durations. These will affect how much time appears on the clock when reset after the [High/Low Switch](/docs/tinyLeague-app/how-to-use#-high--low-toggle-switch) is toggled.
 
 :::info
 Setting the high and low shot clock limits to the same value will result in the [Timer Switch](/docs/tinyLeague-app/how-to-use#-high--low-toggle-switch) doing nothing.
 :::
 
----
+#### 🎚 Live Adjustment
 
-### 🔒 Settings PIN
+When enabled, the ➖ and ➕ buttons stay active while the timer is running, so you can correct the clock without pausing first. Turn it off if you would rather the clock only be adjustable while paused.
 
-Add a layer of protection by requiring a PIN to access settings. Great for ensuring volunteers or players don’t modify critical configuration.
-
-<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
-  <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/App_Settings_1_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/App_Settings_1_Dark.png"
-    alt="tL Logo"
-    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
-  />
-  <p style={{ fontStyle: 'italic' }}>PIN-protect sensitive settings access</p>
-</div>
-
----
-
-### 🔊 Sound Settings
-
-Enable audio cues and buzzer alerts for players and officials. These can be toggled independently for noise-conscious environments.
-
-<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
-  <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/App_Settings_2_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/App_Settings_2_Dark.png"
-    alt="tL Logo"
-    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
-  />
-  <p style={{ fontStyle: 'italic' }}>Control buzzer and in-game sound behavior</p>
-</div>
-
----
-
-### 🔁 True Undo
+#### 🔁 True Undo
 
 When enabled, the app will continue tracking clock time in the background after a reset, allowing for more accurate "Undo" operations.
 
-<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
-  <ImageSwitcher
-    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Light_Mode/App_Settings_2_Light.png"
-    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.4/Dark_Mode/App_Settings_2_Dark.png"
-    alt="tL Logo"
-    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
-  />
-  <p style={{ fontStyle: 'italic' }}>Enhance undo accuracy by tracking elapsed time</p>
-</div>
-
 ---
 
-### 🧹 Reset to Default Settings
+### 🔊 Audio &amp; Cues
 
-This button will restore your app to default settings.
+<div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
+  <ImageSwitcher
+    lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/App_Settings_AudioCues_Light.png"
+    darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/App_Settings_AudioCues_Dark.png"
+    alt="The Audio and Cues group, containing the End Buzzer and Timer Cues toggles, the Cue Interval value and the Final 5s Cues toggle"
+    style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+  />
+</div>
+
+#### End Buzzer
+
+Sounds the buzzer when the shot clock reaches zero.
+
+#### Timer Cues
+
+Plays an audible cue as the clock counts down, at the spacing set by Cue Interval.
+
+#### Cue Interval
+
+Sets how often a timer cue plays, in seconds.
+
+#### Final 5s Cues
+
+Plays a cue for each of the last five seconds, during the tenth-of-a-second rundown.
+
+:::tip
+End Buzzer, Timer Cues and Final 5s Cues toggle independently, so you can keep the buzzer and silence everything else in noise-conscious venues.
+:::
