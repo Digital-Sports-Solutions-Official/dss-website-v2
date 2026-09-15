@@ -67,7 +67,7 @@ Open [App Settings](/docs/tinyLeague-app/app-settings) and scroll to the bottom.
   />
 </div>
 
-If it does not match the version these docs cover, update the app using the links above.
+If it does not match the version these docs cover, update the app using the app store.
 
 ---
 
@@ -75,4 +75,4 @@ If it does not match the version these docs cover, update the app using the link
 
 - Requires **Android 8.0** or higher, with working Bluetooth.
 - Requires **iOS 15.1** or higher, with working Bluetooth.
-- Optimized for phones, but also supports tablets.
+- Supports tablets.

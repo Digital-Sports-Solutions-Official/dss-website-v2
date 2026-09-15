@@ -18,7 +18,6 @@ This guide walks you through the main timer interface of the tinyLeague™ Hub a
     alt="The tinyLeague Hub main timer screen, with the increment, reset, toggle, undo and pause controls"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>The main timer interface</p>
 </div>
 
 ---

@@ -24,17 +24,16 @@ sidebar_position: 3
     alt="The tinyLeague Hub main timer screen, with the shot clock icon in the top left"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Select the button in the top left corner of your screen</p>
 </div>
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
+  <p style={{ fontStyle: 'italic' }}>Icon to tap to navigate to the Connections Menu</p>
   <ImageSwitcher
     lightSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Light_Mode/ShotClk_Icon_black.png"
     darkSrc="https://raw.githubusercontent.com/Digital-Sports-Solutions-Official/DSS-assets/main/img/Updated_tL_Hub_App_Screenshots/v1.5/Dark_Mode/ShotClk_Icon_white.png"
     alt="The shot clock icon that opens the Connections Menu"
     style={{ maxWidth: '110px' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Tap this button to navigate to the Connections Menu</p>
 </div>
 
 3. Accept any permissions required for the settings by tapping **"Allow"** on the prompts.
@@ -46,7 +45,7 @@ sidebar_position: 3
     alt="The Permissions Required panel, with toggles for Location (Precise) and Nearby Devices (Bluetooth) above an Open App Settings button"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Both toggles must be on; Open App Settings is the fallback if they will not move</p>
+  <p style={{ fontStyle: 'italic' }}>Both toggles must be on</p>
 </div>
 
 4. The app will scan for nearby shot clock modules via **BLE**. Under **Available**, tap the ➕ next to **Founders**, or if you have renamed your device, select your device name from the list.

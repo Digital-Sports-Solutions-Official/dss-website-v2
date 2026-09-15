@@ -20,7 +20,6 @@ This guide provides a breakdown of all app settings found in the tinyLeague™ H
     alt="The General group, containing the Theme switch, the Settings Pin toggle and the Reset to Default button"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Theme, Settings Pin and Reset to Default</p>
 </div>
 
 #### 🌙 Theme
@@ -46,7 +45,6 @@ This button will restore your app to default settings.
     alt="The Timer Logic group, containing the High Limit and Low Limit values and the Live Adjustment and True Undo toggles"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>High Limit, Low Limit, Live Adjustment and True Undo</p>
 </div>
 
 #### High Limit and Low Limit
@@ -76,7 +74,6 @@ When enabled, the app will continue tracking clock time in the background after 
     alt="The Audio and Cues group, containing the End Buzzer and Timer Cues toggles, the Cue Interval value and the Final 5s Cues toggle"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>End Buzzer, Timer Cues, Cue Interval and Final 5s Cues</p>
 </div>
 
 #### End Buzzer

@@ -20,7 +20,6 @@ This guide provides a breakdown of all device settings in the tinyLeague™ Hub 
     alt="The device Information panel, showing name, ID, type, firmware and signal strength, with the Learn how to improve signal link beneath it"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Name, ID, device type, firmware version and signal strength</p>
 </div>
 
 This section gives some important information for this connected device. Signal shows the current Bluetooth link quality, and **Learn how to improve signal** beneath it links to placement advice if the reading is poor.
@@ -36,7 +35,6 @@ This section gives some important information for this connected device. Signal 
     alt="The Rename panel, with the name field, its save button and the 14 character counter"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>The name field and its 14 character counter</p>
 </div>
 
 Change the display name of the connected module, perfect for identifying clocks by location (e.g., "Court A", "Home Team").
@@ -56,7 +54,6 @@ The name for the Founders Edition Shot Clock Module has a default character limi
     alt="The Color Picker, showing the primary and secondary color swatch grids"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Set the clock colors for above and below 5 seconds</p>
 </div>
 
 Select primary and secondary LED colors to match team colors or improve visibility. Changes are immediately applied to the connected module.
@@ -76,7 +73,6 @@ Primary color sets the color of the clock when the time is above 5 seconds. Seco
     alt="The Disconnect Device button at the bottom of the device settings screen"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Sits at the bottom of the settings screen</p>
 </div>
 
 Use this button to disconnect from your device. You will be navigated back to the Connections Menu, where your device will appear under **Saved**.
