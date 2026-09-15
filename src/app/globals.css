@@ -99,3 +99,19 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-brand-peach);
 }
+
+/* The docs sidebar and table-of-contents rails scroll independently. The
+   scrollbar theme above is hard-coded dark, so in light mode those rails showed
+   a black track against a #faf9f6 page. */
+[data-docs-theme='light'] .docs-root ::-webkit-scrollbar-track {
+  background: #efece6;
+}
+
+[data-docs-theme='light'] .docs-root ::-webkit-scrollbar-thumb {
+  background: #c6c3bc;
+  border: 2px solid #efece6;
+}
+
+[data-docs-theme='light'] .docs-root ::-webkit-scrollbar-thumb:hover {
+  background: #a9a69f;
+}

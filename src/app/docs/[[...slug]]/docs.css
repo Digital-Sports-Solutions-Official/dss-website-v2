@@ -156,6 +156,17 @@
   margin: 1rem 0;
 }
 
+/* Image captions. The markdown emits <p style="font-style:italic"> inside a
+   centred div, and every italic paragraph in the docs is a caption, so the
+   attribute selector is safe here. Styling them by class instead would mean
+   editing 71 sites in 1.5.3 and could not reach the frozen archive versions. */
+.docs-prose p[style*='font-style:italic'] {
+  color: var(--docs-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
 .docs-prose strong {
   color: var(--docs-heading);
   font-weight: 700;
@@ -329,6 +340,19 @@
   --admonition-accent: var(--docs-info);
 }
 
+/* The admonition tints its own background with 12% of its accent hue. In light
+   mode that lifts the background toward the label and drops these two below the
+   4.5:1 floor: tip measured 4.10:1, note 4.35:1. Darkening only the label keeps
+   the left bar, the tint and the dark theme exactly as they were.
+   Measured after: tip 4.61:1, note 4.62:1. */
+[data-docs-theme='light'] .docs-admonition--note {
+  --admonition-label: #676766;
+}
+
+[data-docs-theme='light'] .docs-admonition--tip {
+  --admonition-label: #197637;
+}
+
 .docs-admonition--caution,
 .docs-admonition--warning,
 .docs-admonition--danger {
@@ -337,7 +361,7 @@
 
 .docs-admonition-label {
   align-items: center;
-  color: var(--admonition-accent);
+  color: var(--admonition-label, var(--admonition-accent));
   display: flex;
   font-size: 0.875rem;
   font-weight: 700;

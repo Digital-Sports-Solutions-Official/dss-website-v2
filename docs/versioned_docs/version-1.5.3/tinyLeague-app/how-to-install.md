@@ -56,7 +56,7 @@ sidebar_position: 2
 
 ## 🔢 Check Your App Version
 
-Open **App Settings** and scroll to the bottom.
+Open [App Settings](/docs/tinyLeague-app/app-settings) and scroll to the bottom.
 
 <div style={{ textAlign: 'center', marginTop: '1rem', marginBottom: '1rem' }}>
   <ImageSwitcher
@@ -65,10 +65,9 @@ Open **App Settings** and scroll to the bottom.
     alt="The bottom of the App Settings screen, showing the app name and version number beneath the last settings group"
     style={{ maxWidth: '90%', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
   />
-  <p style={{ fontStyle: 'italic' }}>Below the last settings group</p>
 </div>
 
-Older than the version these docs cover? Update with the links above, or switch the **version selector** in the sidebar to match your build.
+If it does not match the version these docs cover, update the app using the links above.
 
 ---
 
