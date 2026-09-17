@@ -11,6 +11,63 @@ Stay up to date with the latest improvements to the **tinyLeague™ Hub** app. T
 
 ---
 
+### **v1.5.3** – *June 2026* (current release)
+
+tinyLeague Hub - Version 1.5.3 Release Notes
+
+🆕 What's New
+- Connected shot clocks keep counting while the app is in the background. On Android, a notification shows while a device is connected
+- Four new display colors, and the color picker now fills wider screens such as tablets
+
+🛠 Improvements & Enhancements
+- The end buzzer no longer sounds early when you return to the app
+- No beeps or vibration while the app is in the background
+- The + button grays out at 99 seconds
+
+🔄 Make sure to update to the latest version for the best experience!
+
+---
+
+### **v1.5.2** – *May 2026*
+
+tinyLeague Hub - Version 1.5.2 Release Notes
+
+🆕 What's New
+- Live Adjustment is now on by default
+- The screen stays awake while the app is open
+
+🛠 Improvements & Enhancements
+- Smoother tenths-of-a-second countdown under 5 seconds, ending on 0.0 on connected displays
+- Beeps and vibrations stay in sync, with no doubled sounds
+- The clock shows the correct time when you return to the app
+- Fixed crashes and slowdowns during long sessions
+
+🔄 Make sure to update to the latest version for the best experience!
+
+---
+
+### **v1.5.1** – *April 2026*
+
+tinyLeague Hub - Version 1.5.1 Release Notes
+
+🆕 What's New
+- Live Adjustment setting to use -/+ while the timer is running
+- Connect to a computer app for livestream integration (beta)
+- Reorganized settings and device screens
+- App version shown at the bottom of settings
+
+🛠 Improvements & Enhancements
+- Time you adjust with -/+ is kept when you unpause
+- Pressing reset stops the buzzer and vibration immediately
+- Final-countdown beeps match the on-screen time and no longer overlap interval cues
+- Faster device discovery, with device names instead of IDs in messages
+- Saved devices stay saved after the app is closed
+- Light and dark mode display correctly on every control
+
+🔄 Make sure to update to the latest version for the best experience!
+
+---
+
 ### **v1.4.3** – *July 2025*
 
 tinyLeague Hub - Version 1.4.3 Release Notes
