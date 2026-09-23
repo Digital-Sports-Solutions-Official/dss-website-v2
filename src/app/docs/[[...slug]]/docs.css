@@ -384,3 +384,86 @@
 .docs-admonition-body > :last-child {
   margin-bottom: 0;
 }
+
+/* ==========================================================================
+   CHANGELOG
+   The one page that is a list of releases rather than prose, and the one that
+   is read by skimming: a reader arrives knowing their version and looking for
+   it. `data-doc` carries the page's route path, so these rules reach it without
+   a component or classes in the markdown — which matters here because the
+   version headings have to stay plain `###` for rehype-slug to give them ids
+   and for the table of contents to list them.
+
+   Colour is structural here, not decorative: a bar marking where each release
+   starts, and one badge on the version the reader most likely wants. The
+   version numbers and section labels stay in the heading colour — 11 of the
+   first and 21 of the second in accent turned the page into a wall of orange.
+   ========================================================================== */
+
+/* The lede is one sentence, so it can afford to be larger than body copy. */
+.docs-prose[data-doc$='/changelog'] > p:first-of-type {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* "Releases" sits between the lede and the first entry so the outline does not
+   jump h1 -> h3; the version headings have to stay h3 to reach the table of
+   contents. It is a rail label, not a section title — the same small uppercase
+   treatment DocsToc gives "On this page" — so restoring the heading level costs
+   almost no vertical space at the top of a phone screen. */
+.docs-prose[data-doc$='/changelog'] h2 {
+  color: var(--docs-muted);
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* A release heading. The accent bar reads as a marker down the left edge and
+   reuses the blockquote and admonition treatment already in the system, so no
+   horizontal rule is needed between entries. */
+.docs-prose[data-doc$='/changelog'] h3 {
+  border-left: 3px solid var(--docs-accent);
+  margin-top: 3.5rem;
+  padding-left: 0.875rem;
+}
+
+/* The label belongs to the release below it, not to the lede above. */
+.docs-prose[data-doc$='/changelog'] h2 + h3 {
+  margin-top: 1rem;
+}
+
+/* The date is context, not the thing being scanned for. */
+.docs-prose[data-doc$='/changelog'] h3 em {
+  color: var(--docs-muted);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* `latest` in the markdown, rendered as a badge. Inline code is the only
+   markdown that can carry a distinct box, and it already owns the accent. */
+.docs-prose[data-doc$='/changelog'] h3 code {
+  background: var(--docs-active);
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.6em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-left: 0.5rem;
+  padding: 0.35em 0.85em;
+  text-transform: uppercase;
+  vertical-align: 0.2em;
+}
+
+/* Section labels within a release keep the h4 treatment they get everywhere
+   else in the docs; only the spacing tightens, so each label sits with its
+   list rather than floating between two. */
+.docs-prose[data-doc$='/changelog'] h4 {
+  margin-top: 1.5rem;
+}
+
+/* Pull the list up under its label; the default h4 gap reads as a break. */
+.docs-prose[data-doc$='/changelog'] h4 + ul {
+  margin-top: 0.5rem;
+}
