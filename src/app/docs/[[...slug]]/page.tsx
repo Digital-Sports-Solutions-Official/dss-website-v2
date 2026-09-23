@@ -97,7 +97,10 @@ export default async function DocPage({ params }: PageProps) {
           </div>
         )}
 
-        <article className="docs-prose">
+        {/* `data-doc` is the page's route path within its version. Every page
+            takes the same prose styling; this is the hook for the rare one that
+            needs more, without a component or classes in the markdown. */}
+        <article className="docs-prose" data-doc={routePath}>
           {!doc.hideTitle && <h1>{doc.title}</h1>}
           <Content components={getMdxComponents(version, doc.routeDir)} />
         </article>
