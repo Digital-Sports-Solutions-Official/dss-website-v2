@@ -394,6 +394,11 @@
    version headings have to stay plain `###` for rehype-slug to give them ids
    and for the table of contents to list them.
 
+   "Releases" is a plain `##`, taking the same h2 as every other page: it exists
+   so the outline does not jump h1 -> h3, since the version headings have to
+   stay h3 to reach the table of contents. It is deliberately not given a
+   page-specific size — this page should read like the rest of the docs.
+
    Colour is structural here, not decorative: a bar marking where each release
    starts, and one badge on the version the reader most likely wants. The
    version numbers and section labels stay in the heading colour — 11 of the
@@ -406,20 +411,6 @@
   line-height: 1.6;
 }
 
-/* "Releases" sits between the lede and the first entry so the outline does not
-   jump h1 -> h3; the version headings have to stay h3 to reach the table of
-   contents. It is a rail label, not a section title — the same small uppercase
-   treatment DocsToc gives "On this page" — so restoring the heading level costs
-   almost no vertical space at the top of a phone screen. */
-.docs-prose[data-doc$='/changelog'] h2 {
-  color: var(--docs-muted);
-  font-size: 0.8125rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 0;
-  margin-top: 2.5rem;
-  text-transform: uppercase;
-}
-
 /* A release heading. The accent bar reads as a marker down the left edge and
    reuses the blockquote and admonition treatment already in the system, so no
    horizontal rule is needed between entries. */
@@ -429,9 +420,11 @@
   padding-left: 0.875rem;
 }
 
-/* The label belongs to the release below it, not to the lede above. */
+/* That 3.5rem separates one release from the next. The first release is not
+   being separated from anything — it is the first child of "Releases" — so it
+   keeps the ordinary h3 spacing. */
 .docs-prose[data-doc$='/changelog'] h2 + h3 {
-  margin-top: 1rem;
+  margin-top: 2.25rem;
 }
 
 /* The date is context, not the thing being scanned for. */
