@@ -7,7 +7,7 @@ sidebar_position: 8
 
 What's new in each release of the **tinyLeague™ Hub** app. [Check which version you're running](/docs/tinyLeague-app/app-installation#-check-your-app-version).
 
-## Releases
+## 🗒 Releases
 
 ### **v1.5.3** – *June 2026* `latest`
 
